@@ -55,6 +55,12 @@
       "imageHint": "interior design consultation"
     },
     {
+      "id": "style-assistant-1",
+      "description": "A mood board with fabric swatches, color palettes, and furniture sketches.",
+      "imageUrl": "https://images.unsplash.com/photo-1516659183608-6cde23d6de13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZXNpZ24lMjBtb29kJTIwYm9hcmR8ZW58MHx8fHwxNzcyMjIzNDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "design mood board"
+    },
+    {
       "id": "product-7",
       "description": "A compact and stylish nightstand with a single drawer.",
       "imageUrl": "https://images.unsplash.com/photo-1652155205433-52179159a15e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuaWdodHN0YW5kfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -81,139 +87,139 @@
     {
       "id": "product-11",
       "description": "A large, rustic farmhouse dining table.",
-      "imageUrl": "https://images.unsplash.com/photo-1602872030490-4a484a7b3ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaW5pbmclMjB0YWJsZXxlbnwwfHx8fDE3NzEyMzEzODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1602872030490-4a484a7b3ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaW5pbmclMjB0YWJsZXxlbnwwfHx8fDE3NzEyMzEzODd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "dining table"
     },
     {
       "id": "product-12",
       "description": "A sleek, minimalist desk for a home office.",
-      "imageUrl": "https://images.unsplash.com/photo-1519219788971-8d9797e0928e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvZmZpY2UlMjBkZXNrfGVufDB8fHx8MTc3MTMyMzUzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519219788971-8d9797e0928e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvZmZpY2UlMjBkZXNrfGVufDB8fHx8MTc3MTMyMzUzNHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "office desk"
     },
     {
       "id": "product-13",
       "description": "An ergonomic executive office chair with lumbar support.",
-      "imageUrl": "https://images.unsplash.com/photo-1657757996603-acec063f1d9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b2ZmaWNlJTIwY2hhaXJ8ZW58MHx8fHwxNzcxMjE0Nzk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1657757996603-acec063f1d9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b2ZmaWNlJTIwY2hhaXJ8ZW58MHx8fHwxNzcxMjE0Nzk3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "office chair"
     },
     {
       "id": "product-14",
       "description": "A weather-resistant outdoor lounge set for a patio.",
-      "imageUrl": "https://images.unsplash.com/photo-1760304979382-cbf537da0027?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvdXRkb29yJTIwbG91bmdlfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1760304979382-cbf537da0027?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvdXRkb29yJTIwbG91bmdlfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "outdoor lounge"
     },
     {
       "id": "product-15",
       "description": "An elegant floor lamp with a modern design.",
-      "imageUrl": "https://images.unsplash.com/photo-1638189311070-d4e5dcc86902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zmxvb3IlMjBsYW1wfGVufDB8fHx8MTc3MTI2MTY0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1638189311070-d4e5dcc86902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zmxvb3IlMjBsYW1wfGVufDB8fHx8MTc3MTI2MTY0M3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "floor lamp"
     },
     {
       "id": "product-16",
       "description": "A classic dresser with six spacious drawers.",
-      "imageUrl": "https://images.unsplash.com/photo-1616810559347-257669714c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkcmVzc2VyfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616810559347-257669714c79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkcmVzc2VyfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "dresser"
     },
     {
       "id": "product-17",
       "description": "A versatile and colorful bohemian pouf.",
-      "imageUrl": "https://images.unsplash.com/photo-1733210439163-47e9b1936bfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxib2hlbWlhbiUyMHBvdWZ8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1733210439163-47e9b1936bfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxib2hlbWlhbiUyMHBvdWZ8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "bohemian pouf"
     },
     {
       "id": "product-18",
       "description": "A modern and geometric cube-shaped side table.",
-      "imageUrl": "https://images.unsplash.com/photo-1617638717732-a3ef01769ff2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzaWRlJTIwdGFibGV8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1617638717732-a3ef01769ff2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzaWRlJTIwdGFibGV8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "side table"
     },
     {
       "id": "product-19",
       "description": "A stylish and comfortable bar stool for a kitchen island.",
-      "imageUrl": "https://images.unsplash.com/photo-1761471857678-bd03dbecea04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiYXIlMjBzdG9vbHxlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1761471857678-bd03dbecea04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiYXIlMjBzdG9vbHxlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "bar stool"
     },
     {
       "id": "product-20",
       "description": "A spacious wardrobe with hanging space and shelves.",
-      "imageUrl": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2FyZHJvYmV8ZW58MHx8fHwxNzcxMjgwNjkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2FyZHJvYmV8ZW58MHx8fHwxNzcxMjgwNjkwfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "wardrobe"
     },
     {
       "id": "product-21",
       "description": "A minimalist console table for an entryway.",
-      "imageUrl": "https://images.unsplash.com/photo-1609879938030-31acdeded104?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zb2xlJTIwdGFibGV8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1609879938030-31acdeded104?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zb2xlJTIwdGFibGV8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "console table"
     },
     {
       "id": "product-22",
       "description": "A large, L-shaped sectional sofa for a family room.",
-      "imageUrl": "https://images.unsplash.com/photo-1759722665935-0967b4e0da93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzZWN0aW9uYWwlMjBzb2ZhfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759722665935-0967b4e0da93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzZWN0aW9uYWwlMjBzb2ZhfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "sectional sofa"
     },
     {
       "id": "product-23",
       "description": "A stylish ladder shelf for displaying items.",
-      "imageUrl": "https://images.unsplash.com/photo-1760636803311-e119fe64f519?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYWRkZXIlMjBzaGVsZnxlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1760636803311-e119fe64f519?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYWRkZXIlMjBzaGVsZnxlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "ladder shelf"
     },
     {
       "id": "product-24",
       "description": "An elegant vanity desk with a mirror.",
-      "imageUrl": "https://images.unsplash.com/photo-1701980699696-410e6ddd4ea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmFuaXR5JTIwZGVza3xlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1701980699696-410e6ddd4ea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmFuaXR5JTIwZGVza3xlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "vanity desk"
     },
     {
       "id": "product-25",
       "description": "A versatile rustic wooden bench.",
-      "imageUrl": "https://images.unsplash.com/photo-1763626343508-d7f9571e1d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cnVzdGljJTIwYmVuY2h8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1763626343508-d7f9571e1d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cnVzdGljJTIwYmVuY2h8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "rustic bench"
     },
     {
       "id": "product-26",
       "description": "A modern rocking chair.",
-      "imageUrl": "https://images.unsplash.com/flagged/photo-1558117962-95a20e243ef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2NraW5nJTIwY2hhaXJ8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1558117962-95a20e243ef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2NraW5nJTIwY2hhaXJ8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "rocking chair"
     },
     {
       "id": "product-27",
       "description": "A stylish rug with a bold geometric pattern.",
-      "imageUrl": "https://images.unsplash.com/photo-1766405831946-2b7f1653ed8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnZW9tZXRyaWMlMjBydWd8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1766405831946-2b7f1653ed8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnZW9tZXRyaWMlMjBydWd8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "geometric rug"
     },
     {
       "id": "product-28",
       "description": "A beautiful hanging pendant light.",
-      "imageUrl": "https://images.unsplash.com/photo-1589173956121-8891103b66b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZW5kYW50JTIwbGlnaHR8ZW58MHx8fHwxNzcxMjU4NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589173956121-8891103b66b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZW5kYW50JTIwbGlnaHR8ZW58MHx8fHwxNzcxMjU4NDU2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "pendant light"
     },
     {
       "id": "product-29",
       "description": "A set of nesting coffee tables.",
-      "imageUrl": "https://images.unsplash.com/photo-1759722667804-d4f7fc3a7e69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXN0aW5nJTIwdGFibGVzfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759722667804-d4f7fc3a7e69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXN0aW5nJTIwdGFibGVzfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "nesting tables"
     },
     {
       "id": "product-30",
       "description": "An industrial-style open bookcase.",
-      "imageUrl": "https://images.unsplash.com/photo-1760822600750-0bc72f1fad9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2Z0JTIwYm9va2Nhc2V8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1760822600750-0bc72f1fad9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2Z0JTIwYm9va2Nhc2V8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "loft bookcase"
     },
     {
       "id": "product-31",
       "description": "A versatile daybed that functions as a sofa and bed.",
-      "imageUrl": "https://images.unsplash.com/photo-1667552749841-40f6e0762e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXliZWR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1667552749841-40f6e0762e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXliZWR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "daybed"
     },
     {
       "id": "product-32",
       "description": "A charming cottage-style sideboard for dining storage.",
-      "imageUrl": "https://images.unsplash.com/photo-1567225477277-c8162eb4991d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzaWRlYm9hcmR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1567225477277-c8162eb4991d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzaWRlYm9hcmR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "sideboard"
     },
     {
       "id": "product-33",
       "description": "A sculptural end table that serves as a piece of art.",
-      "imageUrl": "https://images.unsplash.com/photo-1731045971022-566f67b7780a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbmQlMjB0YWJsZXxlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1731045971022-566f67b7780a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbmQlMjB0YWJsZXxlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "end table"
     },
     {

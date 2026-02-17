@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/#products', label: 'Products' },
   { href: '/#about', label: 'About Us' },
   { href: '/#services', label: 'Services' },
+  { href: '/#style-assistant', label: 'Style Assistant' },
   { href: '/#contact', label: 'Contact Us' },
 ];
 
@@ -48,7 +49,7 @@ export function Header() {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
+            <SheetContent side="right">
               <div className="flex flex-col gap-4 p-4">
                 <Link href="/#home" className="flex items-center gap-2 mb-4" onClick={() => setIsSheetOpen(false)}>
                   <Sofa className="h-6 w-6 text-primary" />
