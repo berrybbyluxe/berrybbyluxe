@@ -131,7 +131,7 @@ export function PaymentDialog({ product }: { product: Product }) {
                     Processing...
                   </>
                 ) : (
-                  `Pay $${product.price.toFixed(2)} with Paystack`
+                  `Pay $${product.price.toFixed(2)}`
                 )}
               </Button>
             </DialogFooter>
