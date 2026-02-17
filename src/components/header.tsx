@@ -10,10 +10,12 @@ import { cn } from '@/lib/utils';
 import * as React from 'react';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About Us' },
-  { href: '/services', label: 'Services' },
-  { href: '/contact', label: 'Contact Us' },
+  { href: '/#home', label: 'Home' },
+  { href: '/#products', label: 'Products' },
+  { href: '/#about', label: 'About Us' },
+  { href: '/#services', label: 'Services' },
+  { href: '/#style-assistant', label: 'Style Assistant' },
+  { href: '/#contact', label: 'Contact Us' },
 ];
 
 export function Header() {
@@ -50,8 +52,7 @@ export function Header() {
                     href={href}
                     onClick={() => setIsSheetOpen(false)}
                     className={cn(
-                      'text-lg font-medium text-muted-foreground transition-colors hover:text-foreground',
-                      pathname === href && 'text-foreground'
+                      'text-lg font-medium text-muted-foreground transition-colors hover:text-foreground'
                     )}
                   >
                     {label}
@@ -69,8 +70,7 @@ export function Header() {
                 key={href}
                 href={href}
                 className={cn(
-                  'text-sm font-medium text-muted-foreground transition-colors hover:text-foreground',
-                  pathname === href && 'text-foreground'
+                  'text-sm font-medium text-muted-foreground transition-colors hover:text-foreground'
                 )}
               >
                 {label}

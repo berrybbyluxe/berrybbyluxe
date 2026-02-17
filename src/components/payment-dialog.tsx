@@ -45,7 +45,7 @@ export function PaymentDialog({ product }: { product: Product }) {
   const onSubmit = async (data: PaymentFormValues) => {
     // Simulate API call to Paystack
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log('Payment data:', data);
+    console.log('Paystack Payment data:', data);
 
     toast({
       title: 'Payment Successful!',
@@ -64,7 +64,7 @@ export function PaymentDialog({ product }: { product: Product }) {
         <DialogHeader>
           <DialogTitle className="font-headline">Complete Your Purchase</DialogTitle>
           <DialogDescription>
-            Buying: {product.name} for ${product.price.toFixed(2)}. Enter your card details below. This is a demo, do not use real card info.
+            Buying: {product.name} for ${product.price.toFixed(2)}. This is a demo using a simulated Paystack gateway. Do not use real card info.
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -131,7 +131,7 @@ export function PaymentDialog({ product }: { product: Product }) {
                     Processing...
                   </>
                 ) : (
-                  `Pay $${product.price.toFixed(2)}`
+                  `Pay $${product.price.toFixed(2)} with Paystack`
                 )}
               </Button>
             </DialogFooter>

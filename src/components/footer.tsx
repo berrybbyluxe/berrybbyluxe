@@ -15,9 +15,9 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Berrybby. All rights reserved.
           </div>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
-            <Link href="#" aria-label="WhatsApp">
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
               <WhatsappIcon className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
