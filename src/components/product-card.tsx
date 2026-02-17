@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import type { Product } from '@/lib/types';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
