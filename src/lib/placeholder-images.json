@@ -55,12 +55,6 @@
       "imageHint": "interior design consultation"
     },
     {
-      "id": "style-assistant-hero",
-      "description": "A beautifully decorated room showcasing a variety of furniture styles.",
-      "imageUrl": "https://images.unsplash.com/photo-1676688981092-47392e7688c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZWNvcmF0ZWQlMjByb29tfGVufDB8fHx8MTc3MTMyMjQ1NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "decorated room"
-    },
-    {
       "id": "product-7",
       "description": "A compact and stylish nightstand with a single drawer.",
       "imageUrl": "https://images.unsplash.com/photo-1652155205433-52179159a15e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuaWdodHN0YW5kfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -183,61 +177,61 @@
     {
       "id": "product-27",
       "description": "A stylish rug with a bold geometric pattern.",
-      "imageUrl": "https://images.unsplash.com/photo-1766405831946-2b7f1653ed8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnZW9tZXRyaWMlMjBydWd8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1766405831946-2b7f1653ed8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnZW9tZXRyaWMlMjBydWd8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "geometric rug"
     },
     {
       "id": "product-28",
       "description": "A beautiful hanging pendant light.",
-      "imageUrl": "https://images.unsplash.com/photo-1589173956121-8891103b66b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZW5kYW50JTIwbGlnaHR8ZW58MHx8fHwxNzcxMjU4NDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589173956121-8891103b66b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZW5kYW50JTIwbGlnaHR8ZW58MHx8fHwxNzcxMjU4NDU2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "pendant light"
     },
     {
       "id": "product-29",
       "description": "A set of nesting coffee tables.",
-      "imageUrl": "https://images.unsplash.com/photo-1759722667804-d4f7fc3a7e69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXN0aW5nJTIwdGFibGVzfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759722667804-d4f7fc3a7e69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXN0aW5nJTIwdGFibGVzfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "nesting tables"
     },
     {
       "id": "product-30",
       "description": "An industrial-style open bookcase.",
-      "imageUrl": "https://images.unsplash.com/photo-1760822600750-0bc72f1fad9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2Z0JTIwYm9va2Nhc2V8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1760822600750-0bc72f1fad9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2Z0JTIwYm9va2Nhc2V8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "loft bookcase"
     },
     {
       "id": "product-31",
       "description": "A versatile daybed that functions as a sofa and bed.",
-      "imageUrl": "https://images.unsplash.com/photo-1667552749841-40f6e0762e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXliZWR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1667552749841-40f6e0762e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXliZWR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "daybed"
     },
     {
       "id": "product-32",
       "description": "A charming cottage-style sideboard for dining storage.",
-      "imageUrl": "https://images.unsplash.com/photo-1567225477277-c8162eb4991d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzaWRlYm9hcmR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1567225477277-c8162eb4991d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzaWRlYm9hcmR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sideboard"
     },
     {
       "id": "product-33",
       "description": "A sculptural end table that serves as a piece of art.",
-      "imageUrl": "https://images.unsplash.com/photo-1731045971022-566f67b7780a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbmQlMjB0YWJsZXxlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1731045971022-566f67b7780a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbmQlMjB0YWJsZXxlbnwwfHx8fDE3NzEzMjM1MzV8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "end table"
     },
     {
       "id": "product-34",
       "description": "A small bistro set with a table and two chairs.",
-      "imageUrl": "https://images.unsplash.com/photo-1770520870800-e771eae1d72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiaXN0cm8lMjBzZXR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1770520870800-e771eae1d72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiaXN0cm8lMjBzZXR8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "bistro set"
     },
     {
       "id": "product-35",
       "description": "An heirloom-quality grandfather clock.",
-      "imageUrl": "https://images.unsplash.com/photo-1769874827520-8eeddf779a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncmFuZGZhdGhlciUyMGNsb2NrfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1769874827520-8eeddf779a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncmFuZGZhdGhlciUyMGNsb2NrfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "grandfather clock"
     },
     {
       "id": "product-36",
       "description": "A functional storage bench with a hinged lid.",
-      "imageUrl": "https://images.unsplash.com/photo-1758611195875-e8261c35a9aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdG9yYWdlJTIwYmVuY2h8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758611195875-e8261c35a9aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdG9yYWdlJTIwYmVuY2h8ZW58MHx8fHwxNzcxMzIzNTM1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "storage bench"
     }
   ]
