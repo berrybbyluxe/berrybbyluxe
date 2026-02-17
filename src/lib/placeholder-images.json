@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "A stylish and modern living room with a comfortable sofa.",
+      "imageUrl": "https://images.unsplash.com/photo-1724582586529-62622e50c0b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc3MTIxOTk1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern living room"
+    },
+    {
+      "id": "product-1",
+      "description": "An elegant wooden armchair with a minimalist design.",
+      "imageUrl": "https://images.unsplash.com/photo-1723804685588-b8e95b2044f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBhcm1jaGFpcnxlbnwwfHx8fDE3NzEzMjI0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wooden armchair"
+    },
+    {
+      "id": "product-2",
+      "description": "A modern, minimalist sofa in a neutral color.",
+      "imageUrl": "https://images.unsplash.com/photo-1759722667832-48e555120458?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaW5pbWFsaXN0JTIwc29mYXxlbnwwfHx8fDE3NzEzMjEzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist sofa"
+    },
+    {
+      "id": "product-3",
+      "description": "A sleek, dark wood coffee table with a rectangular top.",
+      "imageUrl": "https://images.unsplash.com/photo-1617996707561-6c5d6104163d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b29kJTIwY29mZmVlJTIwdGFibGV8ZW58MHx8fHwxNzcxMzIyNDU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wood coffee table"
+    },
+    {
+      "id": "product-4",
+      "description": "A comfortable and stylish dining chair with upholstered seat.",
+      "imageUrl": "https://images.unsplash.com/photo-1611633332753-d1e2f695aa3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaW5pbmclMjBjaGFpcnxlbnwwfHx8fDE3NzEzMDUxODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dining chair"
+    },
+    {
+      "id": "product-5",
+      "description": "A king-sized bed frame with a modern wooden headboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1530629013299-6cb10d168419?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWQlMjBmcmFtZXxlbnwwfHx8fDE3NzEzMjI0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bed frame"
+    },
+    {
+      "id": "product-6",
+      "description": "A tall, elegant bookshelf made of dark wood.",
+      "imageUrl": "https://images.unsplash.com/photo-1515542706656-8e6ef17a1521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9va3NoZWxmfGVufDB8fHx8MTc3MTMyMjQ1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bookshelf"
+    },
+    {
+      "id": "about-us",
+      "description": "A workshop where skilled artisans are crafting furniture.",
+      "imageUrl": "https://images.unsplash.com/photo-1707064892275-a3088e8240be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwd29ya3Nob3B8ZW58MHx8fHwxNzcxMjM5OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artisan workshop"
+    },
+    {
+      "id": "services-1",
+      "description": "An interior designer consulting with a client over design plans.",
+      "imageUrl": "https://images.unsplash.com/photo-1563973153236-794eef98609f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbnRlcmlvciUyMGRlc2lnbiUyMGNvbnN1bHRhdGlvbnxlbnwwfHx8fDE3NzEzMjI0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "interior design consultation"
+    },
+    {
+      "id": "style-assistant-hero",
+      "description": "A beautifully decorated room showcasing a variety of furniture styles.",
+      "imageUrl": "https://images.unsplash.com/photo-1676688981092-47392e7688c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZWNvcmF0ZWQlMjByb29tfGVufDB8fHx8MTc3MTMyMjQ1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "decorated room"
+    }
+  ]
 }
