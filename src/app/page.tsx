@@ -49,7 +49,7 @@ export default function Home() {
         )}
         <div className="relative z-20 flex flex-col items-center justify-center h-full text-center p-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold tracking-tight">
-            Crafted for Comfort, Designed for Life
+            Crafted for Comfort
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-neutral-200">
             Discover exquisite furniture that brings warmth, style, and personality to your home.
@@ -147,40 +147,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-      </section>
-
-      <section id="style-assistant" className="py-16 md:py-24 bg-secondary/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">Style Assistant</h2>
-            <p className="mt-2 text-lg text-muted-foreground">Need help defining your style? Let our experts assist you!</p>
-          </div>
-          <Card className="max-w-2xl mx-auto p-8">
-             <h3 className="text-2xl font-headline font-semibold text-foreground mb-6 text-center">Get Personalized Advice</h3>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="style-name">Full Name</Label>
-                  <Input id="style-name" placeholder="Your Name" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="style-email">Email Address</Label>
-                  <Input id="style-email" type="email" placeholder="you@example.com" />
-                </div>
-              </div>
-               <div className="space-y-2">
-                  <Label htmlFor="style-phone">Phone Number</Label>
-                  <Input id="style-phone" type="tel" placeholder="+1 (234) 567-890" />
-                </div>
-              <div className="space-y-2">
-                <Label htmlFor="style-message">Describe your style or question</Label>
-                <Textarea id="style-message" placeholder="e.g., I'm looking for a minimalist look for my small apartment..." rows={5} />
-              </div>
-              <Button type="submit" className="w-full bg-accent hover:bg-accent/90">Request Assistance</Button>
-               <p className="text-xs text-muted-foreground text-center">Our team will get back to you via email or phone. Connecting this form requires a developer to integrate an email sending service.</p>
-            </form>
-          </Card>
-        </div>
       </section>
 
       <section id="contact" className="py-16 md:py-24 bg-background">
