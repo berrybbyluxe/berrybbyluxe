@@ -38,7 +38,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <span className="font-bold text-lg text-primary">${product.price.toFixed(2)}</span>
         <div className="flex items-center gap-2">
           <PaymentDialog product={product} />
-          <Button asChild variant="ghost" size="icon" className="text-muted-foreground hover:text-green-600">
+          <Button asChild variant="ghost" size="icon" className="hover:text-green-600">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
               <WhatsappIcon className="h-6 w-6" />
             </a>
