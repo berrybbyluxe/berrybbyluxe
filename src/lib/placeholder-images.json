@@ -57,31 +57,31 @@
     {
       "id": "style-assistant-1",
       "description": "A mood board with fabric swatches, color palettes, and furniture sketches.",
-      "imageUrl": "https://images.unsplash.com/photo-1516659183608-6cde23d6de13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZXNpZ24lMjBtb29kJTIwYm9hcmR8ZW58MHx8fHwxNzcyMjIzNDU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1620914183885-3e08f5154b5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGRlc2lnbiUyMG1vb2QlMjBib2FyZHxlbnwwfHx8fDE3NzIyMjM0NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "design mood board"
     },
     {
       "id": "product-7",
       "description": "A compact and stylish nightstand with a single drawer.",
-      "imageUrl": "https://images.unsplash.com/photo-1652155205433-52179159a15e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuaWdodHN0YW5kfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1652155205433-52179159a15e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuaWdodHN0YW5kfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "nightstand"
     },
     {
       "id": "product-8",
       "description": "A futuristic accent chair with a curved seat.",
-      "imageUrl": "https://images.unsplash.com/photo-1762008985368-d39df07225fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhY2NlbnQlMjBjaGFpcnxlbnwwfHx8fDE3NzEzMjEzMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1762008985368-d39df07225fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhY2NlbnQlMjBjaGFpcnxlbnwwfHx8fDE3NzEzMjEzMjB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "accent chair"
     },
     {
       "id": "product-9",
       "description": "An industrial style TV stand made of metal and wood.",
-      "imageUrl": "https://images.unsplash.com/photo-1698047945367-112339b04d51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0diUyMHN0YW5kfGVufDB8fHx8MTc3MTMyMzUzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1698047945367-112339b04d51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0diUyMHN0YW5kfGVufDB8fHx8MTc3MTMyMzUzNHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tv stand"
     },
     {
       "id": "product-10",
       "description": "A luxurious velvet ottoman.",
-      "imageUrl": "https://images.unsplash.com/photo-1719853915569-eee18569018d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx2ZWx2ZXQlMjBvdHRvbWFufGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1719853915569-eee18569018d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx2ZWx2ZXQlMjBvdHRvbWFufGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "velvet ottoman"
     },
     {
