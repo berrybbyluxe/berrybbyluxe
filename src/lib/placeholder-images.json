@@ -33,31 +33,31 @@
     {
       "id": "product-5",
       "description": "A king-sized bed frame with a modern wooden headboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1530629013299-6cb10d168419?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWQlMjBmcmFtZXxlbnwwfHx8fDE3NzEzMjI0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1530629013299-6cb10d168419?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWQlMjBmcmFtZXxlbnwwfHx8fDE3NzEzMjI0NTV8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "bed frame"
     },
     {
       "id": "product-6",
       "description": "A tall, elegant bookshelf made of dark wood.",
-      "imageUrl": "https://images.unsplash.com/photo-1515542706656-8e6ef17a1521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9va3NoZWxmfGVufDB8fHx8MTc3MTMyMjQ1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1515542706656-8e6ef17a1521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9va3NoZWxmfGVufDB8fHx8MTc3MTMyMjQ1NXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "bookshelf"
     },
     {
       "id": "about-us",
       "description": "A workshop where skilled artisans are crafting furniture.",
-      "imageUrl": "https://images.unsplash.com/photo-1707064892275-a3088e8240be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwd29ya3Nob3B8ZW58MHx8fHwxNzcxMjM5OTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1707064892275-a3088e8240be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcnRpc2FuJTIwd29ya3Nob3B8ZW58MHx8fHwxNzcxMjM5OTA2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "artisan workshop"
     },
     {
       "id": "services-1",
       "description": "An interior designer consulting with a client over design plans.",
-      "imageUrl": "https://images.unsplash.com/photo-1563973153236-794eef98609f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbnRlcmlvciUyMGRlc2lnbiUyMGNvbnN1bHRhdGlvbnxlbnwwfHx8fDE3NzEzMjI0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1563973153236-794eef98609f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbnRlcmlvciUyMGRlc2lnbiUyMGNvbnN1bHRhdGlvbnxlbnwwfHx8fDE3NzEzMjI0NTV8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "interior design consultation"
     },
     {
       "id": "style-assistant-1",
       "description": "A mood board with fabric swatches, color palettes, and furniture sketches.",
-      "imageUrl": "https://images.unsplash.com/photo-1620914183885-3e08f5154b5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGRlc2lnbiUyMG1vb2QlMjBib2FyZHxlbnwwfHx8fDE3NzIyMjM0NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://storage.googleapis.com/maker-studio-5a5f9.appspot.com/user_managed/6a8c42c1-d45e-4078-a3f2-1b12b5962803/image.png",
       "imageHint": "design mood board"
     },
     {
