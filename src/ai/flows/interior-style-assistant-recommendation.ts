@@ -44,7 +44,7 @@ const recommendationPrompt = ai.definePrompt({
   name: 'interiorStyleAssistantRecommendationPrompt',
   input: {schema: InteriorStyleAssistantRecommendationInputSchema},
   output: {schema: InteriorStyleAssistantRecommendationOutputSchema},
-  prompt: `You are an expert interior design assistant for a furniture brand named BerryHaven. Your goal is to provide personalized furniture and decor recommendations based on a user's desired home aesthetic or specific room characteristics.
+  prompt: `You are an expert interior design assistant for a furniture brand named Berrybby. Your goal is to provide personalized furniture and decor recommendations based on a user's desired home aesthetic or specific room characteristics.
 
 Based on the following description, recommend suitable furniture pieces and decor combinations. Also, provide a brief rationale for your recommendations.
 

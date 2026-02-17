@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'BerryHaven',
+  title: 'Berrybby',
   description: 'Exquisite furniture for your modern home.',
 };
 

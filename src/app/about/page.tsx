@@ -8,7 +8,7 @@ export default function AboutPage() {
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">About BerryHaven</h1>
+          <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">About Berrybby</h1>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
             We believe that home is more than just a place; it's a feeling. Our journey began with a simple idea: to create beautiful, lasting furniture that turns houses into homes.
           </p>
@@ -30,7 +30,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-headline font-semibold text-foreground">Our Philosophy</h2>
             <p className="mt-4 text-muted-foreground">
-              At BerryHaven, our philosophy is rooted in the fusion of timeless design and exceptional craftsmanship. We source the finest, sustainably-harvested materials to create pieces that are not only beautiful but also built to be part of your family's story for generations. We are passionate about creating furniture that is both functional and artful, designed to enhance your everyday life.
+              At Berrybby, our philosophy is rooted in the fusion of timeless design and exceptional craftsmanship. We source the finest, sustainably-harvested materials to create pieces that are not only beautiful but also built to be part of your family's story for generations. We are passionate about creating furniture that is both functional and artful, designed to enhance your everyday life.
             </p>
           </div>
           <div>

@@ -28,7 +28,7 @@ export function Header() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
             <Sofa className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline text-lg">BerryHaven</span>
+            <span className="font-bold font-headline text-lg">Berrybby</span>
           </Link>
         </div>
 
@@ -44,7 +44,7 @@ export function Header() {
               <div className="flex flex-col gap-4 p-4">
                 <Link href="/" className="flex items-center gap-2 mb-4" onClick={() => setIsSheetOpen(false)}>
                   <Sofa className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline text-lg">BerryHaven</span>
+                  <span className="font-bold font-headline text-lg">Berrybby</span>
                 </Link>
                 {navLinks.map(({ href, label }) => (
                   <Link

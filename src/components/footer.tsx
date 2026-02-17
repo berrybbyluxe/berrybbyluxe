@@ -9,10 +9,10 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <Sofa className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline text-lg">BerryHaven</span>
+            <span className="font-bold font-headline text-lg">Berrybby</span>
           </div>
           <div className="text-center md:text-left text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} BerryHaven. All rights reserved.
+            &copy; {new Date().getFullYear()} Berrybby. All rights reserved.
           </div>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <Link href="#" aria-label="WhatsApp">
