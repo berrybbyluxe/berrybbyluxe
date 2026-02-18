@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Sofa } from 'lucide-react';
+import { WhatsappIcon } from './icons';
 
 export function Footer() {
   return (
@@ -12,6 +13,16 @@ export function Footer() {
           </div>
           <div className="text-center md:text-left text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} Berrybby. All rights reserved.
+          </div>
+          <div className="flex items-center gap-4 mt-4 md:mt-0">
+            <a
+              href="https://wa.me/1234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <WhatsappIcon className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
+            </a>
           </div>
         </div>
       </div>
