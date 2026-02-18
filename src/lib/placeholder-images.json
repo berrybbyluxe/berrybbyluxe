@@ -55,12 +55,6 @@
       "imageHint": "interior design consultation"
     },
     {
-      "id": "style-assistant-1",
-      "description": "A mood board with fabric swatches, color palettes, and furniture sketches.",
-      "imageUrl": "https://i.imgur.com/mTCpqtd.png",
-      "imageHint": "design mood board"
-    },
-    {
       "id": "product-7",
       "description": "A compact and stylish nightstand with a single drawer.",
       "imageUrl": "https://images.unsplash.com/photo-1652155205433-52179159a15e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuaWdodHN0YW5kfGVufDB8fHx8MTc3MTMyMzUzNXww&ixlib.rb-4.1.0&q=80&w=1080",
