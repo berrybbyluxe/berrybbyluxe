@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { StyleAssistantForm } from '@/components/style-assistant-form';
 
 const services = [
   {
@@ -32,6 +33,7 @@ export default function Home() {
   const heroImage = getPlaceholderImage('hero-1');
   const aboutImage = getPlaceholderImage('about-us');
   const servicesImage = getPlaceholderImage('services-1');
+  const styleAssistantImage = getPlaceholderImage('style-assistant');
 
   return (
     <div className="flex flex-col">
@@ -147,6 +149,32 @@ export default function Home() {
           ))}
         </div>
       </div>
+      </section>
+
+      <section id="style-assistant" className="py-16 md:py-24 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">Style Assistant</h1>
+            <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+              Have a specific vision? Describe your dream furniture style, and our experts will help you bring it to life. Provide your contact details, and we'll get in touch with personalized recommendations.
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 mt-16 items-center">
+            {styleAssistantImage && (
+              <div className="relative h-[550px] w-full rounded-lg overflow-hidden shadow-xl">
+                <Image
+                  src={styleAssistantImage.imageUrl}
+                  alt={styleAssistantImage.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={styleAssistantImage.imageHint}
+                />
+              </div>
+            )}
+            <StyleAssistantForm />
+          </div>
+        </div>
       </section>
 
       <section id="contact" className="py-16 md:py-24 bg-background">
