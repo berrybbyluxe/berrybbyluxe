@@ -96,17 +96,17 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
       },
       callback: (response) => {
         console.log(response);
-        window.location.href = '/payment-successful';
+        // This passes the reference to the success page URL
+        window.location.href = `/payment-successful?reference=${response.reference}`;
       },
     });
 
     paystack.openIframe();
   };
   
-  const isButtonDisabled = isLoading || !scriptLoaded || scriptError;
+  const isButtonDisabled = !scriptLoaded || scriptError;
   
   const getButtonText = () => {
-    if (isLoading) return 'Processing...';
     if (!scriptLoaded && !scriptError) return 'Initializing...';
     if (scriptError) return 'Payment unavailable';
     return `Pay $${product.price.toFixed(2)}`;
@@ -115,41 +115,49 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle>Complete Your Purchase</DialogTitle>
-          <DialogDescription>
-            You are buying <strong>{product.name}</strong> for <strong>${product.price.toFixed(2)}</strong>.
-          </DialogDescription>
-        </DialogHeader>
-
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="email" className="text-right">
-              Email
-            </Label>
-            <Input
-              id="email"
-              type="email"
-              required
-              disabled={isLoading}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="customer@example.com"
-              className="col-span-3"
-            />
+        {isLoading ? (
+          <div className="flex flex-col items-center justify-center p-12 h-48">
+            <Loader2 className="h-12 w-12 animate-spin text-primary" />
+            <p className="mt-4 text-muted-foreground">Redirecting to payment...</p>
           </div>
-        </div>
+        ) : (
+          <>
+            <DialogHeader>
+              <DialogTitle>Complete Your Purchase</DialogTitle>
+              <DialogDescription>
+                You are buying <strong>{product.name}</strong> for <strong>${product.price.toFixed(2)}</strong>.
+              </DialogDescription>
+            </DialogHeader>
 
-        <DialogFooter>
-          <Button
-            onClick={handlePayment}
-            disabled={isButtonDisabled}
-            className="w-full"
-          >
-            {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-            {getButtonText()}
-          </Button>
-        </DialogFooter>
+            <div className="grid gap-4 py-4">
+              <div className="grid grid-cols-4 items-center gap-4">
+                <Label htmlFor="email" className="text-right">
+                  Email
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="customer@example.com"
+                  className="col-span-3"
+                />
+              </div>
+            </div>
+
+            <DialogFooter>
+              <Button
+                onClick={handlePayment}
+                disabled={isButtonDisabled}
+                className="w-full"
+              >
+                {!scriptLoaded && !scriptError && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                {getButtonText()}
+              </Button>
+            </DialogFooter>
+          </>
+        )}
       </DialogContent>
     </Dialog>
   );
