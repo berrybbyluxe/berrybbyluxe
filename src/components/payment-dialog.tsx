@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-// import { usePaystack } from 'use-paystack';
 import type { Product } from '@/lib/types';
+import { usePaystackScript } from '@/hooks/use-paystack-script';
 
 import {
   Dialog,
@@ -16,6 +16,26 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+import { Loader2 } from 'lucide-react';
+
+interface PaystackOptions {
+  key: string;
+  email: string;
+  amount: number;
+  ref: string;
+  onClose?: () => void;
+  callback?: (response: any) => void;
+}
+
+declare global {
+  interface Window {
+    PaystackPop?: {
+      setup(options: PaystackOptions): {
+        openIframe(): void;
+      };
+    };
+  }
+}
 
 type PaymentDialogProps = {
   product: Product;
@@ -26,49 +46,71 @@ type PaymentDialogProps = {
 export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProps) {
   const { toast } = useToast();
   const [email, setEmail] = React.useState('');
-
-  const config = {
-    reference: new Date().getTime().toString(),
-    email,
-    amount: Math.round(product.price * 100), // Amount in kobo
-    publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || '',
-  };
-
-  const initializePayment = usePaystack(config);
-
-  const onSuccess = (reference: any) => {
-    console.log(reference);
-    toast({
-      title: 'Payment Successful',
-      description: `Thank you for your purchase of ${product.name}.`,
-    });
-    onOpenChange(false);
-  };
-
-  const onClose = () => {
-    console.log('closed');
-  };
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [scriptLoaded, scriptError] = usePaystackScript();
 
   const handlePayment = () => {
-    if (!email) {
+    if (!email || !email.includes('@')) {
       toast({
-        title: 'Email Required',
-        description: 'Please enter your email address to proceed.',
+        title: 'Valid Email Required',
+        description: 'Please enter a valid email address to receive your receipt.',
         variant: 'destructive',
       });
       return;
     }
-    if (!config.publicKey) {
+
+    const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_edd66afb7a3d2175e26e297d116a2267b6295cc2';
+
+    if (!publicKey || publicKey.startsWith('YOUR_')) {
       toast({
-          title: "Paystack key is missing",
-          description: "The Paystack public key is not configured. Please contact support.",
-          variant: "destructive",
+        title: 'Configuration Error',
+        description: 'Payment gateway is not properly configured. Please check your Paystack key.',
+        variant: 'destructive',
       });
-      console.error("Paystack public key is missing. Make sure NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY is set in your .env file.");
       return;
     }
-    initializePayment(onSuccess, onClose);
+    
+    if (scriptError) {
+      toast({
+        title: 'Script Error',
+        description: 'Could not load payment script. Please check your connection and try again.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    if (!scriptLoaded || !window.PaystackPop) {
+      return;
+    }
+
+    setIsLoading(true);
+
+    const paystack = window.PaystackPop.setup({
+      key: publicKey,
+      email: email.trim(),
+      amount: Math.round(product.price * 100),
+      ref: new Date().getTime().toString(),
+      onClose: () => {
+        setIsLoading(false);
+        console.log('Payment popup closed by user');
+      },
+      callback: (response) => {
+        console.log(response);
+        window.location.href = '/payment-successful';
+      },
+    });
+
+    paystack.openIframe();
   };
+  
+  const isButtonDisabled = isLoading || !scriptLoaded || scriptError;
+  
+  const getButtonText = () => {
+    if (isLoading) return 'Processing...';
+    if (!scriptLoaded && !scriptError) return 'Initializing...';
+    if (scriptError) return 'Payment unavailable';
+    return `Pay $${product.price.toFixed(2)}`;
+  }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -76,9 +118,10 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
         <DialogHeader>
           <DialogTitle>Complete Your Purchase</DialogTitle>
           <DialogDescription>
-            You are about to buy <strong>{product.name}</strong> for <strong>${product.price.toFixed(2)}</strong>.
+            You are buying <strong>{product.name}</strong> for <strong>${product.price.toFixed(2)}</strong>.
           </DialogDescription>
         </DialogHeader>
+
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="email" className="text-right">
@@ -87,15 +130,25 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
             <Input
               id="email"
               type="email"
+              required
+              disabled={isLoading}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="me@example.com"
+              placeholder="customer@example.com"
               className="col-span-3"
             />
           </div>
         </div>
+
         <DialogFooter>
-          <Button onClick={handlePayment}>Pay with Paystack</Button>
+          <Button
+            onClick={handlePayment}
+            disabled={isButtonDisabled}
+            className="w-full"
+          >
+            {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+            {getButtonText()}
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
