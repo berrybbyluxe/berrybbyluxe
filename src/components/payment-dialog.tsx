@@ -46,7 +46,6 @@ type PaymentDialogProps = {
 export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProps) {
   const { toast } = useToast();
   const [email, setEmail] = React.useState('');
-  const [isLoading, setIsLoading] = React.useState(false);
   const [scriptLoaded, scriptError] = usePaystackScript();
 
   const handlePayment = () => {
@@ -83,15 +82,14 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
       return;
     }
 
-    setIsLoading(true);
-
     const paystack = window.PaystackPop.setup({
       key: publicKey,
       email: email.trim(),
       amount: Math.round(product.price * 100),
       ref: new Date().getTime().toString(),
       onClose: () => {
-        setIsLoading(false);
+        // User closed the payment window.
+        // We don't need to do anything here as they are returned to the main page.
         console.log('Payment popup closed by user');
       },
       callback: (response) => {
@@ -101,6 +99,9 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
       },
     });
 
+    // Close the dialog first to release the focus trap
+    onOpenChange(false);
+    // Then, open the Paystack iframe
     paystack.openIframe();
   };
   
@@ -115,12 +116,6 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
-        {isLoading ? (
-          <div className="flex flex-col items-center justify-center p-12 h-48">
-            <Loader2 className="h-12 w-12 animate-spin text-primary" />
-            <p className="mt-4 text-muted-foreground">Redirecting to payment...</p>
-          </div>
-        ) : (
           <>
             <DialogHeader>
               <DialogTitle>Complete Your Purchase</DialogTitle>
@@ -157,7 +152,6 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
               </Button>
             </DialogFooter>
           </>
-        )}
       </DialogContent>
     </Dialog>
   );
