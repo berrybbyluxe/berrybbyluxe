@@ -2,6 +2,8 @@
 # https://firebase.google.com/docs/app-hosting/configure
 
 runConfig:
-  # Increase this value if you'd like to automatically spin up
-  # more instances in response to increased traffic.
-  maxInstances: 1
+  # Explicitly setting resources can help avoid rollout timeouts or memory issues
+  maxInstances: 2
+  minInstances: 0
+  cpu: 1
+  memoryMiB: 1024
