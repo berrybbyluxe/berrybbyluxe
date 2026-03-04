@@ -3,7 +3,7 @@
 
 runConfig:
   # Explicitly setting resources can help avoid rollout timeouts or memory issues
-  maxInstances: 2
+  maxInstances: 5
   minInstances: 0
   cpu: 1
-  memoryMiB: 1024
+  memoryMiB: 2048
