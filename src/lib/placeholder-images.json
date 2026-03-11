@@ -8,43 +8,43 @@
     },
     {
       "id": "product-dropping-light",
-      "description": "Industrial 3-in-1 dropping light with cage design and rope accents.",
+      "description": "3 in 1 Dropping Light",
       "imageUrl": "/images/3-in-1-dropping-light-45000.jpg",
-      "imageHint": "industrial pendant light"
+      "imageHint": "industrial light"
     },
     {
-      "id": "product-1",
-      "description": "An elegant wooden armchair with a minimalist design.",
+      "id": "product-oslo-armchair",
+      "description": "Oslo Armchair",
       "imageUrl": "/images/oslo-armchair-250000.jpg",
       "imageHint": "wooden armchair"
     },
     {
-      "id": "product-2",
-      "description": "A modern, minimalist sofa in a neutral color.",
+      "id": "product-haven-sofa",
+      "description": "Haven Sofa",
       "imageUrl": "/images/haven-sofa-850000.jpg",
-      "imageHint": "minimalist sofa"
+      "imageHint": "modern sofa"
     },
     {
-      "id": "product-3",
-      "description": "A sleek, dark wood coffee table with a rectangular top.",
+      "id": "product-terra-coffee-table",
+      "description": "Terra Coffee Table",
       "imageUrl": "/images/terra-coffee-table-120000.jpg",
-      "imageHint": "wood coffee table"
+      "imageHint": "wood table"
     },
     {
-      "id": "product-4",
-      "description": "A comfortable and stylish dining chair with upholstered seat.",
+      "id": "product-gala-dining-chair",
+      "description": "Gala Dining Chair",
       "imageUrl": "/images/gala-dining-chair-75000.jpg",
       "imageHint": "dining chair"
     },
     {
-      "id": "product-5",
-      "description": "A king-sized bed frame with a modern wooden headboard.",
+      "id": "product-dreamer-bed",
+      "description": "Dreamer Bed",
       "imageUrl": "/images/dreamer-bed-450000.jpg",
       "imageHint": "bed frame"
     },
     {
-      "id": "product-6",
-      "description": "A tall, elegant bookshelf made of dark wood.",
+      "id": "product-scholar-bookshelf",
+      "description": "Scholar Bookshelf",
       "imageUrl": "/images/scholar-bookshelf-180000.jpg",
       "imageHint": "bookshelf"
     },
