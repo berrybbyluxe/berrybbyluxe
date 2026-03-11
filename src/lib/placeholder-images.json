@@ -7,62 +7,62 @@
       "imageHint": "modern living room"
     },
     {
-      "id": "product-dropping-light-3",
+      "id": "prod-3-in-1",
       "description": "3 in 1 Dropping Light",
-      "imageUrl": "/images/3-in-1-dropping-light_45000.jpg",
+      "imageUrl": "/images/3 in 1-dropping-light_45000.jpg",
       "imageHint": "industrial light"
     },
     {
-      "id": "product-dropping-light-5",
+      "id": "prod-5-in-1",
       "description": "5 in 1 Dropping Light",
       "imageUrl": "/images/5 in 1 Dropping Light _75,000.jpg",
-      "imageHint": "industrial pendant light"
+      "imageHint": "industrial pendant"
     },
     {
-      "id": "product-decorative-crystal-chandelier",
+      "id": "prod-dec-crystal",
       "description": "Decorative Crystal Chandelier",
       "imageUrl": "/images/Decorative Crystal Chandelier_400,000.jpg",
       "imageHint": "crystal chandelier"
     },
     {
-      "id": "product-deer-wall-bracket",
+      "id": "prod-deer-wall",
       "description": "Deer Wall Bracket Light",
       "imageUrl": "/images/Deer Wall Bracket Light_22,000.jpg",
       "imageHint": "wall light"
     },
     {
-      "id": "product-led-drop-light",
+      "id": "prod-led-drop",
       "description": "LED Drop Light",
       "imageUrl": "/images/led_drop_light_40000_sold_out.jpg",
       "imageHint": "pendant light"
     },
     {
-      "id": "product-royal-crystal-chandelier",
+      "id": "prod-royal-crystal",
       "description": "Luxurious Royal Crystal Chandelier",
       "imageUrl": "/images/LUXURIOUS ROYAL CRYSTAL CHANDELIER_800,000.jpg",
       "imageHint": "luxury chandelier"
     },
     {
-      "id": "product-luxury-wall-bracket",
-      "description": "Luxury Home Rooms Wall Bracket Light",
+      "id": "prod-luxury-rooms",
+      "description": "Luxury Home Rooms wall Bracket Light",
       "imageUrl": "/images/Luxury  Home Rooms wall Bracket Light-25,000.jpg",
       "imageHint": "wall bracket"
     },
     {
-      "id": "product-golden-bird-wall-bracket",
+      "id": "prod-golden-bird",
       "description": "Luxury Double Golden Bird Wall Bracket Light",
       "imageUrl": "/images/Luxury Double Golden Bird Wall Bracket Light _35,000.jpg",
-      "imageHint": "bird wall light"
+      "imageHint": "bird light"
     },
     {
-      "id": "product-mounted-bird-light",
+      "id": "prod-mounted-bird",
       "description": "Luxury Quality Mounted Wall Bird Light",
       "imageUrl": "/images/Luxury Quality Mounted Wall Bird Light_20,000.jpg",
       "imageHint": "mounted light"
     },
     {
-      "id": "product-unique-pendant-light",
-      "description": "Luxury Unique Pendant Drop Light",
+      "id": "prod-unique-pendant",
+      "description": "Luxury Unique Pendant drop Light",
       "imageUrl": "/images/Luxury Unique Pendant drop Light_80,000.jpg",
       "imageHint": "unique pendant"
     },
