@@ -13,6 +13,12 @@
       "imageHint": "industrial light"
     },
     {
+      "id": "product-5-in-1-dropping-light",
+      "description": "5 in 1 Dropping Light",
+      "imageUrl": "/images/5-in-1-dropping-light-75000.jpg",
+      "imageHint": "industrial pendant light"
+    },
+    {
       "id": "product-oslo-armchair",
       "description": "Oslo Armchair",
       "imageUrl": "/images/oslo-armchair-250000.jpg",

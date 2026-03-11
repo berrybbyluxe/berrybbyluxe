@@ -1,4 +1,3 @@
-
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -8,6 +7,13 @@ export const products: Product[] = [
     description: 'Industrial style dropping light featuring rustic rope accents and protective metal cages.',
     price: 45000,
     imageId: 'product-dropping-light',
+  },
+  {
+    id: 'prod-5-in-1-dropping-light',
+    name: '5 in 1 Dropping Light',
+    description: 'A grander version of our classic dropping light, featuring five elegant pendant bulbs for maximum ambiance.',
+    price: 75000,
+    imageId: 'product-5-in-1-dropping-light',
   },
   {
     id: 'prod-oslo-armchair',
