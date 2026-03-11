@@ -7,52 +7,64 @@
       "imageHint": "modern living room"
     },
     {
-      "id": "product-dropping-light",
+      "id": "product-dropping-light-3",
       "description": "3 in 1 Dropping Light",
       "imageUrl": "/images/3-in-1-dropping-light-45000.jpg",
       "imageHint": "industrial light"
     },
     {
-      "id": "product-5-in-1-dropping-light",
+      "id": "product-dropping-light-5",
       "description": "5 in 1 Dropping Light",
       "imageUrl": "/images/5-in-1-dropping-light-75000.jpg",
       "imageHint": "industrial pendant light"
     },
     {
-      "id": "product-oslo-armchair",
-      "description": "Oslo Armchair",
-      "imageUrl": "/images/oslo-armchair-250000.jpg",
-      "imageHint": "wooden armchair"
+      "id": "product-decorative-crystal-chandelier",
+      "description": "Decorative Crystal Chandelier",
+      "imageUrl": "/images/Decorative Crystal Chandelier_400,000.jpg",
+      "imageHint": "crystal chandelier"
     },
     {
-      "id": "product-haven-sofa",
-      "description": "Haven Sofa",
-      "imageUrl": "/images/haven-sofa-850000.jpg",
-      "imageHint": "modern sofa"
+      "id": "product-deer-wall-bracket",
+      "description": "Deer Wall Bracket Light",
+      "imageUrl": "/images/Deer Wall Bracket Light_22,000.jpg",
+      "imageHint": "wall light"
     },
     {
-      "id": "product-terra-coffee-table",
-      "description": "Terra Coffee Table",
-      "imageUrl": "/images/terra-coffee-table-120000.jpg",
-      "imageHint": "wood table"
+      "id": "product-led-drop-light",
+      "description": "LED Drop Light",
+      "imageUrl": "/images/led_drop_light_40000_sold_out.jpg",
+      "imageHint": "pendant light"
     },
     {
-      "id": "product-gala-dining-chair",
-      "description": "Gala Dining Chair",
-      "imageUrl": "/images/gala-dining-chair-75000.jpg",
-      "imageHint": "dining chair"
+      "id": "product-royal-crystal-chandelier",
+      "description": "Luxurious Royal Crystal Chandelier",
+      "imageUrl": "/images/LUXURIOUS ROYAL CRYSTAL CHANDELIER_800,000.jpg",
+      "imageHint": "luxury chandelier"
     },
     {
-      "id": "product-dreamer-bed",
-      "description": "Dreamer Bed",
-      "imageUrl": "/images/dreamer-bed-450000.jpg",
-      "imageHint": "bed frame"
+      "id": "product-luxury-wall-bracket",
+      "description": "Luxury Home Rooms Wall Bracket Light",
+      "imageUrl": "/images/Luxury Home Rooms wall Bracket Light-25,000.jpg",
+      "imageHint": "wall bracket"
     },
     {
-      "id": "product-scholar-bookshelf",
-      "description": "Scholar Bookshelf",
-      "imageUrl": "/images/scholar-bookshelf-180000.jpg",
-      "imageHint": "bookshelf"
+      "id": "product-golden-bird-wall-bracket",
+      "description": "Luxury Double Golden Bird Wall Bracket Light",
+      "imageUrl": "/images/Luxury Double Golden Bird Wall Bracket Light _35,000.jpg",
+      "imageHint": "bird wall light"
+    },
+    {
+      "id": "product-mounted-bird-light",
+      "description": "Luxury Quality Mounted Wall Bird Light",
+      "imageUrl": "/images/Luxury Quality Mounted Wall Bird Light_20,000.jpg",
+      "imageHint": "mounted light"
+    },
+    {
+      "id": "product-unique-pendant-light",
+      "description": "Luxury Unique Pendant Drop Light",
+      "imageUrl": "/images/Luxury Unique Pendant drop Light_80,000.jpg",
+      "imageHint": "unique pendant"
     },
     {
       "id": "about-us",
