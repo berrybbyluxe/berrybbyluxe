@@ -1,4 +1,3 @@
-
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -36,6 +35,7 @@ export const products: Product[] = [
     description: 'Modern energy-efficient LED drop light. Sleek and minimalist design.',
     price: 40000,
     imageId: 'product-led-drop-light',
+    isSoldOut: true,
   },
   {
     id: 'prod-royal-crystal-chandelier',
