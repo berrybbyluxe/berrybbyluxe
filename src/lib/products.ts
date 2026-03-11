@@ -1,6 +1,14 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
+  {
+    id: 'prod-dropping-light',
+    name: '3 in 1 Dropping Light',
+    description: 'A stunning industrial-style dropping light set featuring rustic rope accents and protective metal cages. Perfect for dining areas and modern living spaces.',
+    price: 45000,
+    imageId: 'product-dropping-light',
+  },
   {
     id: 'prod-001',
     name: 'The Oslo Armchair',

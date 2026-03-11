@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -58,7 +59,7 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
       return;
     }
 
-    const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_edd66afb7a3d2175e26e297d116a2267b6295cc2';
+    const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;
 
     if (!publicKey || publicKey.startsWith('YOUR_')) {
       toast({
@@ -88,20 +89,14 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
       amount: Math.round(product.price * 100),
       ref: new Date().getTime().toString(),
       onClose: () => {
-        // User closed the payment window.
-        // We don't need to do anything here as they are returned to the main page.
         console.log('Payment popup closed by user');
       },
       callback: (response) => {
-        console.log(response);
-        // This passes the reference to the success page URL
         window.location.href = `/payment-successful?reference=${response.reference}`;
       },
     });
 
-    // Close the dialog first to release the focus trap
     onOpenChange(false);
-    // Then, open the Paystack iframe
     paystack.openIframe();
   };
   
@@ -110,7 +105,7 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
   const getButtonText = () => {
     if (!scriptLoaded && !scriptError) return 'Initializing...';
     if (scriptError) return 'Payment unavailable';
-    return `Pay $${product.price.toFixed(2)}`;
+    return `Pay ₦${product.price.toLocaleString()}`;
   }
 
   return (
@@ -120,7 +115,7 @@ export function PaymentDialog({ product, open, onOpenChange }: PaymentDialogProp
             <DialogHeader>
               <DialogTitle>Complete Your Purchase</DialogTitle>
               <DialogDescription>
-                You are buying <strong>{product.name}</strong> for <strong>${product.price.toFixed(2)}</strong>.
+                You are buying <strong>{product.name}</strong> for <strong>₦{product.price.toLocaleString()}</strong>.
               </DialogDescription>
             </DialogHeader>
 

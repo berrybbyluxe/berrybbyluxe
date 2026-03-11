@@ -1,13 +1,15 @@
 'use client';
 
 import * as React from 'react';
+import { Suspense } from 'react'; // Added this
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, ArrowLeft, Hash } from 'lucide-react';
 
-export default function PaymentSuccessfulPage() {
+// 1. We move the logic into a sub-component
+function PaymentSuccessContent() {
   const searchParams = useSearchParams();
   const reference = searchParams.get('reference');
 
@@ -35,7 +37,6 @@ export default function PaymentSuccessfulPage() {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            {/* Reference Number Section */}
             {reference && (
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 mt-1">
@@ -75,5 +76,14 @@ export default function PaymentSuccessfulPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+// 2. The main page now just wraps the content in Suspense
+export default function PaymentSuccessfulPage() {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
+      <PaymentSuccessContent />
+    </Suspense>
   );
 }

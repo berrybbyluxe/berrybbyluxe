@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -43,7 +44,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <p className="mt-2 text-muted-foreground text-sm">{product.description}</p>
         </CardContent>
         <CardFooter className="flex justify-between items-center">
-          <span className="font-bold text-lg text-primary">${product.price.toFixed(2)}</span>
+          <span className="font-bold text-lg text-primary">₦{product.price.toLocaleString()}</span>
           <div className="flex gap-2">
             <Button asChild variant="outline">
               <Link href={whatsappUrl} target="_blank">

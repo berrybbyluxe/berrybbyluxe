@@ -1,59 +1,26 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: 'standalone',
+  /* CHANGED: This allows free hosting on Firebase Spark Plan */
+  output: 'export', 
+  
+  /* CHANGED: Required for static exports so Next.js doesn't try to optimize images on a server */
+  images: {
+    unoptimized: true, 
+    remotePatterns: [
+      { protocol: 'https', hostname: 'placehold.co', pathname: '/**' },
+      { protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'picsum.photos', pathname: '/**' },
+      { protocol: 'https', hostname: 'storage.googleapis.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'photos.app.goo.gl', pathname: '/**' },
+      { protocol: 'https', hostname: 'i.imgur.com', pathname: '/**' },
+    ],
+  },
   typescript: {
-    // !! WARNING !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARNING !!
     ignoreBuildErrors: true,
   },
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
     ignoreDuringBuilds: true,
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'storage.googleapis.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'photos.app.goo.gl',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.imgur.com',
-        port: '',
-        pathname: '/**',
-      },
-    ],
   },
 };
 
