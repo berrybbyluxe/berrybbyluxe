@@ -1,13 +1,33 @@
+'use client';
 
+import * as React from 'react';
 import Image from 'next/image';
 import { products } from '@/lib/products';
 import { ProductCard } from '@/components/product-card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
+const PRODUCTS_PER_PAGE = 9;
 
 export default function Home() {
   const heroImage = getPlaceholderImage('hero-1');
+  const [currentPage, setCurrentPage] = React.useState(1);
+
+  // Pagination Logic
+  const totalPages = Math.ceil(products.length / PRODUCTS_PER_PAGE);
+  const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
+  const currentProducts = products.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    // Smooth scroll back to products section
+    const productsSection = document.getElementById('products');
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="flex flex-col">
@@ -42,11 +62,53 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Catalog</h2>
             <p className="mt-2 text-lg text-muted-foreground">Handpicked selections for the modern home.</p>
           </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product) => (
+            {currentProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
+
+          {/* Pagination Controls */}
+          {totalPages > 1 && (
+            <div className="mt-16 flex flex-col items-center gap-4">
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  disabled={currentPage === 1}
+                  aria-label="Previous Page"
+                >
+                  <ChevronLeft className="h-4 w-4" />
+                </Button>
+                
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  <Button
+                    key={page}
+                    variant={currentPage === page ? "default" : "outline"}
+                    className="w-10"
+                    onClick={() => handlePageChange(page)}
+                  >
+                    {page}
+                  </Button>
+                ))}
+
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                  aria-label="Next Page"
+                >
+                  <ChevronRight className="h-4 w-4" />
+                </Button>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Showing {startIndex + 1} to {Math.min(startIndex + PRODUCTS_PER_PAGE, products.length)} of {products.length} products
+              </p>
+            </div>
+          )}
         </div>
       </section>
     </div>
