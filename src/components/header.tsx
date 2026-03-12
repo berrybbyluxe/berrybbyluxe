@@ -1,9 +1,10 @@
+
 'use client';
 
 import Link from 'next/link';
 import { Sofa, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import * as React from 'react';
 
@@ -49,6 +50,8 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              <SheetDescription className="sr-only">Access site sections</SheetDescription>
               <div className="flex flex-col gap-4 p-4">
                 <Link href="/#home" className="flex items-center gap-2 mb-4" onClick={() => setIsSheetOpen(false)}>
                   <Sofa className="h-6 w-6 text-primary" />

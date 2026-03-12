@@ -14,6 +14,8 @@ import { Eye, X } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
+  DialogDescription,
 } from "@/components/ui/dialog";
 
 type ProductCardProps = {
@@ -93,7 +95,9 @@ export function ProductCard({ product }: ProductCardProps) {
       </Card>
 
       <Dialog open={isLightboxOpen} onOpenChange={setIsLightboxOpen}>
-        <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
+        <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none focus-visible:outline-none">
+          <DialogTitle className="sr-only">{product.name} - Image Preview</DialogTitle>
+          <DialogDescription className="sr-only">Detailed view of {product.name}</DialogDescription>
           <div className="relative w-full aspect-square md:aspect-video flex items-center justify-center bg-black/90 rounded-lg overflow-hidden">
             <Button
               size="icon"
