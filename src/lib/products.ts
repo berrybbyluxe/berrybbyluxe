@@ -1,3 +1,4 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -71,5 +72,12 @@ export const products: Product[] = [
     description: 'One-of-a-kind pendant drop light for those who value unique design.',
     price: 80000,
     imageId: 'prod-unique-pendant',
+  },
+  {
+    id: 'prod-11',
+    name: 'Modern Outdoor & Indoor Light',
+    description: 'A stylish and versatile light fixture suitable for both modern interior and exterior settings.',
+    price: 12000,
+    imageId: 'prod-modern-outdoor',
   },
 ];

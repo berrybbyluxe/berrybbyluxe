@@ -27,13 +27,13 @@
     {
       "id": "prod-deer-wall",
       "description": "Deer Wall Bracket Light",
-      "imageUrl": "/images/Deer Wall Bracket Light_22,000.jpg",
+      "imageUrl": "/images/Deer Wall Bracket Light_22,000.png",
       "imageHint": "wall light"
     },
     {
       "id": "prod-led-drop",
       "description": "LED Drop Light",
-      "imageUrl": "/images/led_drop_light_40000_sold_out.jpg",
+      "imageUrl": "/images/led_drop_light_40000_sold_out.png",
       "imageHint": "pendant light"
     },
     {
@@ -45,26 +45,32 @@
     {
       "id": "prod-luxury-rooms",
       "description": "Luxury Home Rooms wall Bracket Light",
-      "imageUrl": "/images/Luxury  Home Rooms wall Bracket Light-25,000.jpg",
+      "imageUrl": "/images/Luxury  Home Rooms wall Bracket Light-25,000.png",
       "imageHint": "wall bracket"
     },
     {
       "id": "prod-golden-bird",
       "description": "Luxury Double Golden Bird Wall Bracket Light",
-      "imageUrl": "/images/Luxury Double Golden Bird Wall Bracket Light _35,000.jpg",
+      "imageUrl": "/images/Luxury Double Golden Bird Wall Bracket Light _35,000.png",
       "imageHint": "bird light"
     },
     {
       "id": "prod-mounted-bird",
       "description": "Luxury Quality Mounted Wall Bird Light",
-      "imageUrl": "/images/Luxury Quality Mounted Wall Bird Light_20,000.jpg",
+      "imageUrl": "/images/Luxury Quality Mounted Wall Bird Light_20,000.png",
       "imageHint": "mounted light"
     },
     {
       "id": "prod-unique-pendant",
       "description": "Luxury Unique Pendant drop Light",
-      "imageUrl": "/images/Luxury Unique Pendant drop Light_80,000.jpg",
+      "imageUrl": "/images/Luxury Unique Pendant drop Light_80,000.png",
       "imageHint": "unique pendant"
+    },
+    {
+      "id": "prod-modern-outdoor",
+      "description": "Modern Outdoor & Indoor Light",
+      "imageUrl": "/images/Modern Outdoor & Indoor Light_12,000.png",
+      "imageHint": "outdoor light"
     },
     {
       "id": "about-us",
