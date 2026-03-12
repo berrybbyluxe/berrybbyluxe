@@ -1,3 +1,4 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -211,5 +212,47 @@ export const products: Product[] = [
     description: 'Decorative LED chandelier with a unique, eye-catching structure.',
     price: 220000,
     imageId: 'prod-30',
+  },
+  {
+    id: 'prod-31',
+    name: 'Unique Design 2 way Drop Light',
+    description: 'Versatile 2-way LED drop light with a unique contemporary design.',
+    price: 35000,
+    imageId: 'prod-31',
+  },
+  {
+    id: 'prod-32',
+    name: 'Unique Standing Led Lamp',
+    description: 'Elegant standing LED lamp that makes a statement in any living space.',
+    price: 95000,
+    imageId: 'prod-32',
+  },
+  {
+    id: 'prod-33',
+    name: 'Unique Track LED Drop Light',
+    description: 'Industrial-inspired track LED light perfect for modern galleries and hallways.',
+    price: 100000,
+    imageId: 'prod-33',
+  },
+  {
+    id: 'prod-34',
+    name: 'Unique Wall LED Light',
+    description: 'Sculptural wall LED light that provides both illumination and artistic flair.',
+    price: 19000,
+    imageId: 'prod-34',
+  },
+  {
+    id: 'prod-35',
+    name: 'Wall bracket Light ',
+    description: 'Simple yet elegant wall bracket light for cozy room ambiances.',
+    price: 8000,
+    imageId: 'prod-35',
+  },
+  {
+    id: 'prod-36',
+    name: 'Wall bracket light',
+    description: 'Durable and stylish wall bracket lighting solution for your home.',
+    price: 19000,
+    imageId: 'prod-36',
   },
 ];

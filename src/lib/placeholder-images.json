@@ -185,6 +185,42 @@
       "description": "Unique Decorative LED Chandelier",
       "imageUrl": "/images/Unique Decorative LED Chandelier_220,000.jpeg",
       "imageHint": "decorative led chandelier"
+    },
+    {
+      "id": "prod-31",
+      "description": "Unique Design 2 way Drop Light",
+      "imageUrl": "/images/Unique Design 2 way Drop Light_35,000.png",
+      "imageHint": "2way drop light"
+    },
+    {
+      "id": "prod-32",
+      "description": "Unique Standing Led Lamp",
+      "imageUrl": "/images/Unique Standing Led Lamp_95,000.png",
+      "imageHint": "standing lamp"
+    },
+    {
+      "id": "prod-33",
+      "description": "Unique Track LED Drop Light",
+      "imageUrl": "/images/Unique Track LED Drop Light_100,000.png",
+      "imageHint": "track light"
+    },
+    {
+      "id": "prod-34",
+      "description": "Unique Wall LED Light",
+      "imageUrl": "/images/Unique Wall LED Light_19,000.png",
+      "imageHint": "wall led light"
+    },
+    {
+      "id": "prod-35",
+      "description": "Wall bracket Light ",
+      "imageUrl": "/images/Wall bracket Light _8,000.png",
+      "imageHint": "wall bracket"
+    },
+    {
+      "id": "prod-36",
+      "description": "Wall bracket light",
+      "imageUrl": "/images/Wall bracket light_19,000.png",
+      "imageHint": "wall bracket light"
     }
   ]
 }
