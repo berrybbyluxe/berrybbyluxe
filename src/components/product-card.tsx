@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -13,9 +14,6 @@ import { Eye, X } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
 
 type ProductCardProps = {
@@ -31,6 +29,8 @@ export function ProductCard({ product }: ProductCardProps) {
     `I'm interested in ordering the ${product.name}`
   )}`;
 
+  if (!image) return null;
+
   return (
     <>
       <Card className="group flex flex-col overflow-hidden transition-transform transform hover:-translate-y-2 duration-300 ease-in-out shadow-md hover:shadow-xl relative">
@@ -42,7 +42,6 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
         )}
         
-        {/* Lightbox Trigger Icon */}
         <div className="absolute top-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Button
             size="icon"
@@ -59,16 +58,14 @@ export function ProductCard({ product }: ProductCardProps) {
 
         <CardHeader className="p-0">
           <div className="aspect-video relative overflow-hidden">
-            {image && (
-              <Image
-                src={image.imageUrl}
-                alt={product.name}
-                fill
-                className={`object-cover transition-transform duration-500 group-hover:scale-110 ${product.isSoldOut ? 'grayscale opacity-70' : ''}`}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                data-ai-hint={image.imageHint}
-              />
-            )}
+            <Image
+              src={image.imageUrl}
+              alt={product.name}
+              fill
+              className={`object-cover transition-transform duration-500 group-hover:scale-110 ${product.isSoldOut ? 'grayscale opacity-70' : ''}`}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              data-ai-hint={image.imageHint}
+            />
           </div>
         </CardHeader>
         <CardContent className="pt-6 flex-grow">
@@ -94,7 +91,6 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardFooter>
       </Card>
 
-      {/* Lightbox Dialog */}
       <Dialog open={isLightboxOpen} onOpenChange={setIsLightboxOpen}>
         <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none">
           <div className="relative w-full aspect-square md:aspect-video flex items-center justify-center bg-black/90 rounded-lg overflow-hidden">
@@ -106,16 +102,14 @@ export function ProductCard({ product }: ProductCardProps) {
             >
               <X className="h-6 w-6" />
             </Button>
-            {image && (
-              <Image
-                src={image.imageUrl}
-                alt={product.name}
-                fill
-                className="object-contain"
-                sizes="100vw"
-                priority
-              />
-            )}
+            <Image
+              src={image.imageUrl}
+              alt={product.name}
+              fill
+              className="object-contain"
+              sizes="100vw"
+              priority
+            />
             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
               <h3 className="text-2xl font-headline font-bold">{product.name}</h3>
               <p className="mt-1 opacity-90">{product.description}</p>
