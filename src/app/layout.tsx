@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { BackToTopButton } from '@/components/back-to-top-button';
+import { WhatsAppButton } from '@/components/whatsapp-button';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <BackToTopButton />
+        <WhatsAppButton />
         <Toaster />
       </body>
     </html>
