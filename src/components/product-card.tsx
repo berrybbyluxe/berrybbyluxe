@@ -42,7 +42,8 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
         )}
         
-        <div className="absolute top-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        {/* Eye icon: Always visible on mobile, hover-only on desktop */}
+        <div className="absolute top-4 left-4 z-20 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Button
             size="icon"
             variant="secondary"
@@ -77,7 +78,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <div className="flex gap-2 w-full sm:w-auto">
             <Button asChild variant="outline" disabled={product.isSoldOut} className="flex-1 sm:flex-none">
               <Link href={product.isSoldOut ? '#' : whatsappUrl} target={product.isSoldOut ? undefined : "_blank"} className={product.isSoldOut ? 'pointer-events-none' : ''}>
-                Chat
+                Chat to Order
               </Link>
             </Button>
             <Button 
