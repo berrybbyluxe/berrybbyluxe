@@ -84,7 +84,7 @@ export const products: Product[] = [
     id: 'prod-12',
     name: 'Modern Quality Luxury Christal LED Wall Bracket',
     description: 'A touch of luxury for your walls with high-quality crystal LED lighting.',
-    price: 10000,
+    price: 75000,
     imageId: 'prod-12',
   },
   {

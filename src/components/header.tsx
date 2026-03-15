@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -56,7 +57,9 @@ export function Header() {
               <div className="flex flex-col gap-4 p-4">
                 <Link href="/#home" className="flex items-center gap-2 mb-4" onClick={() => setIsSheetOpen(false)}>
                   <Sofa className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline text-lg">Berrybby Luxury</span>
+                  <span className="font-bold font-headline text-lg text-left leading-tight">
+                    Berrybby Luxury Lighting & Furnishing
+                  </span>
                 </Link>
                 {navLinks.map(({ href, label }) => (
                   <Link

@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -130,7 +131,7 @@ export default function Home() {
               />
             </div>
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">About Berrybby</h2>
+              <h2 className="text-3xl md:text-4xl font-headline font-bold">About Berrybby Luxury Lighting & Furnishing</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 At Berrybby, we believe that your home is a sanctuary that deserves nothing but the finest touches. Founded with a passion for exquisite design and unmatched quality, we specialize in curating premium lighting and furniture that blend functionality with timeless elegance.
               </p>
