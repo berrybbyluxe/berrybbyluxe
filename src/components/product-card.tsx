@@ -78,7 +78,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <span className="font-bold text-lg text-primary">₦{product.price.toLocaleString()}</span>
           <div className="flex gap-2 w-full sm:w-auto">
             <Button asChild variant="outline" disabled={product.isSoldOut} className="flex-1 sm:flex-none">
-              <Link href={product.isSoldOut ? '#' : whatsappUrl} target={product.isSoldOut ? undefined : "_blank"} className={product.isSoldOut ? 'pointer-events-none' : ''}>
+              <Link href={product.isSoldOut ? '#' : whatsappUrl} target={product.isSoldOut ? "_blank" : undefined} className={product.isSoldOut ? 'pointer-events-none' : ''}>
                 Chat to Order
               </Link>
             </Button>
