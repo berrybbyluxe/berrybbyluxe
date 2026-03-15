@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -23,17 +22,19 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/#home" className="flex items-center gap-2">
-          <Sofa className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-lg">Berrybby</span>
+          <Sofa className="h-6 w-6 text-primary flex-shrink-0" />
+          <span className="font-bold font-headline text-base md:text-lg leading-tight">
+            Berrybby Luxury Lighting & Furnishing
+          </span>
         </Link>
 
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden xl:flex gap-6">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               className={cn(
-                'text-sm font-medium text-muted-foreground transition-colors hover:text-foreground'
+                'text-sm font-medium text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap'
               )}
             >
               {label}
@@ -41,7 +42,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -55,7 +56,7 @@ export function Header() {
               <div className="flex flex-col gap-4 p-4">
                 <Link href="/#home" className="flex items-center gap-2 mb-4" onClick={() => setIsSheetOpen(false)}>
                   <Sofa className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline text-lg">Berrybby</span>
+                  <span className="font-bold font-headline text-lg">Berrybby Luxury</span>
                 </Link>
                 {navLinks.map(({ href, label }) => (
                   <Link

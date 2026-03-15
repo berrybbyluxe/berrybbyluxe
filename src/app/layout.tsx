@@ -8,8 +8,8 @@ import { WhatsAppButton } from '@/components/whatsapp-button';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Berrybby',
-  description: 'Exquisite furniture for your modern home.',
+  title: 'Berrybby Luxury Lighting & Furnishing',
+  description: 'Exquisite furniture and premium lighting for your modern home.',
 };
 
 export default function RootLayout({
