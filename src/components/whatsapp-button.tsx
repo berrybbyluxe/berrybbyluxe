@@ -6,8 +6,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 export function WhatsAppButton() {
-  // Using a placeholder number. Ideally this should be the business WhatsApp number.
-  const whatsappNumber = '2348000000000'; 
+  const whatsappNumber = '2349063927855'; 
   const message = encodeURIComponent("Hello! I'm interested in Berrybby's products.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 

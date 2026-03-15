@@ -1,4 +1,3 @@
-
 'use client';
 
 import * as React from 'react';
@@ -27,7 +26,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const [isLightboxOpen, setIsLightboxOpen] = React.useState(false);
   const image = getPlaceholderImage(product.imageId);
 
-  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/2349063927855?text=${encodeURIComponent(
     `I'm interested in ordering the ${product.name}`
   )}`;
 

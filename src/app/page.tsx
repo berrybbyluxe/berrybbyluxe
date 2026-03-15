@@ -208,22 +208,22 @@ export default function Home() {
             <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-md">
               <Phone className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Call Us</h3>
-              <p className="text-muted-foreground">+234 800 000 0000</p>
+              <p className="text-muted-foreground">09063927855</p>
             </div>
             <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-md">
               <Mail className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Email</h3>
-              <p className="text-muted-foreground">info@berrybby.com</p>
+              <p className="text-muted-foreground">berrybbyluxe@gmail.com</p>
             </div>
             <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-md">
               <MapPin className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Visit Us</h3>
-              <p className="text-muted-foreground text-center">Lagos, Nigeria</p>
+              <p className="text-muted-foreground text-center">4A, Victor Olaleye Street, Rogo Ishaga, Lagos State</p>
             </div>
           </div>
           <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white">
-              <Link href="https://wa.me/2348000000000" target="_blank">
+              <Link href="https://wa.me/2349063927855" target="_blank">
                 Contact via WhatsApp
               </Link>
             </Button>
