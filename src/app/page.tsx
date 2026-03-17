@@ -1,4 +1,3 @@
-
 'use client';
 
 import * as React from 'react';
@@ -6,30 +5,49 @@ import Image from 'next/image';
 import { products } from '@/lib/products';
 import { ProductCard } from '@/components/product-card';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Link from 'next/link';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
-import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Phone, Mail, MapPin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Phone, Mail, MapPin, Search, Filter } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const PRODUCTS_PER_PAGE = 9;
+const CATEGORIES = ['All', 'Furniture', 'Chandelier', 'Wall Light', 'Pendant Light', 'Other Lighting'];
 
 export default function Home() {
   const heroImage = getPlaceholderImage('hero-1');
   const [currentPage, setCurrentPage] = React.useState(1);
+  const [searchQuery, setSearchQuery] = React.useState('');
+  const [selectedCategory, setSelectedCategory] = React.useState('All');
+
+  // Filter Logic
+  const filteredProducts = React.useMemo(() => {
+    return products.filter((product) => {
+      const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                           product.description.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
+      return matchesSearch && matchesCategory;
+    });
+  }, [searchQuery, selectedCategory]);
 
   // Pagination Logic
-  const totalPages = Math.ceil(products.length / PRODUCTS_PER_PAGE);
+  const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
   const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
-  const currentProducts = products.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
+  const currentProducts = filteredProducts.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    // Smooth scroll back to products section
     const productsSection = document.getElementById('products');
     if (productsSection) {
       productsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // Reset page when filters change
+  React.useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedCategory]);
 
   return (
     <div className="flex flex-col">
@@ -67,12 +85,51 @@ export default function Home() {
             <div className="w-20 h-1 bg-primary mx-auto mt-4 mb-2"></div>
             <p className="mt-2 text-lg text-muted-foreground">Handpicked selections for the modern home.</p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {currentProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+
+          {/* Search and Filters Bar */}
+          <div className="mb-12 flex flex-col md:flex-row gap-4 items-center justify-between">
+            <div className="relative w-full md:max-w-md">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Input 
+                placeholder="Search products..." 
+                className="pl-10"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+            </div>
+            <div className="flex items-center gap-2 w-full md:w-auto">
+              <Filter className="h-4 w-4 text-muted-foreground hidden sm:block" />
+              <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                <SelectTrigger className="w-full md:w-[200px]">
+                  <SelectValue placeholder="Category" />
+                </SelectTrigger>
+                <SelectContent>
+                  {CATEGORIES.map((cat) => (
+                    <SelectItem key={cat} value={cat}>{cat}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
           </div>
+          
+          {currentProducts.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {currentProducts.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20 bg-muted/20 rounded-lg border-2 border-dashed border-muted">
+              <p className="text-xl text-muted-foreground">No products found matching your criteria.</p>
+              <Button 
+                variant="link" 
+                onClick={() => {setSearchQuery(''); setSelectedCategory('All');}}
+                className="mt-2"
+              >
+                Clear all filters
+              </Button>
+            </div>
+          )}
 
           {/* Pagination Controls */}
           {totalPages > 1 && (
@@ -110,7 +167,7 @@ export default function Home() {
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground">
-                Showing {startIndex + 1} to {Math.min(startIndex + PRODUCTS_PER_PAGE, products.length)} of {products.length} products
+                Showing {startIndex + 1} to {Math.min(startIndex + PRODUCTS_PER_PAGE, filteredProducts.length)} of {filteredProducts.length} results
               </p>
             </div>
           )}
@@ -206,17 +263,17 @@ export default function Home() {
             <p className="mt-2 text-lg text-muted-foreground">We'd love to hear from you. Reach out for inquiries or orders.</p>
           </div>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-md">
+            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
               <Phone className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Call Us</h3>
               <p className="text-muted-foreground">09063927855</p>
             </div>
-            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-md">
+            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
               <Mail className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Email</h3>
               <p className="text-muted-foreground">berrybbyluxe@gmail.com</p>
             </div>
-            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-md">
+            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
               <MapPin className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Visit Us</h3>
               <p className="text-muted-foreground text-center">4A, Victor Olaleye Street, Rogo Ishaga, Lagos State</p>

@@ -231,49 +231,49 @@
     {
       "id": "prod-38",
       "description": "grey 4 seater sofa",
-      "imageUrl": "/images/grey 4 seater sofa_750,000.png",
+      "imageUrl": "/images/grey 4 seater sofa_750,000.jpeg",
       "imageHint": "grey sofa"
     },
     {
       "id": "prod-39",
       "description": "Halifax Accent Chair",
-      "imageUrl": "/images/Halifax Accent Chair_300,000_per 1.png",
+      "imageUrl": "/images/Halifax Accent Chair_300,000_per 1.jpeg",
       "imageHint": "accent chair"
     },
     {
       "id": "prod-40",
       "description": "Marble Coffee Table",
-      "imageUrl": "/images/Marble Coffee Table_550,000.png",
+      "imageUrl": "/images/Marble Coffee Table_550,000.jpeg",
       "imageHint": "coffee table"
     },
     {
       "id": "prod-41",
       "description": "MARBLE CONFFETABLE 4 SEATER SET",
-      "imageUrl": "/images/MARBLE CONFFETABLE 4 SEATER SET_1,500,000.png",
+      "imageUrl": "/images/MARBLE CONFFETABLE 4 SEATER SET_1,500,000.jpeg",
       "imageHint": "dining set"
     },
     {
       "id": "prod-42",
       "description": "osmo sofa",
-      "imageUrl": "/images/osmo sofa _2,500,000.png",
+      "imageUrl": "/images/osmo sofa _2,500,000.jpeg",
       "imageHint": "modern sofa"
     },
     {
       "id": "prod-43",
       "description": "Side table",
-      "imageUrl": "/images/Side table_100,000.png",
+      "imageUrl": "/images/Side table_100,000.jpeg",
       "imageHint": "side table"
     },
     {
       "id": "prod-44",
       "description": "Vista Table",
-      "imageUrl": "/images/Vista Table_400,000.png",
+      "imageUrl": "/images/Vista Table_400,000.jpeg",
       "imageHint": "vista table"
     },
     {
       "id": "prod-45",
       "description": "VITALE SOFA SET",
-      "imageUrl": "/images/VITALE SOFA SET_3,500,000.png",
+      "imageUrl": "/images/VITALE SOFA SET_3,500,000.jpeg",
       "imageHint": "vitale sofa"
     }
   ]

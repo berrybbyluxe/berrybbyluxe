@@ -5,4 +5,5 @@ export type Product = {
   price: number;
   imageId: string;
   isSoldOut?: boolean;
+  category: string;
 };
