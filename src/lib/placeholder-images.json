@@ -221,6 +221,60 @@
       "description": "Wall bracket light",
       "imageUrl": "/images/Wall bracket light_19,000.png",
       "imageHint": "wall bracket light"
+    },
+    {
+      "id": "prod-37",
+      "description": "ARMANI CASSA SET",
+      "imageUrl": "/images/ARMANI CASSA SET_2,500,000.png",
+      "imageHint": "luxury sofa set"
+    },
+    {
+      "id": "prod-38",
+      "description": "grey 4 seater sofa",
+      "imageUrl": "/images/grey 4 seater sofa_750,000.png",
+      "imageHint": "grey sofa"
+    },
+    {
+      "id": "prod-39",
+      "description": "Halifax Accent Chair",
+      "imageUrl": "/images/Halifax Accent Chair_300,000_per 1.png",
+      "imageHint": "accent chair"
+    },
+    {
+      "id": "prod-40",
+      "description": "Marble Coffee Table",
+      "imageUrl": "/images/Marble Coffee Table_550,000.png",
+      "imageHint": "coffee table"
+    },
+    {
+      "id": "prod-41",
+      "description": "MARBLE CONFFETABLE 4 SEATER SET",
+      "imageUrl": "/images/MARBLE CONFFETABLE 4 SEATER SET_1,500,000.png",
+      "imageHint": "dining set"
+    },
+    {
+      "id": "prod-42",
+      "description": "osmo sofa",
+      "imageUrl": "/images/osmo sofa _2,500,000.png",
+      "imageHint": "modern sofa"
+    },
+    {
+      "id": "prod-43",
+      "description": "Side table",
+      "imageUrl": "/images/Side table_100,000.png",
+      "imageHint": "side table"
+    },
+    {
+      "id": "prod-44",
+      "description": "Vista Table",
+      "imageUrl": "/images/Vista Table_400,000.png",
+      "imageHint": "vista table"
+    },
+    {
+      "id": "prod-45",
+      "description": "VITALE SOFA SET",
+      "imageUrl": "/images/VITALE SOFA SET_3,500,000.png",
+      "imageHint": "vitale sofa"
     }
   ]
 }
