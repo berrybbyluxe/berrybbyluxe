@@ -5,6 +5,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { BackToTopButton } from '@/components/back-to-top-button';
 import { WhatsAppButton } from '@/components/whatsapp-button';
+import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -26,6 +27,21 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn('min-h-screen bg-background font-body antialiased flex flex-col')} suppressHydrationWarning>
+        {/* Google Analytics tracking code added via Next.js Script component */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q9022R8581"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Q9022R8581');
+          `}
+        </Script>
+
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
