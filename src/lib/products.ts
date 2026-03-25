@@ -164,7 +164,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-12',
-    name: 'Modern Quality Luxury Christal LED Wall Bracket',
+    name: 'Modern Quality Luxury Crystal LED Wall Bracket',
     description: 'A touch of luxury for your walls with high-quality crystal LED lighting.',
     price: 75000,
     imageId: 'prod-12',
@@ -188,7 +188,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-15',
-    name: 'Modern Design Singlr Drop Pendant Light',
+    name: 'Modern Design Single Drop Pendant Light',
     description: 'A minimalist single drop pendant light for a clean, modern aesthetic.',
     price: 60000,
     imageId: 'prod-15',
@@ -220,7 +220,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-19',
-    name: 'New Design Bird Chandelier Led Light for Dinning & kitchen',
+    name: 'New Design Bird Chandelier Led Light for Dining & Kitchen',
     description: 'Artistic bird-themed chandelier, ideal for dining areas and modern kitchens.',
     price: 75000,
     imageId: 'prod-19',
@@ -252,7 +252,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-23',
-    name: 'Nodic Modern Creative Feather wall bracket',
+    name: 'Nordic Modern Creative Feather wall bracket',
     description: 'Nordic-inspired creative wall bracket with a delicate feather design.',
     price: 15000,
     imageId: 'prod-23',
@@ -260,7 +260,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-24',
-    name: 'Nodic Modern Creative Feather wall Ligh',
+    name: 'Nordic Modern Creative Feather wall Light',
     description: 'Artistic Nordic wall light featuring a stunning creative feather motif.',
     price: 20000,
     imageId: 'prod-24',
@@ -276,7 +276,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-26',
-    name: 'crafted to dazzle the perfect blend of modern design Chandelier Light',
+    name: 'Crafted to dazzle the perfect blend of modern design Chandelier Light',
     description: 'Exquisitely crafted chandelier that is the perfect blend of modern and dazzling design.',
     price: 190000,
     imageId: 'prod-26',
@@ -284,7 +284,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-27',
-    name: 'Unique 3Way Round Led Light',
+    name: 'Unique 3-Way Round Led Light',
     description: 'A unique 3-way round LED light for versatile illumination patterns.',
     price: 75000,
     imageId: 'prod-27',
@@ -292,7 +292,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-28',
-    name: 'Unique 4 way Ball Led Drop Light',
+    name: 'Unique 4-Way Ball Led Drop Light',
     description: 'Creative 4-way ball LED drop light for a playful yet elegant look.',
     price: 80000,
     imageId: 'prod-28',
@@ -316,7 +316,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-31',
-    name: 'Unique Design 2 way Drop Light',
+    name: 'Unique Design 2-Way Drop Light',
     description: 'Versatile 2-way LED drop light with a unique contemporary design.',
     price: 35000,
     imageId: 'prod-31',
@@ -348,7 +348,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-35',
-    name: 'Wall bracket Light ',
+    name: 'Wall bracket Light',
     description: 'Simple yet elegant wall bracket light for cozy room ambiances.',
     price: 8000,
     imageId: 'prod-35',

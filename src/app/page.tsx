@@ -21,12 +21,16 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = React.useState('');
   const [selectedCategory, setSelectedCategory] = React.useState('All');
 
-  // Filter Logic
+  // Filter Logic with Safety Checks
   const filteredProducts = React.useMemo(() => {
     return products.filter((product) => {
-      const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                           product.description.toLowerCase().includes(searchQuery.toLowerCase());
+      const name = product.name?.toLowerCase() || '';
+      const description = product.description?.toLowerCase() || '';
+      const query = searchQuery.toLowerCase();
+      
+      const matchesSearch = name.includes(query) || description.includes(query);
       const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
+      
       return matchesSearch && matchesCategory;
     });
   }, [searchQuery, selectedCategory]);
