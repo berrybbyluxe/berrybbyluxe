@@ -275,6 +275,96 @@
       "description": "VITALE SOFA SET",
       "imageUrl": "/images/VITALE SOFA SET_3,500,000.jpeg",
       "imageHint": "vitale sofa"
+    },
+    {
+      "id": "prod-46",
+      "description": "2 in 1 Led Wall Bracket light",
+      "imageUrl": "/images/2 in 1 Led Wall Bracket light_22,000.png",
+      "imageHint": "wall bracket"
+    },
+    {
+      "id": "prod-47",
+      "description": "beautiful wreath flower",
+      "imageUrl": "/images/beautiful wreath flower_30,000.jpeg",
+      "imageHint": "wreath flower"
+    },
+    {
+      "id": "prod-48",
+      "description": "bed side lamp",
+      "imageUrl": "/images/bed side lamp_50,000.jpeg",
+      "imageHint": "bed lamp"
+    },
+    {
+      "id": "prod-49",
+      "description": "comfortable and stylish bed",
+      "imageUrl": "/images/comfortable and stylish bed_850,000.jpeg",
+      "imageHint": "luxury bed"
+    },
+    {
+      "id": "prod-50",
+      "description": "Crystal_Fan_Chandelier",
+      "imageUrl": "/images/Crystal_Fan_Chandelier_180,000.jpeg",
+      "imageHint": "fan chandelier"
+    },
+    {
+      "id": "prod-51",
+      "description": "decorative LED wall bracket",
+      "imageUrl": "/images/decorative LED wall bracket_20,000.png",
+      "imageHint": "wall bracket"
+    },
+    {
+      "id": "prod-52",
+      "description": "decorative POP light",
+      "imageUrl": "/images/decorative POP light_60,000.jpeg",
+      "imageHint": "pop light"
+    },
+    {
+      "id": "prod-53",
+      "description": "decorative wall bracket light",
+      "imageUrl": "/images/decorative wall bracket light_24,000.png",
+      "imageHint": "wall light"
+    },
+    {
+      "id": "prod-54",
+      "description": "durable and stylish Led wall bracket",
+      "imageUrl": "/images/durable and stylish Led wall bracket_19,000.png",
+      "imageHint": "wall bracket"
+    },
+    {
+      "id": "prod-55",
+      "description": "Durable LED wall bracket",
+      "imageUrl": "/images/Durable LED wall bracket_19,000.png",
+      "imageHint": "wall bracket"
+    },
+    {
+      "id": "prod-56",
+      "description": "Modern and energy-efficient LED wall bracket",
+      "imageUrl": "/images/Modern and energy-efficient LED wall bracket_22,000.png",
+      "imageHint": "wall bracket"
+    },
+    {
+      "id": "prod-57",
+      "description": "modern LED crystal chandelier",
+      "imageUrl": "/images/modern LED crystal chandelier_160,000.jpeg",
+      "imageHint": "crystal chandelier"
+    },
+    {
+      "id": "prod-58",
+      "description": "Modern_Led_Crystal_Chandelier",
+      "imageUrl": "/images/Modern_Led_Crystal_Chandelier_450,000.jpeg",
+      "imageHint": "modern chandelier"
+    },
+    {
+      "id": "prod-59",
+      "description": "stunning crystal chandelier",
+      "imageUrl": "/images/stunning crystal chandelier_300,000.jpeg",
+      "imageHint": "crystal chandelier"
+    },
+    {
+      "id": "prod-60",
+      "description": "Tufted_Turkey_Chairs",
+      "imageUrl": "/images/Tufted_Turkey_Chairs_8,000,000.jpeg",
+      "imageHint": "tufted chairs"
     }
   ]
 }
