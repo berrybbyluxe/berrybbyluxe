@@ -1,11 +1,6 @@
+
 {
   "placeholderImages": [
-    {
-      "id": "site-logo",
-      "description": "Berrybby Luxury Lighting & Furnishing Logo",
-      "imageUrl": "https://lh3.googleusercontent.com/d/1pi33-czwZeBVdzAYQnFMh94r-skqzeBL",
-      "imageHint": "company logo"
-    },
     {
       "id": "hero-1",
       "description": "A stylish and modern living room with a comfortable sofa.",
