@@ -23,9 +23,12 @@ export default function Home() {
 
   // Filter Logic with Safety Checks
   const filteredProducts = React.useMemo(() => {
+    if (!products || !Array.isArray(products)) return [];
+    
     return products.filter((product) => {
-      const name = product.name?.toLowerCase() || '';
-      const description = product.description?.toLowerCase() || '';
+      if (!product) return false;
+      const name = (product.name || '').toLowerCase();
+      const description = (product.description || '').toLowerCase();
       const query = searchQuery.toLowerCase();
       
       const matchesSearch = name.includes(query) || description.includes(query);
@@ -36,7 +39,7 @@ export default function Home() {
   }, [searchQuery, selectedCategory]);
 
   // Pagination Logic
-  const totalPages = Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE);
+  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE));
   const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
   const currentProducts = filteredProducts.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
 
