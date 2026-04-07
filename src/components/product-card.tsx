@@ -61,7 +61,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         <CardHeader className="p-0">
-          <div className="aspect-square md:aspect-video relative overflow-hidden">
+          <div className="aspect-square relative overflow-hidden">
             <Image
               src={image.imageUrl}
               alt={product.name}
@@ -90,7 +90,7 @@ export function ProductCard({ product }: ProductCardProps) {
               disabled={product.isSoldOut}
               className={`flex-1 text-[10px] md:text-sm h-8 md:h-10 ${product.isSoldOut ? 'bg-muted text-muted-foreground' : ''}`}
             >
-              {product.isSoldOut ? 'Out' : 'Buy Now'}
+              {product.isSoldOut ? 'Sold Out' : 'Buy Now'}
             </Button>
           </div>
         </CardFooter>
