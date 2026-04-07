@@ -36,60 +36,61 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <>
-      <Card className="group flex flex-col overflow-hidden transition-transform transform hover:-translate-y-2 duration-300 ease-in-out shadow-md hover:shadow-xl relative">
+      <Card className="group flex flex-col overflow-hidden transition-transform transform hover:-translate-y-2 duration-300 ease-in-out shadow-sm md:shadow-md hover:shadow-xl relative h-full">
         {product.isSoldOut && (
-          <div className="absolute top-4 right-4 z-20">
-            <Badge variant="destructive" className="text-sm px-3 py-1 font-bold">
+          <div className="absolute top-2 right-2 md:top-4 md:right-4 z-20">
+            <Badge variant="destructive" className="text-[10px] md:text-sm px-2 py-0.5 md:px-3 md:py-1 font-bold">
               SOLD OUT
             </Badge>
           </div>
         )}
         
         {/* Eye icon: Always visible on mobile, hover-only on desktop */}
-        <div className="absolute top-4 left-4 z-20 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute top-2 left-2 md:top-4 md:left-4 z-20 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Button
             size="icon"
             variant="secondary"
-            className="rounded-full shadow-lg"
+            className="rounded-full shadow-lg h-7 w-7 md:h-10 md:w-10"
             onClick={(e) => {
               e.preventDefault();
               setIsLightboxOpen(true);
             }}
           >
-            <Eye className="h-5 w-5" />
+            <Eye className="h-4 w-4 md:h-5 md:w-5" />
           </Button>
         </div>
 
         <CardHeader className="p-0">
-          <div className="aspect-video relative overflow-hidden">
+          <div className="aspect-square md:aspect-video relative overflow-hidden">
             <Image
               src={image.imageUrl}
               alt={product.name}
               fill
               className={`object-cover transition-transform duration-500 group-hover:scale-110 ${product.isSoldOut ? 'grayscale opacity-70' : ''}`}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
               data-ai-hint={image.imageHint}
             />
           </div>
         </CardHeader>
-        <CardContent className="pt-6 flex-grow">
-          <CardTitle className="font-headline text-xl">{product.name}</CardTitle>
-          <p className="mt-2 text-muted-foreground text-sm line-clamp-2">{product.description}</p>
+        <CardContent className="p-3 md:p-6 flex-grow flex flex-col gap-1">
+          <CardTitle className="font-headline text-sm md:text-xl line-clamp-2 md:line-clamp-1 h-10 md:h-auto">{product.name}</CardTitle>
+          <p className="text-muted-foreground text-[10px] md:text-sm line-clamp-1 md:line-clamp-2 mt-1 hidden xs:block">{product.description}</p>
+          <span className="font-bold text-sm md:text-lg text-primary mt-auto">₦{product.price.toLocaleString()}</span>
         </CardContent>
-        <CardFooter className="flex flex-col sm:flex-row gap-4 justify-between items-center">
-          <span className="font-bold text-lg text-primary">₦{product.price.toLocaleString()}</span>
-          <div className="flex gap-2 w-full sm:w-auto">
-            <Button asChild variant="outline" disabled={product.isSoldOut} className="flex-1 sm:flex-none">
+        <CardFooter className="p-3 md:p-6 pt-0 md:pt-0 flex flex-col gap-2">
+          <div className="flex flex-col md:flex-row gap-2 w-full">
+            <Button asChild variant="outline" size="sm" disabled={product.isSoldOut} className="flex-1 text-[10px] md:text-sm h-8 md:h-10">
               <Link href={product.isSoldOut ? '#' : whatsappUrl} target={product.isSoldOut ? "_blank" : undefined} className={product.isSoldOut ? 'pointer-events-none' : ''}>
-                Chat to Order
+                Inquire
               </Link>
             </Button>
             <Button 
+              size="sm"
               onClick={() => setIsPaymentDialogOpen(true)} 
               disabled={product.isSoldOut}
-              className={`flex-1 sm:flex-none ${product.isSoldOut ? 'bg-muted text-muted-foreground' : ''}`}
+              className={`flex-1 text-[10px] md:text-sm h-8 md:h-10 ${product.isSoldOut ? 'bg-muted text-muted-foreground' : ''}`}
             >
-              {product.isSoldOut ? 'Sold Out' : 'Buy Now'}
+              {product.isSoldOut ? 'Out' : 'Buy Now'}
             </Button>
           </div>
         </CardFooter>

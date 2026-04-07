@@ -10,10 +10,10 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Link from 'next/link';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
-import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Phone, Mail, MapPin, Search, Filter } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter, Phone, Mail, MapPin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-const PRODUCTS_PER_PAGE = 9;
+const PRODUCTS_PER_PAGE = 12;
 const CATEGORIES = ['All', 'Furniture', 'Chandelier', 'Wall Light', 'Pendant Light', 'Other Lighting'];
 
 export default function Home() {
@@ -86,16 +86,16 @@ export default function Home() {
       </section>
 
       {/* Catalog Section */}
-      <section id="products" className="py-16 md:py-24 bg-background">
+      <section id="products" className="py-12 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Catalog</h2>
             <div className="w-20 h-1 bg-primary mx-auto mt-4 mb-2"></div>
             <p className="mt-2 text-lg text-muted-foreground">Handpicked selections for the modern home.</p>
           </div>
 
           {/* Search and Filters Bar */}
-          <div className="mb-12 flex flex-col md:flex-row gap-4 items-center justify-between">
+          <div className="mb-8 flex flex-col md:flex-row gap-4 items-center justify-between">
             <div className="relative w-full md:max-w-md">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input 
@@ -121,7 +121,7 @@ export default function Home() {
           </div>
           
           {currentProducts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
               {currentProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
@@ -141,7 +141,7 @@ export default function Home() {
 
           {/* Pagination Controls */}
           {totalPages > 1 && (
-            <div className="mt-16 flex flex-col items-center gap-4">
+            <div className="mt-12 md:mt-16 flex flex-col items-center gap-4">
               <div className="flex items-center gap-2">
                 <Button
                   variant="outline"
