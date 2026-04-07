@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
@@ -13,11 +14,10 @@ export const metadata: Metadata = {
   description: 'Exquisite furniture and premium lighting for your modern home.',
   icons: {
     icon: [
-      { url: '/images/berrybby_logo.jpeg?v=1', type: 'image/jpeg' },
-      { url: '/images/berrybby_logo.jpeg?v=1', sizes: '32x32', type: 'image/jpeg' },
+      { url: '/images/berrybby_logo.jpeg?v=2', type: 'image/jpeg' },
     ],
-    shortcut: '/images/berrybby_logo.jpeg?v=1',
-    apple: '/images/berrybby_logo.jpeg?v=1',
+    shortcut: '/images/berrybby_logo.jpeg?v=2',
+    apple: '/images/berrybby_logo.jpeg?v=2',
   },
 };
 
