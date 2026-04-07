@@ -29,7 +29,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const image = getPlaceholderImage(product.imageId);
 
   const whatsappUrl = `https://wa.me/2349063927855?text=${encodeURIComponent(
-    `I'm interested in ordering the ${product.name}`
+    `Hello! I'm interested in ordering the ${product.name} (₦${product.price.toLocaleString()})`
   )}`;
 
   if (!image) return null;
@@ -45,7 +45,6 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
         )}
         
-        {/* Eye icon: Always visible on mobile, hover-only on desktop */}
         <div className="absolute top-2 left-2 md:top-4 md:left-4 z-20 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Button
             size="icon"
@@ -79,9 +78,9 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardContent>
         <CardFooter className="p-3 md:p-6 pt-0 md:pt-0 flex flex-col gap-2">
           <div className="flex flex-col md:flex-row gap-2 w-full">
-            <Button asChild variant="outline" size="sm" disabled={product.isSoldOut} className="flex-1 text-[10px] md:text-sm h-8 md:h-10">
+            <Button asChild variant="outline" size="sm" disabled={product.isSoldOut} className="flex-1 text-[10px] md:text-sm h-8 md:h-10 px-1">
               <Link href={product.isSoldOut ? '#' : whatsappUrl} target={product.isSoldOut ? "_blank" : undefined} className={product.isSoldOut ? 'pointer-events-none' : ''}>
-                Inquire
+                Chat to Order
               </Link>
             </Button>
             <Button 

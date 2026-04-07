@@ -13,7 +13,9 @@ export const metadata: Metadata = {
   title: 'Berrybby Luxury Lighting & Furnishing',
   description: 'Exquisite furniture and premium lighting for your modern home.',
   icons: {
-    icon: '/images/berrybby_logo.jpeg',
+    icon: [
+      { url: '/images/berrybby_logo.jpeg', sizes: 'any' },
+    ],
     shortcut: '/images/berrybby_logo.jpeg',
     apple: '/images/berrybby_logo.jpeg',
   },
