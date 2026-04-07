@@ -22,7 +22,6 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = React.useState('');
   const [selectedCategory, setSelectedCategory] = React.useState('All');
 
-  // Filter Logic with Safety Checks
   const filteredProducts = React.useMemo(() => {
     if (!products || !Array.isArray(products)) return [];
     
@@ -39,7 +38,6 @@ export default function Home() {
     });
   }, [searchQuery, selectedCategory]);
 
-  // Pagination Logic
   const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE));
   const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
   const currentProducts = filteredProducts.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
@@ -52,14 +50,12 @@ export default function Home() {
     }
   };
 
-  // Reset page when filters change
   React.useEffect(() => {
     setCurrentPage(1);
   }, [searchQuery, selectedCategory]);
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
       <section id="home" className="relative w-full h-[60vh] md:h-[80vh] text-white">
         <div className="absolute inset-0 bg-black/50 z-10" />
         {heroImage && (
@@ -85,7 +81,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Catalog Section */}
       <section id="products" className="py-12 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
@@ -94,7 +89,6 @@ export default function Home() {
             <p className="mt-2 text-lg text-muted-foreground">Handpicked selections for the modern home.</p>
           </div>
 
-          {/* Search and Filters Bar */}
           <div className="mb-8 flex flex-col md:flex-row gap-4 items-center justify-between">
             <div className="relative w-full md:max-w-md">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -121,7 +115,7 @@ export default function Home() {
           </div>
           
           {currentProducts.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
               {currentProducts.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
@@ -139,7 +133,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* Pagination Controls */}
           {totalPages > 1 && (
             <div className="mt-12 md:mt-16 flex flex-col items-center gap-4">
               <div className="flex items-center gap-2">
@@ -182,7 +175,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -218,7 +210,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="services" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">What We Do</h2>
@@ -263,7 +254,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">

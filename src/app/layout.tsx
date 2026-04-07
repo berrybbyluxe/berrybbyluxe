@@ -14,10 +14,10 @@ export const metadata: Metadata = {
   description: 'Exquisite furniture and premium lighting for your modern home.',
   icons: {
     icon: [
-      { url: '/images/berrybby_logo.jpeg?v=2', type: 'image/jpeg' },
+      { url: '/images/berrybby_logo.jpeg', type: 'image/jpeg' },
     ],
-    shortcut: '/images/berrybby_logo.jpeg?v=2',
-    apple: '/images/berrybby_logo.jpeg?v=2',
+    shortcut: '/images/berrybby_logo.jpeg',
+    apple: '/images/berrybby_logo.jpeg',
   },
 };
 
@@ -31,8 +31,9 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        {/* Explicitly set favicon to bypass browser defaults */}
+        <link rel="icon" href="/images/berrybby_logo.jpeg" type="image/jpeg" />
       </head>
       <body className={cn('min-h-screen bg-background font-body antialiased flex flex-col')} suppressHydrationWarning>
         {/* Google Analytics tracking code */}
