@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -21,6 +22,7 @@ const CATEGORIES = [
   'Bedroom', 
   'Office', 
   'HOUSE DECORATIVES', 
+  'BULBS',
   'Chandelier', 
   'Wall Light', 
   'Pendant Light', 

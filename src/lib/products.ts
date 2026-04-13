@@ -1,3 +1,4 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -809,5 +810,37 @@ export const products: Product[] = [
     price: 150000,
     imageId: 'prod-101',
     category: 'HOUSE DECORATIVES',
+  },
+  {
+    id: 'prod-102',
+    name: 'AKT 5W bulb',
+    description: 'High-quality AKT 5W energy-saving bulb.',
+    price: 900,
+    imageId: 'prod-102',
+    category: 'BULBS',
+  },
+  {
+    id: 'prod-103',
+    name: 'AKT 15W bulb',
+    description: 'Bright and durable AKT 15W LED bulb.',
+    price: 1700,
+    imageId: 'prod-103',
+    category: 'BULBS',
+  },
+  {
+    id: 'prod-104',
+    name: 'AKT 18W pop bulb',
+    description: 'Specialized AKT 18W pop bulb for modern ceilings.',
+    price: 3800,
+    imageId: 'prod-104',
+    category: 'BULBS',
+  },
+  {
+    id: 'prod-105',
+    name: 'DLI 10W bulb',
+    description: 'Reliable DLI 10W bulb for consistent illumination.',
+    price: 900,
+    imageId: 'prod-105',
+    category: 'BULBS',
   },
 ];
