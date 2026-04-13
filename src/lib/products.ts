@@ -488,7 +488,7 @@ export const products: Product[] = [
     description: 'Luxury 6 seater grey Italian Bursa set for a sophisticated living area.',
     price: 1500000,
     imageId: 'prod-61',
-    category: 'Furniture',
+    category: 'Dining set',
   },
   {
     id: 'prod-62',
