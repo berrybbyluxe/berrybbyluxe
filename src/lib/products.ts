@@ -600,7 +600,7 @@ export const products: Product[] = [
     description: 'Comfortable and modern grey sofa set for your relaxation.',
     price: 750000,
     imageId: 'prod-75',
-    category: 'Furniture',
+    category: 'Office',
   },
   {
     id: 'prod-76',
