@@ -1,4 +1,3 @@
-
 'use client';
 
 import * as React from 'react';
@@ -14,7 +13,7 @@ import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter, Phone, 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const PRODUCTS_PER_PAGE = 12;
-const CATEGORIES = ['All', 'Furniture', 'Chandelier', 'Wall Light', 'Pendant Light', 'Decor', 'Other Lighting'];
+const CATEGORIES = ['All', 'Furniture', 'Chandelier', 'Wall Light', 'Pendant Light', 'Bedroom', 'Decor', 'Other Lighting'];
 
 export default function Home() {
   const heroImage = getPlaceholderImage('hero-1');

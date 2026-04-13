@@ -1,4 +1,3 @@
-
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -24,7 +23,7 @@ export const products: Product[] = [
     description: 'Premium upholstered bed frame designed for maximum comfort and a sophisticated modern aesthetic.',
     price: 850000,
     imageId: 'prod-49',
-    category: 'Furniture',
+    category: 'Bedroom',
   },
   {
     id: 'prod-59',
@@ -529,7 +528,7 @@ export const products: Product[] = [
     description: 'Classic damask accent piece to enhance your interior aesthetic.',
     price: 600000,
     imageId: 'prod-66',
-    category: 'Furniture',
+    category: 'Bedroom',
   },
   {
     id: 'prod-67',
@@ -593,7 +592,7 @@ export const products: Product[] = [
     description: 'Distinctive green curvette furniture piece for a pop of color and style.',
     price: 600000,
     imageId: 'prod-74',
-    category: 'Furniture',
+    category: 'Bedroom',
   },
   {
     id: 'prod-75',
@@ -617,7 +616,7 @@ export const products: Product[] = [
     description: 'Elegant machiatto furniture set, blending comfort with style.',
     price: 600000,
     imageId: 'prod-77',
-    category: 'Furniture',
+    category: 'Bedroom',
   },
   {
     id: 'prod-78',
@@ -681,7 +680,7 @@ export const products: Product[] = [
     description: 'Durable and stylish rocky furniture set for modern living.',
     price: 600000,
     imageId: 'prod-85',
-    category: 'Furniture',
+    category: 'Bedroom',
   },
   {
     id: 'prod-86',
@@ -777,7 +776,7 @@ export const products: Product[] = [
     description: 'Premium varta console table, a masterpiece of design.',
     price: 800000,
     imageId: 'prod-97',
-    category: 'Furniture',
+    category: 'Bedroom',
   },
   {
     id: 'prod-98',
@@ -801,7 +800,7 @@ export const products: Product[] = [
     description: 'Functional wardrobe with inbuilt light for ultimate convenience.',
     price: 950000,
     imageId: 'prod-100',
-    category: 'Furniture',
+    category: 'Bedroom',
   },
   {
     id: 'prod-101',
