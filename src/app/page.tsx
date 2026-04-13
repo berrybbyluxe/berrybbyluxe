@@ -13,7 +13,20 @@ import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter } from '
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const PRODUCTS_PER_PAGE = 12;
-const CATEGORIES = ['All', 'Living Room', 'Furniture', 'Dining set', 'Bedroom', 'Office', 'HOUSE DECORATIVES', 'Chandelier', 'Wall Light', 'Pendant Light', 'Other Lighting'];
+const CATEGORIES = [
+  'All', 
+  'Living Room', 
+  'Furniture', 
+  'Dining set', 
+  'Bedroom', 
+  'Office', 
+  'HOUSE DECORATIVES', 
+  'Chandelier', 
+  'Wall Light', 
+  'Pendant Light', 
+  'Side Lamps-Standing lamps',
+  'Other Lighting'
+];
 
 export default function Home() {
   const heroImage = getPlaceholderImage('hero-1');

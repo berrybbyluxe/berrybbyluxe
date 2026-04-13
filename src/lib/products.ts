@@ -59,15 +59,15 @@ export const products: Product[] = [
   },
   {
     id: 'prod-48',
-    name: 'Bed Side Lamp',
+    name: 'bed side lamp',
     description: 'Elegant and warm bedside lamp, providing the perfect ambiance for late-night reading.',
     price: 50000,
     imageId: 'prod-48',
-    category: 'Other Lighting',
+    category: 'Side Lamps-Standing lamps',
   },
   {
     id: 'prod-47',
-    name: 'Beautiful wreath flower',
+    name: 'beautiful wreath flower',
     description: 'Artistic wreath flower decorative piece to enhance your home\'s interior charm.',
     price: 30000,
     imageId: 'prod-47',
@@ -448,7 +448,7 @@ export const products: Product[] = [
     description: 'Elegant standing LED lamp that makes a statement in any living space.',
     price: 95000,
     imageId: 'prod-32',
-    category: 'Other Lighting',
+    category: 'Side Lamps-Standing lamps',
   },
   {
     id: 'prod-33',
