@@ -9,11 +9,11 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Link from 'next/link';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
-import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter, Phone, Mail, MapPin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const PRODUCTS_PER_PAGE = 12;
-const CATEGORIES = ['All', 'Furniture', 'Dining set', 'Bedroom', 'HOUSE DECORATIVES', 'Chandelier', 'Wall Light', 'Pendant Light', 'Other Lighting'];
+const CATEGORIES = ['All', 'Living Room', 'Furniture', 'Dining set', 'Bedroom', 'HOUSE DECORATIVES', 'Chandelier', 'Wall Light', 'Pendant Light', 'Other Lighting'];
 
 export default function Home() {
   const heroImage = getPlaceholderImage('hero-1');
@@ -261,17 +261,17 @@ export default function Home() {
           </div>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
-              <Phone className="h-10 w-10 text-primary mb-4" />
+              <Info className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Call Us</h3>
               <p className="text-muted-foreground">09063927855</p>
             </div>
             <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
-              <Mail className="h-10 w-10 text-primary mb-4" />
+              <Info className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Email</h3>
               <p className="text-muted-foreground">berrybbyluxe@gmail.com</p>
             </div>
             <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
-              <MapPin className="h-10 w-10 text-primary mb-4" />
+              <Info className="h-10 w-10 text-primary mb-4" />
               <h3 className="font-headline text-xl font-bold mb-2">Visit Us</h3>
               <p className="text-muted-foreground text-center">4A, Victor Olaleye Street, Rogo Ishaga, Lagos State</p>
             </div>

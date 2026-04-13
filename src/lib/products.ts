@@ -7,7 +7,7 @@ export const products: Product[] = [
     description: 'Ultra-luxurious Tufted Turkey chairs, the pinnacle of comfort and royal elegance for your master bedroom or living suite.',
     price: 8000000,
     imageId: 'prod-60',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-58',
@@ -520,7 +520,7 @@ export const products: Product[] = [
     description: 'Stylish chocolate center table, a perfect centerpiece for your living room.',
     price: 500000,
     imageId: 'prod-65',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-66',
@@ -560,7 +560,7 @@ export const products: Product[] = [
     description: 'Minimalist and stylish fehdi console for contemporary homes.',
     price: 650000,
     imageId: 'prod-70',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-71',
@@ -576,7 +576,7 @@ export const products: Product[] = [
     description: 'Unique fire flame design TV stand that makes a bold statement.',
     price: 300000,
     imageId: 'prod-72',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-73',
@@ -584,7 +584,7 @@ export const products: Product[] = [
     description: 'Exquisitely crafted garrah console table for high-end interiors.',
     price: 800000,
     imageId: 'prod-73',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-74',
