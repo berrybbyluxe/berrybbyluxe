@@ -67,15 +67,15 @@ export const products: Product[] = [
   },
   {
     id: 'prod-47',
-    name: 'Beautiful Wreath Flower',
+    name: 'Beautiful wreath flower',
     description: 'Artistic wreath flower decorative piece to enhance your home\'s interior charm.',
     price: 30000,
     imageId: 'prod-47',
-    category: 'Other Lighting',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-46',
-    name: '2 in 1 Led Wall Bracket Light',
+    name: '2 in 1 Led Wall Bracket light',
     description: 'Functional and stylish 2-in-1 LED wall bracket light with modern illumination.',
     price: 22000,
     imageId: 'prod-46',
@@ -83,7 +83,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-56',
-    name: 'Modern and Energy-efficient LED Wall Bracket',
+    name: 'Modern and energy-efficient LED wall bracket',
     description: 'Eco-friendly and high-performance LED wall bracket for modern lighting needs.',
     price: 22000,
     imageId: 'prod-56',
@@ -91,7 +91,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-51',
-    name: 'Decorative LED Wall Bracket',
+    name: 'decorative LED wall bracket',
     description: 'Sophisticated decorative LED wall bracket that serves as a beautiful accent piece.',
     price: 20000,
     imageId: 'prod-51',
@@ -99,7 +99,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-53',
-    name: 'Decorative Wall Bracket Light',
+    name: 'decorative wall bracket light',
     description: 'Classic decorative wall bracket light with a touch of modern craftsmanship.',
     price: 24000,
     imageId: 'prod-53',
@@ -107,7 +107,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-54',
-    name: 'Durable and Stylish Led Wall Bracket',
+    name: 'durable and stylish Led wall bracket',
     description: 'Long-lasting and aesthetically pleasing LED wall bracket for your home.',
     price: 19000,
     imageId: 'prod-54',
@@ -115,7 +115,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-55',
-    name: 'Durable LED Wall Bracket',
+    name: 'Durable LED wall bracket',
     description: 'Reliable LED wall bracket featuring a minimalist yet stylish design.',
     price: 19000,
     imageId: 'prod-55',
@@ -504,7 +504,7 @@ export const products: Product[] = [
     description: 'Artistic antelope deer decorative piece to add charm to your space.',
     price: 150000,
     imageId: 'prod-63',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-64',
@@ -512,7 +512,7 @@ export const products: Product[] = [
     description: 'Elegant candle dining lamp set for a warm and inviting atmosphere.',
     price: 300000,
     imageId: 'prod-64',
-    category: 'Other Lighting',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-65',
@@ -536,7 +536,7 @@ export const products: Product[] = [
     description: 'Unique clock gobe decor that combines functionality with artistic design.',
     price: 120000,
     imageId: 'prod-67',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-68',
@@ -624,7 +624,7 @@ export const products: Product[] = [
     description: 'Graceful medium size deer decor to accent your room.',
     price: 120000,
     imageId: 'prod-78',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-79',
@@ -688,7 +688,7 @@ export const products: Product[] = [
     description: 'Versatile round side table, a perfect companion for any room.',
     price: 100000,
     imageId: 'prod-86',
-    category: 'Furniture',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-87',
@@ -696,7 +696,7 @@ export const products: Product[] = [
     description: 'Cute small deer decor to bring a touch of nature indoors.',
     price: 100000,
     imageId: 'prod-87',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-88',
@@ -704,7 +704,7 @@ export const products: Product[] = [
     description: 'Artistic small tree decor for a sophisticated interior accent.',
     price: 100000,
     imageId: 'prod-88',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-89',
@@ -712,7 +712,7 @@ export const products: Product[] = [
     description: 'Beautiful snow flower decorative set for a delicate touch.',
     price: 170000,
     imageId: 'prod-89',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-90',
@@ -720,7 +720,7 @@ export const products: Product[] = [
     description: 'Majestic standing horse gold decor, a symbol of elegance.',
     price: 150000,
     imageId: 'prod-90',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-91',
@@ -728,7 +728,7 @@ export const products: Product[] = [
     description: 'Unique stoned frame decorative piece for your walls.',
     price: 200000,
     imageId: 'prod-91',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-92',
@@ -752,7 +752,7 @@ export const products: Product[] = [
     description: 'Modern triangle clock decor, blending timekeeping with art.',
     price: 120000,
     imageId: 'prod-94',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-95',
@@ -784,7 +784,7 @@ export const products: Product[] = [
     description: 'Elegant wall decor piece to complete your room aesthetic.',
     price: 150000,
     imageId: 'prod-98',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-99',
@@ -792,7 +792,7 @@ export const products: Product[] = [
     description: 'Stylish wall design mirror to brighten and expand your space.',
     price: 340000,
     imageId: 'prod-99',
-    category: 'Decor',
+    category: 'HOUSE DECORATIVES',
   },
   {
     id: 'prod-100',
@@ -808,6 +808,6 @@ export const products: Product[] = [
     description: 'Unique and cozy white fur light fixture for a soft ambiance.',
     price: 150000,
     imageId: 'prod-101',
-    category: 'Pendant Light',
+    category: 'HOUSE DECORATIVES',
   },
 ];
