@@ -1,4 +1,3 @@
-
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -8,7 +7,7 @@ export const products: Product[] = [
     description: 'Ultra-luxurious Tufted Turkey chairs, the pinnacle of comfort and royal elegance for your master bedroom or living suite.',
     price: 8000000,
     imageId: 'prod-60',
-    category: 'Living Room',
+    category: 'Turkey Collections',
   },
   {
     id: 'prod-58',
@@ -56,7 +55,7 @@ export const products: Product[] = [
     description: 'Eye-catching decorative POP light fixture to add artistic flair to your ceiling designs.',
     price: 60000,
     imageId: 'prod-52',
-    category: 'Other Lighting',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-48',
@@ -64,7 +63,7 @@ export const products: Product[] = [
     description: 'Elegant and warm bedside lamp, providing the perfect ambiance for late-night reading.',
     price: 50000,
     imageId: 'prod-48',
-    category: 'Side Lamps-Standing lamps',
+    category: 'Side Lamps & Standing Lamps',
   },
   {
     id: 'prod-47',
@@ -72,7 +71,7 @@ export const products: Product[] = [
     description: 'Artistic wreath flower decorative piece to enhance your home\'s interior charm.',
     price: 30000,
     imageId: 'prod-47',
-    category: 'HOUSE DECORATIVES',
+    category: 'Vass Flowers',
   },
   {
     id: 'prod-46',
@@ -128,7 +127,7 @@ export const products: Product[] = [
     description: 'Exquisite Armani Cassa sofa set designed for the ultimate luxury living experience.',
     price: 2500000,
     imageId: 'prod-37',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-42',
@@ -136,7 +135,7 @@ export const products: Product[] = [
     description: 'Modern Osmo sofa featuring clean lines and premium comfort for contemporary spaces.',
     price: 2500000,
     imageId: 'prod-42',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-45',
@@ -144,7 +143,7 @@ export const products: Product[] = [
     description: 'Premium Vitale sofa set, a masterpiece of craftsmanship and timeless elegance.',
     price: 3500000,
     imageId: 'prod-45',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-41',
@@ -152,7 +151,7 @@ export const products: Product[] = [
     description: 'Luxurious marble coffee table set with four matching seats for a sophisticated interior.',
     price: 1500000,
     imageId: 'prod-41',
-    category: 'Furniture',
+    category: 'Dinning Set',
   },
   {
     id: 'prod-38',
@@ -160,7 +159,7 @@ export const products: Product[] = [
     description: 'Spacious and stylish grey 4-seater sofa, perfect for modern families.',
     price: 750000,
     imageId: 'prod-38',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-40',
@@ -168,7 +167,7 @@ export const products: Product[] = [
     description: 'Elegant marble coffee table that serves as a stunning centerpiece for any room.',
     price: 550000,
     imageId: 'prod-40',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-44',
@@ -176,7 +175,7 @@ export const products: Product[] = [
     description: 'Beautifully crafted Vista table, blending modern aesthetics with functional design.',
     price: 400000,
     imageId: 'prod-44',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-39',
@@ -184,7 +183,7 @@ export const products: Product[] = [
     description: 'Distinguished Halifax accent chair, providing both comfort and a touch of class.',
     price: 300000,
     imageId: 'prod-39',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-43',
@@ -192,7 +191,7 @@ export const products: Product[] = [
     description: 'Versatile and elegant side table, a perfect companion for your sofa or bed.',
     price: 100000,
     imageId: 'prod-43',
-    category: 'Furniture',
+    category: 'Living Room',
   },
   {
     id: 'prod-1',
@@ -281,7 +280,7 @@ export const products: Product[] = [
     description: 'Stylish and versatile light fixture suitable for both modern interior and exterior settings.',
     price: 12000,
     imageId: 'prod-11',
-    category: 'Other Lighting',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-12',
@@ -449,7 +448,7 @@ export const products: Product[] = [
     description: 'Elegant standing LED lamp that makes a statement in any living space.',
     price: 95000,
     imageId: 'prod-32',
-    category: 'Side Lamps-Standing lamps',
+    category: 'Side Lamps & Standing Lamps',
   },
   {
     id: 'prod-33',
@@ -489,7 +488,7 @@ export const products: Product[] = [
     description: 'Luxury 6 seater grey Italian Bursa set for a sophisticated living area.',
     price: 1500000,
     imageId: 'prod-61',
-    category: 'Dining set',
+    category: 'Dinning Set',
   },
   {
     id: 'prod-62',
@@ -497,7 +496,7 @@ export const products: Product[] = [
     description: 'Modern 12 bulb Nordic light fixture for bright and stylish illumination.',
     price: 150000,
     imageId: 'prod-62',
-    category: 'Other Lighting',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-63',
@@ -505,7 +504,7 @@ export const products: Product[] = [
     description: 'Artistic antelope deer decorative piece to add charm to your space.',
     price: 150000,
     imageId: 'prod-63',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-64',
@@ -513,7 +512,7 @@ export const products: Product[] = [
     description: 'Elegant candle dining lamp set for a warm and inviting atmosphere.',
     price: 300000,
     imageId: 'prod-64',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-65',
@@ -537,7 +536,7 @@ export const products: Product[] = [
     description: 'Unique clock gobe decor that combines functionality with artistic design.',
     price: 120000,
     imageId: 'prod-67',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-68',
@@ -569,7 +568,7 @@ export const products: Product[] = [
     description: 'Durable fence light for effective and stylish outdoor lighting.',
     price: 7000,
     imageId: 'prod-71',
-    category: 'Other Lighting',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-72',
@@ -625,7 +624,7 @@ export const products: Product[] = [
     description: 'Graceful medium size deer decor to accent your room.',
     price: 120000,
     imageId: 'prod-78',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-79',
@@ -657,7 +656,7 @@ export const products: Product[] = [
     description: 'Minimalist modern Nordic light fixture for clean interior designs.',
     price: 400000,
     imageId: 'prod-82',
-    category: 'Other Lighting',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-83',
@@ -673,7 +672,7 @@ export const products: Product[] = [
     description: 'Artistic POP decorative light fixture for unique ceiling aesthetics.',
     price: 70000,
     imageId: 'prod-84',
-    category: 'Other Lighting',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-85',
@@ -689,7 +688,7 @@ export const products: Product[] = [
     description: 'Versatile round side table, a perfect companion for any room.',
     price: 100000,
     imageId: 'prod-86',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-87',
@@ -697,7 +696,7 @@ export const products: Product[] = [
     description: 'Cute small deer decor to bring a touch of nature indoors.',
     price: 100000,
     imageId: 'prod-87',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-88',
@@ -705,7 +704,7 @@ export const products: Product[] = [
     description: 'Artistic small tree decor for a sophisticated interior accent.',
     price: 100000,
     imageId: 'prod-88',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-89',
@@ -713,7 +712,7 @@ export const products: Product[] = [
     description: 'Beautiful snow flower decorative set for a delicate touch.',
     price: 170000,
     imageId: 'prod-89',
-    category: 'HOUSE DECORATIVES',
+    category: 'Vass Flowers',
   },
   {
     id: 'prod-90',
@@ -721,7 +720,7 @@ export const products: Product[] = [
     description: 'Majestic standing horse gold decor, a symbol of elegance.',
     price: 150000,
     imageId: 'prod-90',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-91',
@@ -729,7 +728,7 @@ export const products: Product[] = [
     description: 'Unique stoned frame decorative piece for your walls.',
     price: 200000,
     imageId: 'prod-91',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-92',
@@ -745,7 +744,7 @@ export const products: Product[] = [
     description: 'Industrial track light perfect for galleries and modern hallways.',
     price: 7000,
     imageId: 'prod-93',
-    category: 'Other Lighting',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-94',
@@ -753,7 +752,7 @@ export const products: Product[] = [
     description: 'Modern triangle clock decor, blending timekeeping with art.',
     price: 120000,
     imageId: 'prod-94',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-95',
@@ -785,7 +784,7 @@ export const products: Product[] = [
     description: 'Elegant wall decor piece to complete your room aesthetic.',
     price: 150000,
     imageId: 'prod-98',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-99',
@@ -793,7 +792,7 @@ export const products: Product[] = [
     description: 'Stylish wall design mirror to brighten and expand your space.',
     price: 340000,
     imageId: 'prod-99',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-100',
@@ -809,7 +808,7 @@ export const products: Product[] = [
     description: 'Unique and cozy white fur light fixture for a soft ambiance.',
     price: 150000,
     imageId: 'prod-101',
-    category: 'HOUSE DECORATIVES',
+    category: 'House Decoratives',
   },
   {
     id: 'prod-102',

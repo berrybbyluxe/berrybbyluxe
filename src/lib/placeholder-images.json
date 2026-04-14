@@ -615,31 +615,31 @@
     {
       "id": "prod-101",
       "description": "white fur light",
-      "imageUrl": "/images/white fur light_150,000.jpg",
+      "imageUrl": "/images/white fur light_150,000.jpeg",
       "imageHint": "fur light"
     },
     {
       "id": "prod-102",
       "description": "AKT 5W bulb",
-      "imageUrl": "/images/AKT 5W bulb_900.jpg",
+      "imageUrl": "/images/AKT 5W bulb_900.jpeg",
       "imageHint": "light bulb"
     },
     {
       "id": "prod-103",
       "description": "AKT 15W bulb",
-      "imageUrl": "/images/AKT 15W bulb_1,700.jpg",
+      "imageUrl": "/images/AKT 15W bulb_1,700.jpeg",
       "imageHint": "light bulb"
     },
     {
       "id": "prod-104",
       "description": "AKT 18W pop bulb",
-      "imageUrl": "/images/AKT 18W pop bulb_3,800.jpg",
+      "imageUrl": "/images/AKT 18W pop bulb_3,800.jpeg",
       "imageHint": "light bulb"
     },
     {
       "id": "prod-105",
       "description": "DLI 10W bulb",
-      "imageUrl": "/images/DLI 10W bulb_900.jpg",
+      "imageUrl": "/images/DLI 10W bulb_900.jpeg",
       "imageHint": "light bulb"
     }
   ]

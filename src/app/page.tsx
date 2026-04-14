@@ -1,4 +1,3 @@
-
 'use client';
 
 import * as React from 'react';
@@ -16,18 +15,18 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const PRODUCTS_PER_PAGE = 12;
 const CATEGORIES = [
   'All', 
-  'Living Room', 
-  'Furniture', 
-  'Dining set', 
   'Bedroom', 
+  'Dinning Set', 
+  'House Decoratives', 
+  'Living Room', 
   'Office', 
-  'HOUSE DECORATIVES', 
-  'BULBS',
+  'Side Lamps & Standing Lamps',
+  'Turkey Collections',
+  'Vass Flowers',
   'Chandelier', 
   'Wall Light', 
   'Pendant Light', 
-  'Side Lamps-Standing lamps',
-  'Other Lighting'
+  'BULBS'
 ];
 
 export default function Home() {
