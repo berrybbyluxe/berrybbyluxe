@@ -25,10 +25,13 @@ const CATEGORY_STRUCTURE = {
     'Turkey Collections',
     'Vass Flowers'
   ],
-  'Lighting & Bulbs': [
-    'Chandelier', 
-    'Wall Light', 
-    'Pendant Light', 
+  'Lighting': [
+    'Ceiling & Pop Lighting',
+    'Chandelier Lighting',
+    'Outdoor Lighting',
+    'Pendant & Drop Lighting',
+    'Switches & Sockets',
+    'Wall Bracket Lighting',
     'BULBS'
   ]
 };
@@ -55,8 +58,8 @@ export default function Home() {
         matchesCategory = true;
       } else if (selectedCategory === 'Furniture') {
         matchesCategory = CATEGORY_STRUCTURE.Furniture.includes(product.category);
-      } else if (selectedCategory === 'Lighting & Bulbs') {
-        matchesCategory = CATEGORY_STRUCTURE['Lighting & Bulbs'].includes(product.category);
+      } else if (selectedCategory === 'Lighting') {
+        matchesCategory = CATEGORY_STRUCTURE.Lighting.includes(product.category);
       } else {
         matchesCategory = product.category === selectedCategory;
       }
@@ -144,9 +147,9 @@ export default function Home() {
                   </SelectGroup>
                   <SelectSeparator />
                   <SelectGroup>
-                    <SelectLabel className="font-bold text-primary">Lighting & Bulbs</SelectLabel>
-                    <SelectItem value="Lighting & Bulbs" className="font-semibold italic">Show All Lighting</SelectItem>
-                    {CATEGORY_STRUCTURE['Lighting & Bulbs'].map((cat) => (
+                    <SelectLabel className="font-bold text-primary">Lighting</SelectLabel>
+                    <SelectItem value="Lighting" className="font-semibold italic">Show All Lighting</SelectItem>
+                    {CATEGORY_STRUCTURE.Lighting.map((cat) => (
                       <SelectItem key={cat} value={cat} className="pl-6">{cat}</SelectItem>
                     ))}
                   </SelectGroup>

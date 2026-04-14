@@ -15,7 +15,7 @@ export const products: Product[] = [
     description: 'Magnificent modern LED crystal chandelier with a unique high-end design that transforms any grand space.',
     price: 450000,
     imageId: 'prod-58',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-49',
@@ -31,7 +31,7 @@ export const products: Product[] = [
     description: 'A breathtaking crystal chandelier that radiates brilliance and adds a touch of pure luxury to your dining area.',
     price: 300000,
     imageId: 'prod-59',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-50',
@@ -39,7 +39,7 @@ export const products: Product[] = [
     description: 'Innovative and stylish crystal chandelier that doubles as a high-performance ceiling fan.',
     price: 180000,
     imageId: 'prod-50',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-57',
@@ -47,7 +47,7 @@ export const products: Product[] = [
     description: 'Sleek and sparkling modern LED crystal chandelier, perfect for contemporary homes.',
     price: 160000,
     imageId: 'prod-57',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-52',
@@ -55,7 +55,7 @@ export const products: Product[] = [
     description: 'Eye-catching decorative POP light fixture to add artistic flair to your ceiling designs.',
     price: 60000,
     imageId: 'prod-52',
-    category: 'House Decoratives',
+    category: 'Ceiling & Pop Lighting',
   },
   {
     id: 'prod-48',
@@ -79,7 +79,7 @@ export const products: Product[] = [
     description: 'Functional and stylish 2-in-1 LED wall bracket light with modern illumination.',
     price: 22000,
     imageId: 'prod-46',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-56',
@@ -87,7 +87,7 @@ export const products: Product[] = [
     description: 'Eco-friendly and high-performance LED wall bracket for modern lighting needs.',
     price: 22000,
     imageId: 'prod-56',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-51',
@@ -95,7 +95,7 @@ export const products: Product[] = [
     description: 'Sophisticated decorative LED wall bracket that serves as a beautiful accent piece.',
     price: 20000,
     imageId: 'prod-51',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-53',
@@ -103,7 +103,7 @@ export const products: Product[] = [
     description: 'Classic decorative wall bracket light with a touch of modern craftsmanship.',
     price: 24000,
     imageId: 'prod-53',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-54',
@@ -111,7 +111,7 @@ export const products: Product[] = [
     description: 'Long-lasting and aesthetically pleasing LED wall bracket for your home.',
     price: 19000,
     imageId: 'prod-54',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-55',
@@ -119,7 +119,7 @@ export const products: Product[] = [
     description: 'Reliable LED wall bracket featuring a minimalist yet stylish design.',
     price: 19000,
     imageId: 'prod-55',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-37',
@@ -199,7 +199,7 @@ export const products: Product[] = [
     description: 'Industrial style dropping light featuring rustic rope accents and protective metal cages.',
     price: 45000,
     imageId: 'prod-1',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-2',
@@ -207,7 +207,7 @@ export const products: Product[] = [
     description: 'A grander version of our classic dropping light, featuring five elegant pendant bulbs.',
     price: 75000,
     imageId: 'prod-2',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-3',
@@ -215,7 +215,7 @@ export const products: Product[] = [
     description: 'A stunning decorative piece that brings elegance and sparkle to any room.',
     price: 400000,
     imageId: 'prod-3',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-4',
@@ -223,7 +223,7 @@ export const products: Product[] = [
     description: 'Unique nature-inspired wall bracket light featuring a majestic deer design.',
     price: 22000,
     imageId: 'prod-4',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-5',
@@ -232,7 +232,7 @@ export const products: Product[] = [
     price: 40000,
     imageId: 'prod-5',
     isSoldOut: true,
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-6',
@@ -240,7 +240,7 @@ export const products: Product[] = [
     description: 'The pinnacle of luxury lighting. A grand royal crystal chandelier for sophisticated spaces.',
     price: 800000,
     imageId: 'prod-6',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-7',
@@ -248,7 +248,7 @@ export const products: Product[] = [
     description: 'Premium wall bracket light designed for high-end residential interiors.',
     price: 25000,
     imageId: 'prod-7',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-8',
@@ -256,7 +256,7 @@ export const products: Product[] = [
     description: 'Artistic lighting fixture featuring two exquisite golden birds.',
     price: 35000,
     imageId: 'prod-8',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-9',
@@ -264,7 +264,7 @@ export const products: Product[] = [
     description: 'High-quality mounted wall light with a beautiful bird accent.',
     price: 20000,
     imageId: 'prod-9',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-10',
@@ -272,7 +272,7 @@ export const products: Product[] = [
     description: 'One-of-a-kind pendant drop light for those who value unique design.',
     price: 80000,
     imageId: 'prod-10',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-11',
@@ -280,7 +280,7 @@ export const products: Product[] = [
     description: 'Stylish and versatile light fixture suitable for both modern interior and exterior settings.',
     price: 12000,
     imageId: 'prod-11',
-    category: 'House Decoratives',
+    category: 'Outdoor Lighting',
   },
   {
     id: 'prod-12',
@@ -288,7 +288,7 @@ export const products: Product[] = [
     description: 'A touch of luxury for your walls with high-quality crystal LED lighting.',
     price: 75000,
     imageId: 'prod-12',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-13',
@@ -296,7 +296,7 @@ export const products: Product[] = [
     description: 'Sleek modern chandelier featuring exquisite crystal elements.',
     price: 120000,
     imageId: 'prod-13',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-14',
@@ -304,7 +304,7 @@ export const products: Product[] = [
     description: 'An elegant centerpiece that combines modern design with classic crystal charm.',
     price: 180000,
     imageId: 'prod-14',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-15',
@@ -312,7 +312,7 @@ export const products: Product[] = [
     description: 'A minimalist single drop pendant light for a clean, modern aesthetic.',
     price: 60000,
     imageId: 'prod-15',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-16',
@@ -320,7 +320,7 @@ export const products: Product[] = [
     description: 'Striking four-drop LED pendant light for balanced, elegant illumination.',
     price: 75000,
     imageId: 'prod-16',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-17',
@@ -328,7 +328,7 @@ export const products: Product[] = [
     description: 'Unique horn-style wall bracket for a bold and creative lighting statement.',
     price: 25000,
     imageId: 'prod-17',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-18',
@@ -336,7 +336,7 @@ export const products: Product[] = [
     description: 'Versatile wall bracket light perfect for modern bedrooms and living areas.',
     price: 15000,
     imageId: 'prod-18',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-19',
@@ -344,7 +344,7 @@ export const products: Product[] = [
     description: 'Artistic bird-themed chandelier, ideal for dining areas and modern kitchens.',
     price: 75000,
     imageId: 'prod-19',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-20',
@@ -352,7 +352,7 @@ export const products: Product[] = [
     description: 'A fresh, new design in crystal drop lighting for modern interiors.',
     price: 75000,
     imageId: 'prod-20',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-21',
@@ -360,7 +360,7 @@ export const products: Product[] = [
     description: 'Grand luxury gold duplex chandelier featuring premium crystal accents.',
     price: 350000,
     imageId: 'prod-21',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-22',
@@ -368,7 +368,7 @@ export const products: Product[] = [
     description: 'A unique LED lighting solution with a cutting-edge design.',
     price: 120000,
     imageId: 'prod-22',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-23',
@@ -376,7 +376,7 @@ export const products: Product[] = [
     description: 'Nordic-inspired creative wall bracket with a delicate feather design.',
     price: 15000,
     imageId: 'prod-23',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-24',
@@ -384,7 +384,7 @@ export const products: Product[] = [
     description: 'Artistic Nordic wall light featuring a stunning creative feather motif.',
     price: 20000,
     imageId: 'prod-24',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-25',
@@ -392,7 +392,7 @@ export const products: Product[] = [
     description: 'Charming chandelier crafted from pure crystals for maximum brilliance.',
     price: 400000,
     imageId: 'prod-25',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-26',
@@ -400,7 +400,7 @@ export const products: Product[] = [
     description: 'Exquisitely crafted chandelier that is the perfect blend of modern and dazzling design.',
     price: 190000,
     imageId: 'prod-26',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-27',
@@ -408,7 +408,7 @@ export const products: Product[] = [
     description: 'A unique 3-way round LED light for versatile illumination patterns.',
     price: 75000,
     imageId: 'prod-27',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-28',
@@ -416,7 +416,7 @@ export const products: Product[] = [
     description: 'Creative 4-way ball LED drop light for a playful yet elegant look.',
     price: 80000,
     imageId: 'prod-28',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-29',
@@ -424,7 +424,7 @@ export const products: Product[] = [
     description: 'Enchanting butterfly-themed LED dropping light for magical spaces.',
     price: 120000,
     imageId: 'prod-29',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-30',
@@ -432,7 +432,7 @@ export const products: Product[] = [
     description: 'Decorative LED chandelier with a unique, eye-catching structure.',
     price: 220000,
     imageId: 'prod-30',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-31',
@@ -440,7 +440,7 @@ export const products: Product[] = [
     description: 'Versatile 2-way LED drop light with a unique contemporary design.',
     price: 35000,
     imageId: 'prod-31',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-32',
@@ -456,7 +456,7 @@ export const products: Product[] = [
     description: 'Industrial-inspired track LED light perfect for modern galleries and hallways.',
     price: 100000,
     imageId: 'prod-33',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-34',
@@ -464,7 +464,7 @@ export const products: Product[] = [
     description: 'Sculptural wall LED light that provides both illumination and artistic flair.',
     price: 19000,
     imageId: 'prod-34',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-35',
@@ -472,7 +472,7 @@ export const products: Product[] = [
     description: 'Simple yet elegant wall bracket light for cozy room ambiances.',
     price: 8000,
     imageId: 'prod-35',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-36',
@@ -480,7 +480,7 @@ export const products: Product[] = [
     description: 'Durable and stylish wall bracket lighting solution for your home.',
     price: 19000,
     imageId: 'prod-36',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-61',
@@ -544,7 +544,7 @@ export const products: Product[] = [
     description: 'Sleek compact Nordic crystal drop light for modern interiors.',
     price: 140000,
     imageId: 'prod-68',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-69',
@@ -552,7 +552,7 @@ export const products: Product[] = [
     description: 'Breathtakingly elegant and modern crystal chandelier for a touch of luxury.',
     price: 150000,
     imageId: 'prod-69',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-70',
@@ -568,7 +568,7 @@ export const products: Product[] = [
     description: 'Durable fence light for effective and stylish outdoor lighting.',
     price: 7000,
     imageId: 'prod-71',
-    category: 'House Decoratives',
+    category: 'Outdoor Lighting',
   },
   {
     id: 'prod-72',
@@ -608,7 +608,7 @@ export const products: Product[] = [
     description: 'Stunning luxury Nordic rain drop chandelier for grand spaces.',
     price: 400000,
     imageId: 'prod-76',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-77',
@@ -632,7 +632,7 @@ export const products: Product[] = [
     description: 'Timeless modern crystal chandelier for a sophisticated lighting solution.',
     price: 180000,
     imageId: 'prod-79',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-80',
@@ -640,7 +640,7 @@ export const products: Product[] = [
     description: 'Sleek modern LED wall bracket for effective accent lighting.',
     price: 17000,
     imageId: 'prod-80',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-81',
@@ -648,7 +648,7 @@ export const products: Product[] = [
     description: 'Luxurious modern Nordic gold chandelier for a radiant home.',
     price: 120000,
     imageId: 'prod-81',
-    category: 'Chandelier',
+    category: 'Chandelier Lighting',
   },
   {
     id: 'prod-82',
@@ -664,7 +664,7 @@ export const products: Product[] = [
     description: 'Functional modern wall bracket complete with bulb for instant use.',
     price: 17000,
     imageId: 'prod-83',
-    category: 'Wall Light',
+    category: 'Wall Bracket Lighting',
   },
   {
     id: 'prod-84',
@@ -672,7 +672,7 @@ export const products: Product[] = [
     description: 'Artistic POP decorative light fixture for unique ceiling aesthetics.',
     price: 70000,
     imageId: 'prod-84',
-    category: 'House Decoratives',
+    category: 'Ceiling & Pop Lighting',
   },
   {
     id: 'prod-85',
@@ -736,7 +736,7 @@ export const products: Product[] = [
     description: 'Contemporary stylish LED drop light for balanced illumination.',
     price: 45000,
     imageId: 'prod-92',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-93',
@@ -744,7 +744,7 @@ export const products: Product[] = [
     description: 'Industrial track light perfect for galleries and modern hallways.',
     price: 7000,
     imageId: 'prod-93',
-    category: 'House Decoratives',
+    category: 'Ceiling & Pop Lighting',
   },
   {
     id: 'prod-94',
@@ -760,7 +760,7 @@ export const products: Product[] = [
     description: 'Artistic unique bird light fixture for a creative interior.',
     price: 85000,
     imageId: 'prod-95',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-96',
@@ -768,7 +768,7 @@ export const products: Product[] = [
     description: 'One-of-a-kind unique drop light for personalized spaces.',
     price: 70000,
     imageId: 'prod-96',
-    category: 'Pendant Light',
+    category: 'Pendant & Drop Lighting',
   },
   {
     id: 'prod-97',
