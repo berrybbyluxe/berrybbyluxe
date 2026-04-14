@@ -9,7 +9,7 @@
     {
       "id": "hero-1",
       "description": "A stylish and modern living room with a comfortable sofa.",
-      "imageUrl": "https://images.unsplash.com/photo-1724582586529-62622e50c0b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc3MTIxOTk1NHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1724582586529-62622e50c0b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVnMTc3MTIxOTk1NHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "modern living room"
     },
     {
@@ -641,6 +641,30 @@
       "description": "DLI 10W bulb",
       "imageUrl": "/images/DLI 10W bulb_900.jpeg",
       "imageHint": "light bulb"
+    },
+    {
+      "id": "prod-106",
+      "description": "bluetooth pop light",
+      "imageUrl": "/images/bluetooth pop light_55,000.jpeg",
+      "imageHint": "bluetooth light"
+    },
+    {
+      "id": "prod-107",
+      "description": "design pop light",
+      "imageUrl": "/images/design pop light_70,000.jpeg",
+      "imageHint": "design light"
+    },
+    {
+      "id": "prod-108",
+      "description": "okeli rope light",
+      "imageUrl": "/images/okeli rope light_40,000.jpeg",
+      "imageHint": "rope light"
+    },
+    {
+      "id": "prod-109",
+      "description": "spot AKT pop light",
+      "imageUrl": "/images/spot AKT pop light_35,000.jpeg",
+      "imageHint": "spot light"
     }
   ]
 }

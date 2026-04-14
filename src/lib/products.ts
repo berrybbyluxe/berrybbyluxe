@@ -1,3 +1,4 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -51,7 +52,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-52',
-    name: 'Decorative POP Light',
+    name: 'decorative POP light',
     description: 'Eye-catching decorative POP light fixture to add artistic flair to your ceiling designs.',
     price: 60000,
     imageId: 'prod-52',
@@ -740,8 +741,8 @@ export const products: Product[] = [
   },
   {
     id: 'prod-93',
-    name: 'track_light',
-    description: 'Industrial track light perfect for galleries and modern hallways.',
+    name: 'track light',
+    description: 'Available in white and black 20W-40W. Prices: 20W - ₦7,000, 40W - ₦10,000, Rail per meter - ₦2,000.',
     price: 7000,
     imageId: 'prod-93',
     category: 'Ceiling & Pop Lighting',
@@ -764,11 +765,11 @@ export const products: Product[] = [
   },
   {
     id: 'prod-96',
-    name: 'unique drop light',
     description: 'One-of-a-kind unique drop light for personalized spaces.',
     price: 70000,
     imageId: 'prod-96',
     category: 'Pendant & Drop Lighting',
+    name: 'unique drop light',
   },
   {
     id: 'prod-97',
@@ -841,5 +842,37 @@ export const products: Product[] = [
     price: 900,
     imageId: 'prod-105',
     category: 'BULBS',
+  },
+  {
+    id: 'prod-106',
+    name: 'bluetooth pop light',
+    description: 'Modern bluetooth-enabled POP light with versatile ceiling illumination.',
+    price: 55000,
+    imageId: 'prod-106',
+    category: 'Ceiling & Pop Lighting',
+  },
+  {
+    id: 'prod-107',
+    name: 'design pop light',
+    description: 'Stylishly designed POP light for premium architectural aesthetics.',
+    price: 70000,
+    imageId: 'prod-107',
+    category: 'Ceiling & Pop Lighting',
+  },
+  {
+    id: 'prod-108',
+    name: 'okeli rope light',
+    description: 'High-quality Okeli rope light for soft and even ambient lighting.',
+    price: 40000,
+    imageId: 'prod-108',
+    category: 'Ceiling & Pop Lighting',
+  },
+  {
+    id: 'prod-109',
+    name: 'spot AKT pop light',
+    description: 'Powerful Spot AKT POP light. Available in blue and white colors.',
+    price: 35000,
+    imageId: 'prod-109',
+    category: 'Ceiling & Pop Lighting',
   },
 ];
