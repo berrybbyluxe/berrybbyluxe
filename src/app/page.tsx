@@ -6,28 +6,32 @@ import { products } from '@/lib/products';
 import { ProductCard } from '@/components/product-card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, SelectSeparator } from '@/components/ui/select';
 import Link from 'next/link';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
 import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const PRODUCTS_PER_PAGE = 12;
-const CATEGORIES = [
-  'All', 
-  'Bedroom', 
-  'Dinning Set', 
-  'House Decoratives', 
-  'Living Room', 
-  'Office', 
-  'Side Lamps & Standing Lamps',
-  'Turkey Collections',
-  'Vass Flowers',
-  'Chandelier', 
-  'Wall Light', 
-  'Pendant Light', 
-  'BULBS'
-];
+
+const CATEGORY_STRUCTURE = {
+  'Furniture': [
+    'Bedroom', 
+    'Dinning Set', 
+    'House Decoratives', 
+    'Living Room', 
+    'Office', 
+    'Side Lamps & Standing Lamps',
+    'Turkey Collections',
+    'Vass Flowers'
+  ],
+  'Lighting & Bulbs': [
+    'Chandelier', 
+    'Wall Light', 
+    'Pendant Light', 
+    'BULBS'
+  ]
+};
 
 export default function Home() {
   const heroImage = getPlaceholderImage('hero-1');
@@ -45,7 +49,17 @@ export default function Home() {
       const query = searchQuery.toLowerCase();
       
       const matchesSearch = name.includes(query) || description.includes(query);
-      const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
+      
+      let matchesCategory = false;
+      if (selectedCategory === 'All') {
+        matchesCategory = true;
+      } else if (selectedCategory === 'Furniture') {
+        matchesCategory = CATEGORY_STRUCTURE.Furniture.includes(product.category);
+      } else if (selectedCategory === 'Lighting & Bulbs') {
+        matchesCategory = CATEGORY_STRUCTURE['Lighting & Bulbs'].includes(product.category);
+      } else {
+        matchesCategory = product.category === selectedCategory;
+      }
       
       return matchesSearch && matchesCategory;
     });
@@ -115,13 +129,27 @@ export default function Home() {
             <div className="flex items-center gap-2 w-full md:w-auto">
               <Filter className="h-4 w-4 text-muted-foreground hidden sm:block" />
               <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                <SelectTrigger className="w-full md:w-[200px]">
+                <SelectTrigger className="w-full md:w-[250px]">
                   <SelectValue placeholder="Category" />
                 </SelectTrigger>
                 <SelectContent>
-                  {CATEGORIES.map((cat) => (
-                    <SelectItem key={cat} value={cat}>{cat}</SelectItem>
-                  ))}
+                  <SelectItem value="All">All Products</SelectItem>
+                  <SelectSeparator />
+                  <SelectGroup>
+                    <SelectLabel className="font-bold text-primary">Furniture</SelectLabel>
+                    <SelectItem value="Furniture" className="font-semibold italic">Show All Furniture</SelectItem>
+                    {CATEGORY_STRUCTURE.Furniture.map((cat) => (
+                      <SelectItem key={cat} value={cat} className="pl-6">{cat}</SelectItem>
+                    ))}
+                  </SelectGroup>
+                  <SelectSeparator />
+                  <SelectGroup>
+                    <SelectLabel className="font-bold text-primary">Lighting & Bulbs</SelectLabel>
+                    <SelectItem value="Lighting & Bulbs" className="font-semibold italic">Show All Lighting</SelectItem>
+                    {CATEGORY_STRUCTURE['Lighting & Bulbs'].map((cat) => (
+                      <SelectItem key={cat} value={cat} className="pl-6">{cat}</SelectItem>
+                    ))}
+                  </SelectGroup>
                 </SelectContent>
               </Select>
             </div>
