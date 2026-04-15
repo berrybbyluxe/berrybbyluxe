@@ -9,8 +9,9 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, SelectSeparator } from '@/components/ui/select';
 import Link from 'next/link';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
-import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter, MoreHorizontal } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const PRODUCTS_PER_PAGE = 12;
 
@@ -37,6 +38,7 @@ const CATEGORY_STRUCTURE = {
 };
 
 export default function Home() {
+  const isMobile = useIsMobile();
   const heroImage = getPlaceholderImage('hero-1');
   const [currentPage, setCurrentPage] = React.useState(1);
   const [searchQuery, setSearchQuery] = React.useState('');
@@ -73,12 +75,34 @@ export default function Home() {
   const currentProducts = filteredProducts.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
 
   const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return;
     setCurrentPage(page);
     const productsSection = document.getElementById('products');
     if (productsSection) {
       productsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // Helper to calculate which page buttons to show
+  const getVisiblePages = () => {
+    const maxVisible = isMobile ? 3 : 5;
+    if (totalPages <= maxVisible) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+
+    let start = Math.max(1, currentPage - Math.floor(maxVisible / 2));
+    let end = Math.min(totalPages, start + maxVisible - 1);
+
+    if (end === totalPages) {
+      start = Math.max(1, totalPages - maxVisible + 1);
+    } else if (start === 1) {
+      end = Math.min(totalPages, maxVisible);
+    }
+
+    return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+  };
+
+  const visiblePages = getVisiblePages();
 
   React.useEffect(() => {
     setCurrentPage(1);
@@ -179,27 +203,54 @@ export default function Home() {
 
           {totalPages > 1 && (
             <div className="mt-12 md:mt-16 flex flex-col items-center gap-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1 md:gap-2">
                 <Button
                   variant="outline"
                   size="icon"
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}
                   aria-label="Previous Page"
+                  className="h-8 w-8 md:h-10 md:w-10"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </Button>
                 
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                {visiblePages[0] > 1 && (
+                  <>
+                    <Button
+                      variant="outline"
+                      className="hidden sm:flex h-8 w-8 md:h-10 md:w-10 p-0"
+                      onClick={() => handlePageChange(1)}
+                    >
+                      1
+                    </Button>
+                    <MoreHorizontal className="h-4 w-4 text-muted-foreground mx-1" />
+                  </>
+                )}
+
+                {visiblePages.map((page) => (
                   <Button
                     key={page}
                     variant={currentPage === page ? "default" : "outline"}
-                    className="w-10"
+                    className="h-8 w-8 md:h-10 md:w-10 p-0 text-xs md:text-sm"
                     onClick={() => handlePageChange(page)}
                   >
                     {page}
                   </Button>
                 ))}
+
+                {visiblePages[visiblePages.length - 1] < totalPages && (
+                  <>
+                    <MoreHorizontal className="h-4 w-4 text-muted-foreground mx-1" />
+                    <Button
+                      variant="outline"
+                      className="hidden sm:flex h-8 w-8 md:h-10 md:w-10 p-0"
+                      onClick={() => handlePageChange(totalPages)}
+                    >
+                      {totalPages}
+                    </Button>
+                  </>
+                )}
 
                 <Button
                   variant="outline"
@@ -207,11 +258,12 @@ export default function Home() {
                   onClick={() => handlePageChange(currentPage + 1)}
                   disabled={currentPage === totalPages}
                   aria-label="Next Page"
+                  className="h-8 w-8 md:h-10 md:w-10"
                 >
                   <ChevronRight className="h-4 w-4" />
                 </Button>
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs md:text-sm text-muted-foreground">
                 Showing {startIndex + 1} to {Math.min(startIndex + PRODUCTS_PER_PAGE, filteredProducts.length)} of {filteredProducts.length} results
               </p>
             </div>
