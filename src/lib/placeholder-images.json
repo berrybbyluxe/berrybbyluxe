@@ -615,7 +615,7 @@
     {
       "id": "prod-101",
       "description": "white fur light",
-      "imageUrl": "/images/white fur light_150,000.jpeg",
+      "imageUrl": "/images/white fur light_150,000.jpg",
       "imageHint": "fur light"
     },
     {
@@ -645,7 +645,7 @@
     {
       "id": "prod-106",
       "description": "bluetooth pop light",
-      "imageUrl": "/images/bluetooth pop light_55,000.jpeg",
+      "imageUrl": "/images/bluetooth pop light_55,000.png",
       "imageHint": "bluetooth light"
     },
     {
