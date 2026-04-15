@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -6,12 +7,19 @@ import { products } from '@/lib/products';
 import { ProductCard } from '@/components/product-card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, SelectSeparator } from '@/components/ui/select';
 import Link from 'next/link';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
-import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter, MoreHorizontal } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter, MoreHorizontal, X } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useIsMobile } from '@/hooks/use-mobile';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 const PRODUCTS_PER_PAGE = 12;
 
@@ -43,6 +51,7 @@ export default function Home() {
   const [currentPage, setCurrentPage] = React.useState(1);
   const [searchQuery, setSearchQuery] = React.useState('');
   const [selectedCategory, setSelectedCategory] = React.useState('All');
+  const [isFilterDialogOpen, setIsFilterDialogOpen] = React.useState(false);
 
   const filteredProducts = React.useMemo(() => {
     if (!products || !Array.isArray(products)) return [];
@@ -83,7 +92,6 @@ export default function Home() {
     }
   };
 
-  // Helper to calculate which page buttons to show
   const getVisiblePages = () => {
     const maxVisible = isMobile ? 3 : 5;
     if (totalPages <= maxVisible) {
@@ -107,6 +115,11 @@ export default function Home() {
   React.useEffect(() => {
     setCurrentPage(1);
   }, [searchQuery, selectedCategory]);
+
+  const selectCategoryAndClose = (category: string) => {
+    setSelectedCategory(category);
+    setIsFilterDialogOpen(false);
+  };
 
   return (
     <div className="flex flex-col">
@@ -154,31 +167,98 @@ export default function Home() {
               />
             </div>
             <div className="flex items-center gap-2 w-full md:w-auto">
-              <Filter className="h-4 w-4 text-muted-foreground hidden sm:block" />
-              <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                <SelectTrigger className="w-full md:w-[250px]">
-                  <SelectValue placeholder="Category" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="All">All Products</SelectItem>
-                  <SelectSeparator />
-                  <SelectGroup>
-                    <SelectLabel className="font-bold text-primary">Furniture</SelectLabel>
-                    <SelectItem value="Furniture" className="font-semibold italic">Show All Furniture</SelectItem>
-                    {CATEGORY_STRUCTURE.Furniture.map((cat) => (
-                      <SelectItem key={cat} value={cat} className="pl-6">{cat}</SelectItem>
-                    ))}
-                  </SelectGroup>
-                  <SelectSeparator />
-                  <SelectGroup>
-                    <SelectLabel className="font-bold text-primary">Lighting</SelectLabel>
-                    <SelectItem value="Lighting" className="font-semibold italic">Show All Lighting</SelectItem>
-                    {CATEGORY_STRUCTURE.Lighting.map((cat) => (
-                      <SelectItem key={cat} value={cat} className="pl-6">{cat}</SelectItem>
-                    ))}
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
+              <Dialog open={isFilterDialogOpen} onOpenChange={setIsFilterDialogOpen}>
+                <DialogTrigger asChild>
+                  <Button variant="outline" className="w-full md:w-[300px] justify-between h-10">
+                    <span className="truncate mr-2">
+                      {selectedCategory === 'All' ? 'Filter by Category' : `Category: ${selectedCategory}`}
+                    </span>
+                    <Filter className="h-4 w-4 shrink-0 opacity-50" />
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-3xl max-h-[90vh] flex flex-col p-0">
+                  <DialogHeader className="p-6 border-b">
+                    <DialogTitle className="text-2xl font-headline">Select a Category</DialogTitle>
+                  </DialogHeader>
+                  <ScrollArea className="flex-grow p-6">
+                    <div className="grid gap-8">
+                      <Button 
+                        variant={selectedCategory === 'All' ? 'default' : 'outline'} 
+                        onClick={() => selectCategoryAndClose('All')}
+                        className="w-full font-bold h-12"
+                      >
+                        All Products
+                      </Button>
+
+                      <div>
+                        <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+                          <span className="w-2 h-6 bg-primary rounded-full"></span>
+                          Furniture
+                        </h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          <Button 
+                            variant={selectedCategory === 'Furniture' ? 'secondary' : 'ghost'} 
+                            onClick={() => selectCategoryAndClose('Furniture')}
+                            className="justify-start font-bold italic h-auto py-3 px-4 border border-dashed border-primary/20"
+                          >
+                            All Furniture
+                          </Button>
+                          {CATEGORY_STRUCTURE.Furniture.map((cat) => (
+                            <Button 
+                              key={cat}
+                              variant={selectedCategory === cat ? 'default' : 'outline'} 
+                              onClick={() => selectCategoryAndClose(cat)}
+                              className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight"
+                            >
+                              {cat}
+                            </Button>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+                          <span className="w-2 h-6 bg-primary rounded-full"></span>
+                          Lighting
+                        </h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          <Button 
+                            variant={selectedCategory === 'Lighting' ? 'secondary' : 'ghost'} 
+                            onClick={() => selectCategoryAndClose('Lighting')}
+                            className="justify-start font-bold italic h-auto py-3 px-4 border border-dashed border-primary/20"
+                          >
+                            All Lighting
+                          </Button>
+                          {CATEGORY_STRUCTURE.Lighting.map((cat) => (
+                            <Button 
+                              key={cat}
+                              variant={selectedCategory === cat ? 'default' : 'outline'} 
+                              onClick={() => selectCategoryAndClose(cat)}
+                              className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight"
+                            >
+                              {cat}
+                            </Button>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </ScrollArea>
+                  <div className="p-4 border-t bg-muted/30 flex justify-end">
+                    <Button variant="ghost" onClick={() => setIsFilterDialogOpen(false)}>Close</Button>
+                  </div>
+                </DialogContent>
+              </Dialog>
+              {selectedCategory !== 'All' && (
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  onClick={() => setSelectedCategory('All')}
+                  className="shrink-0"
+                  title="Clear Filter"
+                >
+                  <X className="h-4 w-4" />
+                </Button>
+              )}
             </div>
           </div>
           
