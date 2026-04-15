@@ -665,6 +665,54 @@
       "description": "spot AKT pop light",
       "imageUrl": "/images/spot AKT pop light_35,000.jpeg",
       "imageHint": "spot light"
+    },
+    {
+      "id": "sw-1",
+      "description": "Electrical switch",
+      "imageUrl": "https://picsum.photos/seed/sw1/600/400",
+      "imageHint": "light switch"
+    },
+    {
+      "id": "sw-2",
+      "description": "Double electrical switch",
+      "imageUrl": "https://picsum.photos/seed/sw2/600/400",
+      "imageHint": "double switch"
+    },
+    {
+      "id": "sw-3",
+      "description": "Triple electrical switch",
+      "imageUrl": "https://picsum.photos/seed/sw3/600/400",
+      "imageHint": "triple switch"
+    },
+    {
+      "id": "sw-4",
+      "description": "Power socket",
+      "imageUrl": "https://picsum.photos/seed/sw4/600/400",
+      "imageHint": "power socket"
+    },
+    {
+      "id": "sw-5",
+      "description": "Water heater switch",
+      "imageUrl": "https://picsum.photos/seed/sw5/600/400",
+      "imageHint": "heater switch"
+    },
+    {
+      "id": "sw-6",
+      "description": "Double power socket",
+      "imageUrl": "https://picsum.photos/seed/sw6/600/400",
+      "imageHint": "double socket"
+    },
+    {
+      "id": "sw-7",
+      "description": "Wall socket",
+      "imageUrl": "https://picsum.photos/seed/sw7/600/400",
+      "imageHint": "wall socket"
+    },
+    {
+      "id": "sw-8",
+      "description": "Single wall socket",
+      "imageUrl": "https://picsum.photos/seed/sw8/600/400",
+      "imageHint": "single socket"
     }
   ]
 }

@@ -1,4 +1,3 @@
-
 'use client';
 
 import * as React from 'react';
@@ -33,7 +32,7 @@ const CATEGORY_STRUCTURE = {
     'Pendant & Drop Lighting',
     'Switches & Sockets',
     'Wall Bracket Lighting',
-    'BULBS'
+    'Bulb'
   ]
 };
 

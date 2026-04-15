@@ -1,4 +1,3 @@
-
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -931,14 +930,80 @@ export const products: Product[] = [
     category: 'Wall Bracket Lighting',
   },
 
-  // --- LIGHTING: BULBS ---
+  // --- LIGHTING: Switches & Sockets ---
+  {
+    id: 'sw-1',
+    name: '1 gang 2 way switch',
+    description: 'High-quality 1 gang 2 way electrical switch with a sleek modern design.',
+    price: 2500,
+    imageId: 'sw-1',
+    category: 'Switches & Sockets',
+  },
+  {
+    id: 'sw-2',
+    name: '2 gang 2 way switch',
+    description: 'High-quality 2 gang 2 way electrical switch for dual circuit control.',
+    price: 3000,
+    imageId: 'sw-2',
+    category: 'Switches & Sockets',
+  },
+  {
+    id: 'sw-3',
+    name: '3 Gang 2 way switch',
+    description: 'High-quality 3 gang 2 way electrical switch for multi-point control.',
+    price: 5000,
+    imageId: 'sw-3',
+    category: 'Switches & Sockets',
+  },
+  {
+    id: 'sw-4',
+    name: '13A multi big button socket',
+    description: 'Universal 13A multi-plug socket featuring a large, easy-to-use button.',
+    price: 3000,
+    imageId: 'sw-4',
+    category: 'Switches & Sockets',
+  },
+  {
+    id: 'sw-5',
+    name: '20A switch water heater',
+    description: 'Heavy-duty 20A switch specifically designed for water heaters and high-power appliances.',
+    price: 3000,
+    imageId: 'sw-5',
+    category: 'Switches & Sockets',
+  },
+  {
+    id: 'sw-6',
+    name: 'double 13A multi big button socket',
+    description: 'Dual universal 13A multi-plug socket with large independent buttons.',
+    price: 5000,
+    imageId: 'sw-6',
+    category: 'Switches & Sockets',
+  },
+  {
+    id: 'sw-7',
+    name: 'double socket',
+    description: 'Standard double wall socket with a durable and clean finish.',
+    price: 5000,
+    imageId: 'sw-7',
+    category: 'Switches & Sockets',
+  },
+  {
+    id: 'sw-8',
+    name: 'single socket',
+    description: 'Standard single wall socket, perfect for any room in your home.',
+    price: 3000,
+    imageId: 'sw-8',
+    category: 'Switches & Sockets',
+  },
+
+  // --- LIGHTING: Bulb ---
   {
     id: 'prod-102',
     name: 'AKT 5W bulb',
     description: 'High-quality AKT 5W energy-saving bulb.',
     price: 900,
     imageId: 'prod-102',
-    category: 'BULBS',
+    category: 'Bulb',
   },
   {
     id: 'prod-103',
@@ -946,7 +1011,7 @@ export const products: Product[] = [
     description: 'Bright and durable AKT 15W LED bulb.',
     price: 1700,
     imageId: 'prod-103',
-    category: 'BULBS',
+    category: 'Bulb',
   },
   {
     id: 'prod-104',
@@ -954,7 +1019,7 @@ export const products: Product[] = [
     description: 'Specialized AKT 18W pop bulb for modern ceilings.',
     price: 3800,
     imageId: 'prod-104',
-    category: 'BULBS',
+    category: 'Bulb',
   },
   {
     id: 'prod-105',
@@ -962,6 +1027,6 @@ export const products: Product[] = [
     description: 'Reliable DLI 10W bulb for consistent illumination.',
     price: 900,
     imageId: 'prod-105',
-    category: 'BULBS',
+    category: 'Bulb',
   },
 ];
