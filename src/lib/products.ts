@@ -1,3 +1,4 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -114,7 +115,7 @@ export const products: Product[] = [
     id: 'prod-72',
     name: 'fire flame tv stand',
     description: 'Unique fire flame design TV stand that makes a bold statement.',
-    price: 30000,
+    price: 300000,
     imageId: 'prod-72',
     category: 'Living Room',
   },
