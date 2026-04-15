@@ -115,7 +115,7 @@ export const products: Product[] = [
     id: 'prod-72',
     name: 'fire flame tv stand',
     description: 'Unique fire flame design TV stand that makes a bold statement.',
-    price: 30000,
+    price: 300000,
     imageId: 'prod-72',
     category: 'Living Room',
   },
@@ -381,7 +381,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-12',
-    name: 'modern design crystal chandelier (available in size 500)',
+    name: 'modern design crystal chandelier',
     description: 'Magnificent modern design crystal chandelier, available in 500mm size.',
     price: 160000,
     imageId: 'prod-58',
@@ -453,7 +453,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-21',
-    name: 'unique modern crystal chandelier (available in size 400 & 500)',
+    name: 'unique modern crystal chandelier',
     description: 'One-of-a-kind unique modern crystal chandelier, available in sizes 400 and 500.',
     price: 160000,
     imageId: 'prod-13',

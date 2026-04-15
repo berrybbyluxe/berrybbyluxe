@@ -176,30 +176,30 @@ export default function Home() {
                     <Filter className="h-4 w-4 shrink-0 opacity-50" />
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="max-w-3xl h-[85vh] sm:h-auto sm:max-h-[80vh] flex flex-col p-0 overflow-hidden">
+                <DialogContent className="max-w-2xl h-[90vh] sm:h-auto sm:max-h-[85vh] flex flex-col p-0 overflow-hidden">
                   <DialogHeader className="p-6 border-b shrink-0 bg-background z-10">
-                    <DialogTitle className="text-2xl font-headline text-center sm:text-left">Select a Category</DialogTitle>
+                    <DialogTitle className="text-2xl font-headline text-center sm:text-left">Select Category</DialogTitle>
                   </DialogHeader>
-                  <ScrollArea className="flex-grow">
+                  <ScrollArea className="flex-grow min-h-0">
                     <div className="p-6 space-y-10">
                       <Button 
                         variant={selectedCategory === 'All' ? 'default' : 'outline'} 
                         onClick={() => selectCategoryAndClose('All')}
-                        className="w-full font-bold h-12"
+                        className="w-full font-bold h-12 shadow-sm"
                       >
                         All Products
                       </Button>
 
-                      <div className="space-y-4">
-                        <h3 className="text-lg font-bold text-primary flex items-center gap-2 border-b pb-2">
+                      <div className="space-y-6">
+                        <div className="flex items-center gap-3">
                           <span className="w-1.5 h-6 bg-primary rounded-full"></span>
-                          Furniture
-                        </h3>
+                          <h3 className="text-xl font-headline font-bold text-foreground">Furniture</h3>
+                        </div>
                         <div className="grid grid-cols-2 gap-3">
                           <Button 
-                            variant={selectedCategory === 'Furniture' ? 'secondary' : 'ghost'} 
+                            variant={selectedCategory === 'Furniture' ? 'secondary' : 'outline'} 
                             onClick={() => selectCategoryAndClose('Furniture')}
-                            className="justify-start font-bold italic h-auto py-3 px-4 border border-dashed border-primary/20 col-span-2"
+                            className="justify-start font-bold italic h-auto py-3 px-4 border-dashed border-primary/40 col-span-2"
                           >
                             Browse All Furniture
                           </Button>
@@ -208,7 +208,7 @@ export default function Home() {
                               key={cat}
                               variant={selectedCategory === cat ? 'default' : 'outline'} 
                               onClick={() => selectCategoryAndClose(cat)}
-                              className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight text-xs sm:text-sm"
+                              className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight text-xs sm:text-sm shadow-sm"
                             >
                               {cat}
                             </Button>
@@ -216,16 +216,16 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="space-y-4">
-                        <h3 className="text-lg font-bold text-primary flex items-center gap-2 border-b pb-2">
+                      <div className="space-y-6">
+                        <div className="flex items-center gap-3">
                           <span className="w-1.5 h-6 bg-primary rounded-full"></span>
-                          Lighting
-                        </h3>
+                          <h3 className="text-xl font-headline font-bold text-foreground">Lighting</h3>
+                        </div>
                         <div className="grid grid-cols-2 gap-3">
                           <Button 
-                            variant={selectedCategory === 'Lighting' ? 'secondary' : 'ghost'} 
+                            variant={selectedCategory === 'Lighting' ? 'secondary' : 'outline'} 
                             onClick={() => selectCategoryAndClose('Lighting')}
-                            className="justify-start font-bold italic h-auto py-3 px-4 border border-dashed border-primary/20 col-span-2"
+                            className="justify-start font-bold italic h-auto py-3 px-4 border-dashed border-primary/40 col-span-2"
                           >
                             Browse All Lighting
                           </Button>
@@ -234,7 +234,7 @@ export default function Home() {
                               key={cat}
                               variant={selectedCategory === cat ? 'default' : 'outline'} 
                               onClick={() => selectCategoryAndClose(cat)}
-                              className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight text-xs sm:text-sm"
+                              className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight text-xs sm:text-sm shadow-sm"
                             >
                               {cat}
                             </Button>
