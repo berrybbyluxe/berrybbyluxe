@@ -198,14 +198,7 @@ export default function Home() {
                       
                       <div className="flex-grow overflow-hidden relative mt-4">
                         <ScrollArea className="h-full pr-4">
-                          <TabsContent value="furniture" className="m-0 space-y-6">
-                            <Button 
-                              variant={selectedCategory === 'Furniture' ? 'secondary' : 'outline'} 
-                              onClick={() => selectCategoryAndClose('Furniture')}
-                              className="w-full font-bold italic h-auto py-3 px-4 border-dashed border-primary/40"
-                            >
-                              Browse All Furniture
-                            </Button>
+                          <TabsContent value="furniture" className="m-0 space-y-4">
                             <div className="grid grid-cols-2 gap-3 pb-4">
                               {CATEGORY_STRUCTURE.Furniture.map((cat) => (
                                 <Button 
@@ -220,14 +213,7 @@ export default function Home() {
                             </div>
                           </TabsContent>
 
-                          <TabsContent value="lighting" className="m-0 space-y-6">
-                            <Button 
-                              variant={selectedCategory === 'Lighting' ? 'secondary' : 'outline'} 
-                              onClick={() => selectCategoryAndClose('Lighting')}
-                              className="w-full font-bold italic h-auto py-3 px-4 border-dashed border-primary/40"
-                            >
-                              Browse All Lighting
-                            </Button>
+                          <TabsContent value="lighting" className="m-0 space-y-4">
                             <div className="grid grid-cols-2 gap-3 pb-4">
                               {CATEGORY_STRUCTURE.Lighting.map((cat) => (
                                 <Button 
