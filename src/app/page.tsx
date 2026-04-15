@@ -176,74 +176,76 @@ export default function Home() {
                     <Filter className="h-4 w-4 shrink-0 opacity-50" />
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="max-w-3xl max-h-[90vh] flex flex-col p-0">
-                  <DialogHeader className="p-6 border-b">
-                    <DialogTitle className="text-2xl font-headline">Select a Category</DialogTitle>
+                <DialogContent className="max-w-3xl max-h-[90vh] flex flex-col p-0 overflow-hidden">
+                  <DialogHeader className="p-6 border-b shrink-0">
+                    <DialogTitle className="text-2xl font-headline text-center sm:text-left">Select a Category</DialogTitle>
                   </DialogHeader>
-                  <ScrollArea className="flex-grow p-6">
-                    <div className="grid gap-8">
-                      <Button 
-                        variant={selectedCategory === 'All' ? 'default' : 'outline'} 
-                        onClick={() => selectCategoryAndClose('All')}
-                        className="w-full font-bold h-12"
-                      >
-                        All Products
-                      </Button>
+                  <ScrollArea className="flex-grow">
+                    <div className="p-6">
+                      <div className="grid gap-8">
+                        <Button 
+                          variant={selectedCategory === 'All' ? 'default' : 'outline'} 
+                          onClick={() => selectCategoryAndClose('All')}
+                          className="w-full font-bold h-12"
+                        >
+                          All Products
+                        </Button>
 
-                      <div>
-                        <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
-                          <span className="w-2 h-6 bg-primary rounded-full"></span>
-                          Furniture
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          <Button 
-                            variant={selectedCategory === 'Furniture' ? 'secondary' : 'ghost'} 
-                            onClick={() => selectCategoryAndClose('Furniture')}
-                            className="justify-start font-bold italic h-auto py-3 px-4 border border-dashed border-primary/20"
-                          >
-                            All Furniture
-                          </Button>
-                          {CATEGORY_STRUCTURE.Furniture.map((cat) => (
+                        <div>
+                          <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+                            <span className="w-2 h-6 bg-primary rounded-full"></span>
+                            Furniture
+                          </h3>
+                          <div className="grid grid-cols-2 gap-3">
                             <Button 
-                              key={cat}
-                              variant={selectedCategory === cat ? 'default' : 'outline'} 
-                              onClick={() => selectCategoryAndClose(cat)}
-                              className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight"
+                              variant={selectedCategory === 'Furniture' ? 'secondary' : 'ghost'} 
+                              onClick={() => selectCategoryAndClose('Furniture')}
+                              className="justify-start font-bold italic h-auto py-3 px-4 border border-dashed border-primary/20 col-span-2 sm:col-span-1"
                             >
-                              {cat}
+                              All Furniture
                             </Button>
-                          ))}
+                            {CATEGORY_STRUCTURE.Furniture.map((cat) => (
+                              <Button 
+                                key={cat}
+                                variant={selectedCategory === cat ? 'default' : 'outline'} 
+                                onClick={() => selectCategoryAndClose(cat)}
+                                className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight text-xs sm:text-sm"
+                              >
+                                {cat}
+                              </Button>
+                            ))}
+                          </div>
                         </div>
-                      </div>
 
-                      <div>
-                        <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
-                          <span className="w-2 h-6 bg-primary rounded-full"></span>
-                          Lighting
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          <Button 
-                            variant={selectedCategory === 'Lighting' ? 'secondary' : 'ghost'} 
-                            onClick={() => selectCategoryAndClose('Lighting')}
-                            className="justify-start font-bold italic h-auto py-3 px-4 border border-dashed border-primary/20"
-                          >
-                            All Lighting
-                          </Button>
-                          {CATEGORY_STRUCTURE.Lighting.map((cat) => (
+                        <div>
+                          <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+                            <span className="w-2 h-6 bg-primary rounded-full"></span>
+                            Lighting
+                          </h3>
+                          <div className="grid grid-cols-2 gap-3">
                             <Button 
-                              key={cat}
-                              variant={selectedCategory === cat ? 'default' : 'outline'} 
-                              onClick={() => selectCategoryAndClose(cat)}
-                              className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight"
+                              variant={selectedCategory === 'Lighting' ? 'secondary' : 'ghost'} 
+                              onClick={() => selectCategoryAndClose('Lighting')}
+                              className="justify-start font-bold italic h-auto py-3 px-4 border border-dashed border-primary/20 col-span-2 sm:col-span-1"
                             >
-                              {cat}
+                              All Lighting
                             </Button>
-                          ))}
+                            {CATEGORY_STRUCTURE.Lighting.map((cat) => (
+                              <Button 
+                                key={cat}
+                                variant={selectedCategory === cat ? 'default' : 'outline'} 
+                                onClick={() => selectCategoryAndClose(cat)}
+                                className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight text-xs sm:text-sm"
+                              >
+                                {cat}
+                              </Button>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </ScrollArea>
-                  <div className="p-4 border-t bg-muted/30 flex justify-end">
+                  <div className="p-4 border-t bg-muted/30 flex justify-end shrink-0">
                     <Button variant="ghost" onClick={() => setIsFilterDialogOpen(false)}>Close</Button>
                   </div>
                 </DialogContent>
