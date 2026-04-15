@@ -115,7 +115,7 @@ export const products: Product[] = [
     id: 'prod-72',
     name: 'fire flame tv stand',
     description: 'Unique fire flame design TV stand that makes a bold statement.',
-    price: 300000,
+    price: 30000,
     imageId: 'prod-72',
     category: 'Living Room',
   },
@@ -145,14 +145,6 @@ export const products: Product[] = [
     description: 'Artistic antelope deer decorative piece to add charm to your space.',
     price: 150000,
     imageId: 'prod-63',
-    category: 'House Decoratives',
-  },
-  {
-    id: 'prod-47',
-    name: 'beautiful wreath flower',
-    description: 'Artistic wreath flower decorative piece to enhance your home\'s interior charm.',
-    price: 30000,
-    imageId: 'prod-47',
     category: 'House Decoratives',
   },
   {
@@ -258,6 +250,16 @@ export const products: Product[] = [
     price: 150000,
     imageId: 'prod-101',
     category: 'House Decoratives',
+  },
+
+  // --- FURNITURE: Vass Flowers ---
+  {
+    id: 'prod-47',
+    name: 'beautiful wreath flower',
+    description: 'Artistic wreath flower decorative piece to enhance your home\'s interior charm.',
+    price: 30000,
+    imageId: 'prod-47',
+    category: 'Vass Flowers',
   },
 
   // --- FURNITURE: Office ---
@@ -503,7 +505,7 @@ export const products: Product[] = [
     id: 'prod-109',
     name: 'spot AKT pop light',
     description: 'Powerful Spot AKT POP light. Available in blue and white colors.',
-    price: 35000,
+    price: 3500,
     imageId: 'prod-109',
     category: 'Ceiling & Pop Lighting',
   },
@@ -515,12 +517,20 @@ export const products: Product[] = [
     imageId: 'prod-93',
     category: 'Ceiling & Pop Lighting',
   },
+  {
+    id: 'prod-track-2',
+    name: 'track_light_7,000',
+    description: 'Durable track light for modern gallery and office illumination.',
+    price: 7000,
+    imageId: 'prod-93',
+    category: 'Ceiling & Pop Lighting',
+  },
 
   // --- LIGHTING: Outdoor Lighting ---
   {
     id: 'out-1',
     name: 'outdoor light',
-    description: 'Sleek and durable outdoor light fixture, perfect for illuminating pathways or porches.',
+    description: 'Sleek and durable outdoor light fixture, perfect for pathways.',
     price: 8000,
     imageId: 'prod-11',
     category: 'Outdoor Lighting',
@@ -528,7 +538,7 @@ export const products: Product[] = [
   {
     id: 'out-2',
     name: 'outdoor light',
-    description: 'Weather-resistant decorative outdoor light for a stylish exterior ambiance.',
+    description: 'Weather-resistant decorative outdoor light for stylish exteriors.',
     price: 8000,
     imageId: 'prod-35',
     category: 'Outdoor Lighting',
@@ -544,7 +554,7 @@ export const products: Product[] = [
   {
     id: 'out-4',
     name: 'outdoor light',
-    description: 'Modern and versatile outdoor light suitable for various architectural styles.',
+    description: 'Modern and versatile outdoor light for various architectural styles.',
     price: 12000,
     imageId: 'prod-11',
     category: 'Outdoor Lighting',
@@ -552,7 +562,7 @@ export const products: Product[] = [
   {
     id: 'out-5',
     name: 'outdoor light',
-    description: 'High-performance outdoor light for secure and bright surroundings.',
+    description: 'High-performance outdoor light for secure surroundings.',
     price: 17000,
     imageId: 'prod-80',
     category: 'Outdoor Lighting',
@@ -568,7 +578,7 @@ export const products: Product[] = [
   {
     id: 'out-7',
     name: 'outdoor light',
-    description: 'Luxurious grand outdoor light fixture for a stately home exterior.',
+    description: 'Luxurious grand outdoor light fixture for a stately home.',
     price: 25000,
     imageId: 'prod-7',
     category: 'Outdoor Lighting',
@@ -576,7 +586,7 @@ export const products: Product[] = [
   {
     id: 'out-8',
     name: 'outdoor light',
-    description: 'The ultimate in outdoor illumination, combining power with exquisite design.',
+    description: 'The ultimate in outdoor illumination, combining power with design.',
     price: 35000,
     imageId: 'prod-8',
     category: 'Outdoor Lighting',
@@ -594,7 +604,7 @@ export const products: Product[] = [
   {
     id: 'prod-2',
     name: '5 in 1 Dropping Light',
-    description: 'A grander version of our classic dropping light, featuring five elegant pendant bulbs.',
+    description: 'A grander version of our classic dropping light, featuring five bulbs.',
     price: 75000,
     imageId: 'prod-2',
     category: 'Pendant & Drop Lighting',
@@ -627,7 +637,7 @@ export const products: Product[] = [
   {
     id: 'prod-76',
     name: 'luxury nordic rain drop chandelier',
-    description: 'Breathtaking Nordic rain drop chandelier for a touch of luxury and movement.',
+    description: 'Breathtaking Nordic rain drop chandelier for a touch of luxury.',
     price: 400000,
     imageId: 'prod-76',
     category: 'Pendant & Drop Lighting',
@@ -659,7 +669,7 @@ export const products: Product[] = [
   {
     id: 'prod-81',
     name: 'modern nordic gold chandelier',
-    description: 'Elegant modern Nordic gold chandelier that radiates warmth and style.',
+    description: 'Elegant modern Nordic gold chandelier that radiates warmth.',
     price: 120000,
     imageId: 'prod-81',
     category: 'Pendant & Drop Lighting',
@@ -673,8 +683,8 @@ export const products: Product[] = [
     category: 'Pendant & Drop Lighting',
   },
   {
-    id: 'prod-58',
-    name: 'Modern_Led_Crystal_Chandelier',
+    id: 'prod-pd-12',
+    name: 'Modern_Led_Crystal_Chandelier_450,000',
     description: 'Exquisite modern LED crystal chandelier for brilliant interior illumination.',
     price: 450000,
     imageId: 'prod-58',
@@ -683,7 +693,7 @@ export const products: Product[] = [
   {
     id: 'prod-19',
     name: 'New Design Bird Chandelier Led Light for Dinning & kitchen',
-    description: 'Artistic bird-inspired LED chandelier, perfect for dining and kitchen areas.',
+    description: 'Artistic bird-inspired LED chandelier, perfect for dining area.',
     price: 75000,
     imageId: 'prod-19',
     category: 'Pendant & Drop Lighting',
@@ -763,7 +773,7 @@ export const products: Product[] = [
   {
     id: 'prod-33',
     name: 'Unique Track LED Drop Light',
-    description: 'Industrial-inspired track LED light perfect for modern galleries and hallways.',
+    description: 'Industrial-inspired track LED light perfect for modern galleries.',
     price: 100000,
     imageId: 'prod-33',
     category: 'Pendant & Drop Lighting',
@@ -773,7 +783,7 @@ export const products: Product[] = [
   {
     id: 'wb-1',
     name: '2 in 1 Led Wall Bracket light',
-    description: 'Functional and stylish 2-in-1 LED wall bracket light with modern illumination.',
+    description: 'Functional and stylish 2-in-1 LED wall bracket light.',
     price: 22000,
     imageId: 'prod-46',
     category: 'Wall Bracket Lighting',
@@ -781,7 +791,7 @@ export const products: Product[] = [
   {
     id: 'wb-2',
     name: 'decorative LED wall bracket',
-    description: 'Sophisticated decorative LED wall bracket that serves as a beautiful accent piece.',
+    description: 'Sophisticated decorative LED wall bracket.',
     price: 20000,
     imageId: 'prod-51',
     category: 'Wall Bracket Lighting',
@@ -789,7 +799,7 @@ export const products: Product[] = [
   {
     id: 'wb-3',
     name: 'decorative wall bracket light',
-    description: 'Classic decorative wall bracket light with a touch of modern craftsmanship.',
+    description: 'Classic decorative wall bracket light.',
     price: 24000,
     imageId: 'prod-53',
     category: 'Wall Bracket Lighting',
@@ -797,7 +807,7 @@ export const products: Product[] = [
   {
     id: 'wb-4',
     name: 'Deer Wall Bracket Light',
-    description: 'Unique nature-inspired wall bracket light featuring a majestic deer design.',
+    description: 'Unique nature-inspired wall bracket light featuring a deer design.',
     price: 22000,
     imageId: 'prod-4',
     category: 'Wall Bracket Lighting',
@@ -805,7 +815,7 @@ export const products: Product[] = [
   {
     id: 'wb-5',
     name: 'durable and stylish Led wall bracket',
-    description: 'Long-lasting and aesthetically pleasing LED wall bracket for your home.',
+    description: 'Long-lasting and aesthetically pleasing LED wall bracket.',
     price: 19000,
     imageId: 'prod-54',
     category: 'Wall Bracket Lighting',
@@ -813,7 +823,7 @@ export const products: Product[] = [
   {
     id: 'wb-6',
     name: 'Durable LED wall bracket',
-    description: 'Reliable LED wall bracket featuring a minimalist yet stylish design.',
+    description: 'Reliable LED wall bracket featuring a minimalist design.',
     price: 19000,
     imageId: 'prod-55',
     category: 'Wall Bracket Lighting',
@@ -845,7 +855,7 @@ export const products: Product[] = [
   {
     id: 'wb-10',
     name: 'Modern and energy-efficient LED wall bracket',
-    description: 'Eco-friendly and high-performance LED wall bracket for modern lighting needs.',
+    description: 'Eco-friendly and high-performance LED wall bracket.',
     price: 22000,
     imageId: 'prod-56',
     category: 'Wall Bracket Lighting',
@@ -861,7 +871,7 @@ export const products: Product[] = [
   {
     id: 'wb-12',
     name: 'Modern Horn Rooms bracket',
-    description: 'Unique horn-style wall bracket for a bold and creative lighting statement.',
+    description: 'Unique horn-style wall bracket for a creative lighting statement.',
     price: 25000,
     imageId: 'prod-17',
     category: 'Wall Bracket Lighting',
@@ -877,7 +887,7 @@ export const products: Product[] = [
   {
     id: 'wb-14',
     name: 'Modern Room Wall Bracket Light',
-    description: 'Versatile wall bracket light perfect for modern bedrooms and living areas.',
+    description: 'Versatile wall bracket light perfect for modern bedrooms.',
     price: 15000,
     imageId: 'prod-18',
     category: 'Wall Bracket Lighting',
@@ -885,7 +895,7 @@ export const products: Product[] = [
   {
     id: 'wb-15',
     name: 'modern wall bracket with bulb',
-    description: 'Functional modern wall bracket complete with bulb for instant use.',
+    description: 'Functional modern wall bracket complete with bulb.',
     price: 17000,
     imageId: 'prod-83',
     category: 'Wall Bracket Lighting',
@@ -893,7 +903,7 @@ export const products: Product[] = [
   {
     id: 'wb-16',
     name: 'Nodic Modern Creative Feather wall bracket',
-    description: 'Nordic-inspired creative wall bracket with a delicate feather design.',
+    description: 'Nordic-inspired creative wall bracket with a feather design.',
     price: 15000,
     imageId: 'prod-23',
     category: 'Wall Bracket Lighting',
@@ -901,7 +911,7 @@ export const products: Product[] = [
   {
     id: 'wb-17',
     name: 'Nodic Modern Creative Feather wall Ligh',
-    description: 'Artistic Nordic wall light featuring a stunning creative feather motif.',
+    description: 'Artistic Nordic wall light featuring a creative feather motif.',
     price: 20000,
     imageId: 'prod-24',
     category: 'Wall Bracket Lighting',
@@ -917,7 +927,7 @@ export const products: Product[] = [
   {
     id: 'wb-19',
     name: 'Unique Wall LED Light',
-    description: 'Sculptural wall LED light that provides both illumination and artistic flair.',
+    description: 'Sculptural wall LED light that provides both illumination and art.',
     price: 19000,
     imageId: 'prod-34',
     category: 'Wall Bracket Lighting',
@@ -933,7 +943,7 @@ export const products: Product[] = [
   {
     id: 'wb-21',
     name: 'Wall bracket light',
-    description: 'Durable and stylish wall bracket lighting solution for your home.',
+    description: 'Durable and stylish wall bracket lighting solution.',
     price: 19000,
     imageId: 'prod-36',
     category: 'Wall Bracket Lighting',
@@ -943,7 +953,7 @@ export const products: Product[] = [
   {
     id: 'sw-1',
     name: '1 gang 2 way switch',
-    description: 'High-quality 1 gang 2 way electrical switch with a sleek modern design.',
+    description: 'High-quality 1 gang 2 way electrical switch with a sleek design.',
     price: 2500,
     imageId: 'sw-1',
     category: 'Switches & Sockets',
@@ -967,7 +977,7 @@ export const products: Product[] = [
   {
     id: 'sw-4',
     name: '13A multi big button socket',
-    description: 'Universal 13A multi-plug socket featuring a large, easy-to-use button.',
+    description: 'Universal 13A multi-plug socket featuring a large button.',
     price: 3000,
     imageId: 'sw-4',
     category: 'Switches & Sockets',
@@ -975,7 +985,7 @@ export const products: Product[] = [
   {
     id: 'sw-5',
     name: '20A switch water heater',
-    description: 'Heavy-duty 20A switch specifically designed for water heaters and high-power appliances.',
+    description: 'Heavy-duty 20A switch specifically designed for water heaters.',
     price: 3000,
     imageId: 'sw-5',
     category: 'Switches & Sockets',
@@ -983,7 +993,7 @@ export const products: Product[] = [
   {
     id: 'sw-6',
     name: 'double 13A multi big button socket',
-    description: 'Dual universal 13A multi-plug socket with large independent buttons.',
+    description: 'Dual universal 13A multi-plug socket with large buttons.',
     price: 5000,
     imageId: 'sw-6',
     category: 'Switches & Sockets',
@@ -991,7 +1001,7 @@ export const products: Product[] = [
   {
     id: 'sw-7',
     name: 'double socket',
-    description: 'Standard double wall socket with a durable and clean finish.',
+    description: 'Standard double wall socket with a durable finish.',
     price: 5000,
     imageId: 'sw-7',
     category: 'Switches & Sockets',
@@ -999,7 +1009,7 @@ export const products: Product[] = [
   {
     id: 'sw-8',
     name: 'single socket',
-    description: 'Standard single wall socket, perfect for any room in your home.',
+    description: 'Standard single wall socket, perfect for any room.',
     price: 3000,
     imageId: 'sw-8',
     category: 'Switches & Sockets',
