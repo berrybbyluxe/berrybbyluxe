@@ -292,7 +292,7 @@ export const products: Product[] = [
   // --- LIGHTING: Chandelier Lighting ---
   {
     id: 'prod-3',
-    name: 'crystal chandelier',
+    name: 'decorative crystal chandelier',
     description: 'A stunning crystal centerpiece that brings elegance and sparkle to any room.',
     price: 400000,
     imageId: 'prod-3',

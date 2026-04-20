@@ -443,9 +443,9 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white">
-              <Link href="https://wa.me/2349063927855" target="_blank">
+              <a href="https://wa.me/2349063927855" target="_blank" rel="noopener noreferrer">
                 Contact via WhatsApp
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

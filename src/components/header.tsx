@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, Sparkles } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -13,7 +13,6 @@ import * as React from 'react';
 const navLinks = [
   { href: '/#home', label: 'Home' },
   { href: '/#products', label: 'Catalog' },
-  { href: '/style-assistant', label: 'AI Assistant', icon: Sparkles },
   { href: '/#about', label: 'About' },
   { href: '/#services', label: 'Services' },
   { href: '/#contact', label: 'Contact' },
@@ -44,7 +43,7 @@ export function Header() {
         </Link>
 
         <nav className="hidden lg:flex gap-6">
-          {navLinks.map(({ href, label, icon: Icon }) => (
+          {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
@@ -52,7 +51,6 @@ export function Header() {
                 'text-sm font-medium text-muted-foreground transition-colors hover:text-foreground whitespace-nowrap flex items-center gap-1.5'
               )}
             >
-              {Icon && <Icon className="h-3.5 w-3.5 text-primary" />}
               {label}
             </Link>
           ))}
@@ -85,7 +83,7 @@ export function Header() {
                     Berrybby Luxury
                   </span>
                 </Link>
-                {navLinks.map(({ href, label, icon: Icon }) => (
+                {navLinks.map(({ href, label }) => (
                   <Link
                     key={href}
                     href={href}
@@ -94,7 +92,6 @@ export function Header() {
                       'text-lg font-medium text-muted-foreground transition-colors hover:text-foreground flex items-center gap-2'
                     )}
                   >
-                    {Icon && <Icon className="h-4 w-4 text-primary" />}
                     {label}
                   </Link>
                 ))}
