@@ -4,7 +4,7 @@ export const products: Product[] = [
   // --- FURNITURE: Turkey Collections ---
   {
     id: 'prod-60',
-    name: 'Tufted Turkey Chairs',
+    name: 'Tufted Turkey chairs',
     description: 'Ultra-luxurious Tufted Turkey chairs, the pinnacle of comfort and royal elegance for your master bedroom or living suite.',
     price: 8000000,
     imageId: 'prod-60',
@@ -14,7 +14,7 @@ export const products: Product[] = [
   // --- FURNITURE: Bedroom ---
   {
     id: 'prod-49',
-    name: 'comfortable and stylish bed',
+    name: 'Comfortable and stylish bed',
     description: 'Premium upholstered bed frame designed for maximum comfort and a sophisticated modern aesthetic.',
     price: 850000,
     imageId: 'prod-49',
@@ -22,7 +22,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-66',
-    name: 'classic damask accent',
+    name: 'Classic damask accent',
     description: 'Classic damask accent piece to enhance your interior aesthetic.',
     price: 600000,
     imageId: 'prod-66',
@@ -30,7 +30,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-74',
-    name: 'green curvette',
+    name: 'Green curvette',
     description: 'Distinctive green curvette furniture piece for a pop of color and style.',
     price: 600000,
     imageId: 'prod-74',
@@ -38,7 +38,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-77',
-    name: 'machiatto set',
+    name: 'Machiatto set',
     description: 'Elegant machiatto furniture set, blending comfort with style.',
     price: 600000,
     imageId: 'prod-77',
@@ -46,7 +46,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-85',
-    name: 'rocky set',
+    name: 'Rocky set',
     description: 'Durable and stylish rocky furniture set for modern living.',
     price: 600000,
     imageId: 'prod-85',
@@ -54,7 +54,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-97',
-    name: 'varta console',
+    name: 'Varta console',
     description: 'Premium varta console table, a masterpiece of design.',
     price: 800000,
     imageId: 'prod-97',
@@ -62,7 +62,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-100',
-    name: 'wardrobe with inbuilt light',
+    name: 'Wardrobe with inbuilt light',
     description: 'Functional wardrobe with inbuilt light for ultimate convenience.',
     price: 950000,
     imageId: 'prod-100',
@@ -72,15 +72,15 @@ export const products: Product[] = [
   // --- FURNITURE: Living Room ---
   {
     id: 'prod-37',
-    name: 'ARMANI CASSA SET',
-    description: 'Exquisite Armani Cassa sofa set designed for the ultimate luxury living experience.',
+    name: 'Armani cassa set',
+    description: 'Exquisite Armani cassa sofa set designed for the ultimate luxury living experience.',
     price: 2500000,
     imageId: 'prod-37',
     category: 'Living Room',
   },
   {
     id: 'prod-42',
-    name: 'osmo sofa',
+    name: 'Osmo sofa',
     description: 'Modern Osmo sofa featuring clean lines and premium comfort for contemporary spaces.',
     price: 2500000,
     imageId: 'prod-42',
@@ -88,7 +88,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-45',
-    name: 'VITALE SOFA SET',
+    name: 'Vitale sofa set',
     description: 'Premium Vitale sofa set, a masterpiece of craftsmanship and timeless elegance.',
     price: 3500000,
     imageId: 'prod-45',
@@ -96,7 +96,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-65',
-    name: 'chocolate center table',
+    name: 'Chocolate center table',
     description: 'Stylish chocolate center table, a perfect centerpiece for your living room.',
     price: 500000,
     imageId: 'prod-65',
@@ -104,7 +104,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-70',
-    name: 'fehdi console',
+    name: 'Fehdi console',
     description: 'Minimalist and stylish fehdi console for contemporary homes.',
     price: 650000,
     imageId: 'prod-70',
@@ -112,7 +112,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-72',
-    name: 'fire flame tv stand',
+    name: 'Fire flame TV stand',
     description: 'Unique fire flame design TV stand that makes a bold statement.',
     price: 300000,
     imageId: 'prod-72',
@@ -120,7 +120,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-73',
-    name: 'garrah console',
+    name: 'Garrah console',
     description: 'Exquisitely crafted garrah console table for high-end interiors.',
     price: 800000,
     imageId: 'prod-73',
@@ -130,7 +130,7 @@ export const products: Product[] = [
   // --- FURNITURE: Dinning Set ---
   {
     id: 'prod-61',
-    name: '6 seater grey italian bursa',
+    name: '6 seater grey Italian bursa',
     description: 'Luxury 6 seater grey Italian Bursa set for a sophisticated dining area.',
     price: 1500000,
     imageId: 'prod-61',
@@ -140,7 +140,7 @@ export const products: Product[] = [
   // --- FURNITURE: House Decoratives ---
   {
     id: 'prod-63',
-    name: 'antelope deer decor',
+    name: 'Antelope deer decor',
     description: 'Artistic antelope deer decorative piece to add charm to your space.',
     price: 150000,
     imageId: 'prod-63',
@@ -148,7 +148,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-64',
-    name: 'candle dinning lamp set',
+    name: 'Candle dinning lamp set',
     description: 'Elegant candle dining lamp set for a warm and inviting atmosphere.',
     price: 300000,
     imageId: 'prod-64',
@@ -156,7 +156,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-67',
-    name: 'clock gobe',
+    name: 'Clock gobe',
     description: 'Unique clock gobe decor that combines functionality with artistic design.',
     price: 120000,
     imageId: 'prod-67',
@@ -164,7 +164,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-78',
-    name: 'medium size deer decor',
+    name: 'Medium size deer decor',
     description: 'Graceful medium size deer decor to accent your room.',
     price: 120000,
     imageId: 'prod-78',
@@ -172,7 +172,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-86',
-    name: 'round side table',
+    name: 'Round side table',
     description: 'Versatile round side table, a perfect companion for any room.',
     price: 100000,
     imageId: 'prod-86',
@@ -180,7 +180,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-87',
-    name: 'small deer decor',
+    name: 'Small deer decor',
     description: 'Cute small deer decor to bring a touch of nature indoors.',
     price: 100000,
     imageId: 'prod-87',
@@ -188,7 +188,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-88',
-    name: 'small tree decor',
+    name: 'Small tree decor',
     description: 'Artistic small tree decor for a sophisticated interior accent.',
     price: 100000,
     imageId: 'prod-88',
@@ -196,7 +196,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-89',
-    name: 'snow flower set',
+    name: 'Snow flower set',
     description: 'Beautiful snow flower decorative set for a delicate touch.',
     price: 170000,
     imageId: 'prod-89',
@@ -204,7 +204,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-90',
-    name: 'standing horse gold decor',
+    name: 'Standing horse gold decor',
     description: 'Majestic standing horse gold decor, a symbol of elegance.',
     price: 150000,
     imageId: 'prod-90',
@@ -212,7 +212,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-91',
-    name: 'stoned frame',
+    name: 'Stoned frame',
     description: 'Unique stoned frame decorative piece for your walls.',
     price: 200000,
     imageId: 'prod-91',
@@ -220,7 +220,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-94',
-    name: 'triangle clock decor',
+    name: 'Triangle clock decor',
     description: 'Modern triangle clock decor, blending timekeeping with art.',
     price: 120000,
     imageId: 'prod-94',
@@ -228,7 +228,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-98',
-    name: 'wall decor',
+    name: 'Wall decor',
     description: 'Elegant wall decor piece to complete your room aesthetic.',
     price: 150000,
     imageId: 'prod-98',
@@ -236,7 +236,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-99',
-    name: 'wall design mirror',
+    name: 'Wall design mirror',
     description: 'Stylish wall design mirror to brighten and expand your space.',
     price: 340000,
     imageId: 'prod-99',
@@ -244,7 +244,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-101',
-    name: 'white fur light',
+    name: 'White fur light',
     description: 'Unique and cozy white fur light fixture for a soft ambiance.',
     price: 150000,
     imageId: 'prod-101',
@@ -254,7 +254,7 @@ export const products: Product[] = [
   // --- FURNITURE: Vass Flowers ---
   {
     id: 'prod-47',
-    name: 'beautiful wreath flower',
+    name: 'Beautiful wreath flower',
     description: 'Artistic wreath flower decorative piece to enhance your home\'s interior charm.',
     price: 30000,
     imageId: 'prod-47',
@@ -264,7 +264,7 @@ export const products: Product[] = [
   // --- FURNITURE: Office ---
   {
     id: 'prod-75',
-    name: 'grey sofa',
+    name: 'Grey sofa',
     description: 'Comfortable and modern grey sofa set for your office or relaxation area.',
     price: 750000,
     imageId: 'prod-75',
@@ -274,7 +274,7 @@ export const products: Product[] = [
   // --- FURNITURE: Side Lamps & Standing Lamps ---
   {
     id: 'prod-48',
-    name: 'bed side lamp',
+    name: 'Bed side lamp',
     description: 'Elegant and warm bedside lamp, providing the perfect ambiance for late-night reading.',
     price: 50000,
     imageId: 'prod-48',
@@ -282,7 +282,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-32',
-    name: 'Unique Standing Led Lamp',
+    name: 'Unique standing LED lamp',
     description: 'Elegant standing LED lamp that makes a statement in any living space.',
     price: 95000,
     imageId: 'prod-32',
@@ -292,7 +292,7 @@ export const products: Product[] = [
   // --- LIGHTING: Chandelier Lighting ---
   {
     id: 'prod-3',
-    name: 'decorative crystal chandelier',
+    name: 'Decorative crystal chandelier',
     description: 'A stunning crystal centerpiece that brings elegance and sparkle to any room.',
     price: 400000,
     imageId: 'prod-3',
@@ -300,7 +300,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-2',
-    name: 'crystal chandellier',
+    name: 'Modern LED crystal chandelier size 500',
     description: 'Exquisite crystal lighting fixture for a refined interior.',
     price: 410000,
     imageId: 'prod-13',
@@ -309,7 +309,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-50',
-    name: 'Crystal_Fan_Chandelier with bluethooth',
+    name: 'Crystal fan chandelier with Bluetooth',
     description: 'Innovative crystal chandelier that doubles as a high-performance ceiling fan with bluetooth capability.',
     price: 180000,
     imageId: 'prod-50',
@@ -317,7 +317,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-69',
-    name: 'elegant and modern crystal chandeier',
+    name: 'Elegant and modern crystal chandelier',
     description: 'Breathtakingly elegant and modern crystal chandelier for a touch of luxury.',
     price: 150000,
     imageId: 'prod-69',
@@ -325,7 +325,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-6',
-    name: 'LUXURIOUS ROYAL CRYSTAL CHANDELIER',
+    name: 'Luxurious royal crystal chandelier',
     description: 'The pinnacle of luxury lighting. A grand royal crystal chandelier for sophisticated spaces.',
     price: 800000,
     imageId: 'prod-6',
@@ -333,7 +333,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-6',
-    name: 'luxury crystal gold duplex chandelier',
+    name: 'Luxury crystal gold duplex chandelier',
     description: 'Grand luxury gold duplex chandelier featuring premium crystal accents.',
     price: 350000,
     imageId: 'prod-21',
@@ -341,15 +341,15 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-7',
-    name: 'luxury led ceiling chandelier',
+    name: 'Luxury LED ceiling chandelier',
     description: 'Sleek and sparkling luxury LED ceiling chandelier for modern homes.',
-    price: 180000,
+    price: 300000,
     imageId: 'prod-58',
     category: 'Chandelier Lighting',
   },
   {
     id: 'prod-ch-8',
-    name: 'luxury vintage crystal chandelier',
+    name: 'Luxury vintage crystal chandelier',
     description: 'Classic luxury vintage crystal chandelier with timeless appeal.',
     price: 220000,
     imageId: 'prod-25',
@@ -357,7 +357,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-13',
-    name: 'Modern Crystal Chandelier light',
+    name: 'Modern crystal chandelier light',
     description: 'Sleek modern chandelier featuring exquisite crystal elements.',
     price: 120000,
     imageId: 'prod-13',
@@ -365,7 +365,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-79',
-    name: 'modern crystal chandelier',
+    name: 'Modern crystal chandelier',
     description: 'Timeless modern crystal chandelier for a sophisticated lighting solution.',
     price: 180000,
     imageId: 'prod-79',
@@ -373,7 +373,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-14',
-    name: 'Modern Decorative Crystal Chandelier Light',
+    name: 'Modern decorative crystal chandelier light',
     description: 'An elegant centerpiece that combines modern design with classic crystal charm.',
     price: 180000,
     imageId: 'prod-14',
@@ -381,15 +381,15 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-12',
-    name: 'modern design crystal chandelier',
+    name: 'Modern luxury Nordic rain drop light',
     description: 'Magnificent modern design crystal chandelier, available in 500mm size.',
-    price: 160000,
+    price: 200000,
     imageId: 'prod-58',
     category: 'Chandelier Lighting',
   },
   {
     id: 'prod-57',
-    name: 'modern LED crystal chandelier',
+    name: 'Modern LED crystal chandelier',
     description: 'Sleek and sparkling modern LED crystal chandelier, perfect for contemporary homes.',
     price: 160000,
     imageId: 'prod-57',
@@ -397,7 +397,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-14',
-    name: 'modern led spheric chandelier',
+    name: 'Modern LED spheric chandelier',
     description: 'Artistic modern LED spheric chandelier for a unique lighting statement.',
     price: 200000,
     imageId: 'prod-22',
@@ -405,23 +405,23 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-15',
-    name: 'modern round crystal chandelier',
+    name: 'Modern round crystal chandelier',
     description: 'Beautiful modern round crystal chandelier for balanced illumination.',
-    price: 350000,
+    price: 380000,
     imageId: 'prod-21',
     category: 'Chandelier Lighting',
   },
   {
     id: 'prod-21',
-    name: 'New Luxury Crystal Gold Duplex Chandelier',
+    name: 'New luxury crystal gold duplex chandelier',
     description: 'Grand luxury gold duplex chandelier featuring premium crystal accents.',
-    price: 350000,
+    price: 380000,
     imageId: 'prod-21',
     category: 'Chandelier Lighting',
   },
   {
     id: 'prod-25',
-    name: 'Pure crystal charming Chandelier Light',
+    name: 'Pure crystal charming chandelier light',
     description: 'Charming chandelier crafted from pure crystals for maximum brilliance.',
     price: 400000,
     imageId: 'prod-25',
@@ -429,7 +429,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-18',
-    name: 'stylish crystal chandelier size 500',
+    name: 'Stylish crystal chandelier size 500',
     description: 'Sleek and sparkling stylish crystal chandelier in 500mm size.',
     price: 140000,
     imageId: 'prod-68',
@@ -437,7 +437,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-30',
-    name: 'Unique Decorative LED Chandelier',
+    name: 'Unique decorative LED chandelier',
     description: 'Decorative LED chandelier with a unique, eye-catching structure.',
     price: 220000,
     imageId: 'prod-30',
@@ -445,15 +445,15 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-20',
-    name: 'unique high quality crystal chandelier',
+    name: 'Unique high quality crystal chandelier',
     description: 'Breathtaking high quality crystal chandelier that radiates brilliance.',
-    price: 180000,
+    price: 350000,
     imageId: 'prod-59',
     category: 'Chandelier Lighting',
   },
   {
     id: 'prod-ch-21',
-    name: 'unique modern crystal chandelier',
+    name: 'Unique modern crystal chandelier',
     description: 'One-of-a-kind unique modern crystal chandelier, available in sizes 400 and 500.',
     price: 160000,
     imageId: 'prod-13',
@@ -463,15 +463,15 @@ export const products: Product[] = [
   // --- LIGHTING: Ceiling & Pop Lighting ---
   {
     id: 'prod-106',
-    name: 'bluetooth pop light',
-    description: 'Modern bluetooth-enabled POP light with versatile ceiling illumination.',
+    name: 'Bluetooth POP light',
+    description: 'Modern Bluetooth-enabled POP light with versatile ceiling illumination.',
     price: 55000,
     imageId: 'prod-106',
     category: 'Ceiling & Pop Lighting',
   },
   {
     id: 'prod-52',
-    name: 'decorative POP light',
+    name: 'Decorative POP light',
     description: 'Eye-catching decorative POP light fixture to add artistic flair to your ceiling designs.',
     price: 60000,
     imageId: 'prod-52',
@@ -479,7 +479,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-107',
-    name: 'design pop light',
+    name: 'Design POP light',
     description: 'Stylishly designed POP light for premium architectural aesthetics.',
     price: 70000,
     imageId: 'prod-107',
@@ -487,7 +487,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-108',
-    name: 'okeli rope light',
+    name: 'Okeli rope light',
     description: 'High-quality Okeli rope light for soft and even ambient lighting.',
     price: 40000,
     imageId: 'prod-108',
@@ -495,7 +495,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-84',
-    name: 'pop decorative light',
+    name: 'Pop decorative light',
     description: 'Artistic POP decorative light fixture for unique ceiling aesthetics.',
     price: 70000,
     imageId: 'prod-84',
@@ -503,7 +503,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-109',
-    name: 'spot AKT pop light',
+    name: 'Spot AKT POP light',
     description: 'Powerful Spot AKT POP light. Available in blue and white colors.',
     price: 3500,
     imageId: 'prod-109',
@@ -511,7 +511,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-93',
-    name: 'track light',
+    name: 'Track light',
     description: 'Available in white and black 20W-40W. Prices: 20W - ₦7,000, 40W - ₦10,000, Rail per meter - ₦2,000.',
     price: 7000,
     imageId: 'prod-93',
@@ -519,7 +519,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-track-2',
-    name: 'track_light_7,000',
+    name: 'Track light',
     description: 'Durable track light for modern gallery and office illumination.',
     price: 7000,
     imageId: 'prod-93',
@@ -529,7 +529,7 @@ export const products: Product[] = [
   // --- LIGHTING: Outdoor Lighting ---
   {
     id: 'out-1',
-    name: 'outdoor light',
+    name: 'Outdoor light',
     description: 'Sleek and durable outdoor light fixture, perfect for pathways.',
     price: 8000,
     imageId: 'prod-11',
@@ -537,7 +537,7 @@ export const products: Product[] = [
   },
   {
     id: 'out-2',
-    name: 'outdoor light',
+    name: 'Outdoor light',
     description: 'Weather-resistant decorative outdoor light for stylish exteriors.',
     price: 8000,
     imageId: 'prod-35',
@@ -545,7 +545,7 @@ export const products: Product[] = [
   },
   {
     id: 'out-3',
-    name: 'outdoor light',
+    name: 'Outdoor light',
     description: 'Premium quality outdoor wall light with efficient illumination.',
     price: 11000,
     imageId: 'prod-71',
@@ -553,7 +553,7 @@ export const products: Product[] = [
   },
   {
     id: 'out-4',
-    name: 'outdoor light',
+    name: 'Outdoor light',
     description: 'Modern and versatile outdoor light for various architectural styles.',
     price: 12000,
     imageId: 'prod-11',
@@ -561,7 +561,7 @@ export const products: Product[] = [
   },
   {
     id: 'out-5',
-    name: 'outdoor light',
+    name: 'Outdoor light',
     description: 'High-performance outdoor light for secure surroundings.',
     price: 17000,
     imageId: 'prod-80',
@@ -569,7 +569,7 @@ export const products: Product[] = [
   },
   {
     id: 'out-6',
-    name: 'outdoor light',
+    name: 'Outdoor light',
     description: 'Elegant outdoor lighting solution with a sophisticated finish.',
     price: 18000,
     imageId: 'prod-11',
@@ -577,7 +577,7 @@ export const products: Product[] = [
   },
   {
     id: 'out-7',
-    name: 'outdoor light',
+    name: 'Outdoor light',
     description: 'Luxurious grand outdoor light fixture for a stately home.',
     price: 25000,
     imageId: 'prod-7',
@@ -585,7 +585,7 @@ export const products: Product[] = [
   },
   {
     id: 'out-8',
-    name: 'outdoor light',
+    name: 'Outdoor light',
     description: 'The ultimate in outdoor illumination, combining power with design.',
     price: 35000,
     imageId: 'prod-8',
@@ -595,7 +595,7 @@ export const products: Product[] = [
   // --- LIGHTING: Pendant & Drop Lighting ---
   {
     id: 'prod-1',
-    name: '3 in 1 Dropping Light',
+    name: '3 in 1 dropping light',
     description: 'Industrial style dropping light featuring rustic rope accents and protective metal cages.',
     price: 45000,
     imageId: 'prod-1',
@@ -603,7 +603,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-2',
-    name: '5 in 1 Dropping Light',
+    name: '5 in 1 dropping light',
     description: 'A grander version of our classic dropping light, featuring five bulbs.',
     price: 75000,
     imageId: 'prod-2',
@@ -611,7 +611,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-62',
-    name: '12 bulb nordic light',
+    name: '12 bulb Nordic light',
     description: 'Striking 12-bulb Nordic lighting fixture for a modern, expansive look.',
     price: 150000,
     imageId: 'prod-62',
@@ -619,7 +619,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-68',
-    name: 'compact nordic crystal drop light',
+    name: 'Compact Nordic crystal drop light',
     description: 'Sleek and compact Nordic crystal drop light for focused elegant illumination.',
     price: 140000,
     imageId: 'prod-68',
@@ -627,7 +627,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-5',
-    name: 'LED Drop Light',
+    name: 'LED drop light',
     description: 'Modern energy-efficient LED drop light. Sleek and minimalist design.',
     price: 40000,
     imageId: 'prod-5',
@@ -636,7 +636,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-76',
-    name: 'luxury nordic rain drop chandelier',
+    name: 'Luxury Nordic rain drop chandelier',
     description: 'Breathtaking Nordic rain drop chandelier for a touch of luxury.',
     price: 400000,
     imageId: 'prod-76',
@@ -644,7 +644,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-10',
-    name: 'Luxury Unique Pendant drop Light',
+    name: 'Luxury unique pendant drop light',
     description: 'One-of-a-kind pendant drop light for those who value unique design.',
     price: 80000,
     imageId: 'prod-10',
@@ -652,7 +652,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-12-pendant',
-    name: 'Modern Quality Luxury Christal LED Wall Bracket',
+    name: 'Modern quality luxury crystal LED wall bracket',
     description: 'A touch of luxury for your space with high-quality crystal LED lighting.',
     price: 10000,
     imageId: 'prod-12',
@@ -660,7 +660,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-15',
-    name: 'modern design nordic wasoli drop light',
+    name: 'Modern design Nordic wasoli drop light',
     description: 'Minimalist Nordic design wasoli drop light for a clean, modern aesthetic.',
     price: 60000,
     imageId: 'prod-15',
@@ -668,7 +668,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-81',
-    name: 'modern nordic gold chandelier',
+    name: 'Modern Nordic gold chandelier',
     description: 'Elegant modern Nordic gold chandelier that radiates warmth.',
     price: 120000,
     imageId: 'prod-81',
@@ -676,7 +676,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-82',
-    name: 'modern nordic light',
+    name: 'Modern Nordic light',
     description: 'Contemporary modern Nordic lighting solution for refined spaces.',
     price: 400000,
     imageId: 'prod-82',
@@ -684,7 +684,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-pd-12',
-    name: 'Modern_Led_Crystal_Chandelier_450,000',
+    name: 'Modern LED crystal chandelier',
     description: 'Exquisite modern LED crystal chandelier for brilliant interior illumination.',
     price: 450000,
     imageId: 'prod-58',
@@ -692,7 +692,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-19',
-    name: 'New Design Bird Chandelier Led Light for Dinning & kitchen',
+    name: 'New design bird chandelier LED light for dining & kitchen',
     description: 'Artistic bird-inspired LED chandelier, perfect for dining area.',
     price: 75000,
     imageId: 'prod-19',
@@ -700,7 +700,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-20',
-    name: 'New Design Crystal Drop Light',
+    name: 'New design crystal drop light',
     description: 'A fresh, new design in crystal drop lighting for modern interiors.',
     price: 75000,
     imageId: 'prod-20',
@@ -708,7 +708,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-22',
-    name: 'New Unique Design Led Light',
+    name: 'New unique design LED light',
     description: 'A unique LED lighting solution with a cutting-edge design.',
     price: 120000,
     imageId: 'prod-22',
@@ -716,7 +716,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-26',
-    name: 'rafted to dazzle the perfect blend of modern design Chandelier Light',
+    name: 'Crafted to dazzle: The perfect blend of modern design chandelier light',
     description: 'Crafted to dazzle, this chandelier is the perfect blend of modern design.',
     price: 190000,
     imageId: 'prod-26',
@@ -724,7 +724,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-92',
-    name: 'stylish led drop light',
+    name: 'Stylish LED drop light',
     description: 'Contemporary stylish LED drop light for balanced illumination.',
     price: 45000,
     imageId: 'prod-92',
@@ -732,7 +732,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-27',
-    name: 'Unique 3Way Round Led Light',
+    name: 'Unique 3-way round LED light',
     description: 'A unique 3-way round LED light for versatile illumination patterns.',
     price: 75000,
     imageId: 'prod-27',
@@ -740,7 +740,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-28',
-    name: 'Unique 4 way Ball Led Drop Light',
+    name: 'Unique 4 way ball LED drop light',
     description: 'Creative 4-way ball LED drop light for a playful yet elegant look.',
     price: 80000,
     imageId: 'prod-28',
@@ -748,7 +748,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-29',
-    name: 'Unique Butterfly Led Dropping Light',
+    name: 'Unique butterfly LED dropping light',
     description: 'Enchanting butterfly-themed LED dropping light for magical spaces.',
     price: 120000,
     imageId: 'prod-29',
@@ -756,7 +756,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-31',
-    name: 'Unique Design 2 way Drop Light',
+    name: 'Unique design 2 way drop light',
     description: 'Versatile 2-way LED drop light with a unique contemporary design.',
     price: 35000,
     imageId: 'prod-31',
@@ -764,7 +764,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-96',
-    name: 'unique drop light',
+    name: 'Unique drop light',
     description: 'One-of-a-kind unique drop light for personalized spaces.',
     price: 70000,
     imageId: 'prod-96',
@@ -772,7 +772,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-33',
-    name: 'Unique Track LED Drop Light',
+    name: 'Unique track LED drop light',
     description: 'Industrial-inspired track LED light perfect for modern galleries.',
     price: 100000,
     imageId: 'prod-33',
@@ -782,7 +782,7 @@ export const products: Product[] = [
   // --- LIGHTING: Wall Bracket Lighting ---
   {
     id: 'wb-1',
-    name: '2 in 1 Led Wall Bracket light',
+    name: '2 in 1 LED wall bracket light',
     description: 'Functional and stylish 2-in-1 LED wall bracket light.',
     price: 22000,
     imageId: 'prod-46',
@@ -790,7 +790,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-2',
-    name: 'decorative LED wall bracket',
+    name: 'Decorative LED wall bracket',
     description: 'Sophisticated decorative LED wall bracket.',
     price: 20000,
     imageId: 'prod-51',
@@ -798,7 +798,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-3',
-    name: 'decorative wall bracket light',
+    name: 'Decorative wall bracket light',
     description: 'Classic decorative wall bracket light.',
     price: 24000,
     imageId: 'prod-53',
@@ -806,7 +806,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-4',
-    name: 'Deer Wall Bracket Light',
+    name: 'Deer wall bracket light',
     description: 'Unique nature-inspired wall bracket light featuring a deer design.',
     price: 22000,
     imageId: 'prod-4',
@@ -814,7 +814,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-5',
-    name: 'durable and stylish Led wall bracket',
+    name: 'Durable and stylish LED wall bracket',
     description: 'Long-lasting and aesthetically pleasing LED wall bracket.',
     price: 19000,
     imageId: 'prod-54',
@@ -830,7 +830,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-7',
-    name: 'Luxury Home Rooms wall Bracket Light',
+    name: 'Luxury home rooms wall bracket light',
     description: 'Premium wall bracket light designed for high-end residential interiors.',
     price: 25000,
     imageId: 'prod-7',
@@ -838,7 +838,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-8',
-    name: 'Luxury Double Golden Bird Wall Bracket Light',
+    name: 'Luxury double golden bird wall bracket light',
     description: 'Artistic lighting fixture featuring two exquisite golden birds.',
     price: 35000,
     imageId: 'prod-8',
@@ -846,7 +846,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-9',
-    name: 'Luxury Quality Mounted Wall Bird Light',
+    name: 'Luxury quality mounted wall bird light',
     description: 'High-quality mounted wall light with a beautiful bird accent.',
     price: 20000,
     imageId: 'prod-9',
@@ -862,7 +862,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-11',
-    name: 'modern design wall bracket',
+    name: 'Modern design wall bracket',
     description: 'Sleek modern design wall bracket for contemporary interiors.',
     price: 17000,
     imageId: 'prod-80',
@@ -870,7 +870,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-12',
-    name: 'Modern Horn Rooms bracket',
+    name: 'Modern horn rooms bracket',
     description: 'Unique horn-style wall bracket for a creative lighting statement.',
     price: 25000,
     imageId: 'prod-17',
@@ -878,7 +878,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-13',
-    name: 'modern led wall bracket',
+    name: 'Modern LED wall bracket',
     description: 'High-quality modern LED wall bracket for focused illumination.',
     price: 17000,
     imageId: 'prod-80',
@@ -886,7 +886,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-14',
-    name: 'Modern Room Wall Bracket Light',
+    name: 'Modern room wall bracket light',
     description: 'Versatile wall bracket light perfect for modern bedrooms.',
     price: 15000,
     imageId: 'prod-18',
@@ -894,7 +894,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-15',
-    name: 'modern wall bracket with bulb',
+    name: 'Modern wall bracket with bulb',
     description: 'Functional modern wall bracket complete with bulb.',
     price: 17000,
     imageId: 'prod-83',
@@ -902,7 +902,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-16',
-    name: 'Nodic Modern Creative Feather wall bracket',
+    name: 'Nordic modern creative feather wall bracket',
     description: 'Nordic-inspired creative wall bracket with a feather design.',
     price: 15000,
     imageId: 'prod-23',
@@ -910,7 +910,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-17',
-    name: 'Nodic Modern Creative Feather wall Ligh',
+    name: 'Nordic modern creative feather wall light',
     description: 'Artistic Nordic wall light featuring a creative feather motif.',
     price: 20000,
     imageId: 'prod-24',
@@ -918,7 +918,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-18',
-    name: 'unique wall bracket',
+    name: 'Unique wall bracket',
     description: 'One-of-a-kind wall bracket for a personalized touch.',
     price: 19000,
     imageId: 'prod-34',
@@ -926,7 +926,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-19',
-    name: 'Unique Wall LED Light',
+    name: 'Unique wall LED light',
     description: 'Sculptural wall LED light that provides both illumination and art.',
     price: 19000,
     imageId: 'prod-34',
@@ -934,7 +934,7 @@ export const products: Product[] = [
   },
   {
     id: 'wb-20',
-    name: 'Wall bracket Light',
+    name: 'Wall bracket light',
     description: 'Simple yet elegant wall bracket light for cozy room ambiances.',
     price: 8000,
     imageId: 'prod-35',
@@ -968,7 +968,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-3',
-    name: '3 Gang 2 way switch',
+    name: '3 gang 2 way switch',
     description: 'High-quality 3 gang 2 way electrical switch for multi-point control.',
     price: 5000,
     imageId: 'sw-3',
@@ -992,7 +992,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-6',
-    name: 'double 13A multi big button socket',
+    name: 'Double 13A multi big button socket',
     description: 'Dual universal 13A multi-plug socket with large buttons.',
     price: 5000,
     imageId: 'sw-6',
@@ -1000,7 +1000,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-7',
-    name: 'double socket',
+    name: 'Double socket',
     description: 'Standard double wall socket with a durable finish.',
     price: 5000,
     imageId: 'sw-7',
@@ -1008,7 +1008,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-8',
-    name: 'single socket',
+    name: 'Single socket',
     description: 'Standard single wall socket, perfect for any room.',
     price: 3000,
     imageId: 'sw-8',
@@ -1034,7 +1034,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-104',
-    name: 'AKT 18W pop bulb',
+    name: 'AKT 18W POP bulb',
     description: 'Specialized AKT 18W pop bulb for modern ceilings.',
     price: 3800,
     imageId: 'prod-104',
