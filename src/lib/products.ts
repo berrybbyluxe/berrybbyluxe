@@ -558,7 +558,7 @@ export const products: Product[] = [
     id: 'prod-10',
     name: 'Luxury unique pendant drop light',
     description: 'One-of-a-kind pendant drop light for those who value unique design.',
-    price: 80000,
+    price: 8000,
     imageId: 'prod-10',
     category: 'Pendant & Drop Lighting',
   },
