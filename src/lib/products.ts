@@ -452,9 +452,9 @@ export const products: Product[] = [
   },
   {
     id: 'prod-ch-20',
-    name: 'Unique high quality crystal chandelier',
+    name: 'Modern round crystal chandelier',
     description: 'Breathtaking high quality crystal chandelier that radiates brilliance.',
-    price: 350000,
+    price: 380000,
     imageId: 'prod-59',
     category: 'Chandelier Lighting',
   },
