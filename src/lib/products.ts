@@ -1,3 +1,4 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -130,7 +131,7 @@ export const products: Product[] = [
   // --- FURNITURE: Dinning Set ---
   {
     id: 'prod-61',
-    name: '6 Seater grey Italian bursa',
+    name: '6 seater grey Italian bursa',
     description: 'Luxury 6 seater grey Italian Bursa set for a sophisticated dining area.',
     price: 1500000,
     imageId: 'prod-61',
@@ -291,6 +292,38 @@ export const products: Product[] = [
 
   // --- LIGHTING: Chandelier Lighting ---
   {
+    id: 'prod-57',
+    name: 'Modern LED crystal chandelier size 500',
+    description: 'Sleek and sparkling modern LED crystal chandelier, perfect for contemporary homes.',
+    price: 190000,
+    imageId: 'prod-57',
+    category: 'Chandelier Lighting',
+  },
+  {
+    id: 'prod-ch-22',
+    name: 'Modern LED crystal chandelier size 400',
+    description: 'Elegant and sparkling modern LED crystal chandelier in 400mm size.',
+    price: 120000,
+    imageId: 'prod-57',
+    category: 'Chandelier Lighting',
+  },
+  {
+    id: 'prod-76',
+    name: 'Modern luxury Nordic rain drop light',
+    description: 'Breathtaking Nordic rain drop chandelier for a touch of luxury.',
+    price: 200000,
+    imageId: 'prod-76',
+    category: 'Chandelier Lighting',
+  },
+  {
+    id: 'prod-59',
+    name: 'Modern round crystal chandelier',
+    description: 'Breathtaking high quality crystal chandelier that radiates brilliance.',
+    price: 380000,
+    imageId: 'prod-59',
+    category: 'Chandelier Lighting',
+  },
+  {
     id: 'prod-3',
     name: 'Decorative crystal chandelier',
     description: 'A stunning crystal centerpiece that brings elegance and sparkle to any room.',
@@ -299,25 +332,9 @@ export const products: Product[] = [
     category: 'Chandelier Lighting',
   },
   {
-    id: 'prod-ch-2',
-    name: 'Modern LED crystal chandelier size 500',
-    description: 'Exquisite crystal lighting fixture for a refined interior in 500mm size.',
-    price: 190000,
-    imageId: 'prod-13',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-ch-22',
-    name: 'Modern LED crystal chandelier size 400',
-    description: 'Elegant and sparkling modern LED crystal chandelier in 400mm size.',
-    price: 120000,
-    imageId: 'prod-13',
-    category: 'Chandelier Lighting',
-  },
-  {
     id: 'prod-50',
     name: 'Crystal fan chandelier with Bluetooth',
-    description: 'Innovative crystal chandelier that doubles as a high-performance ceiling fan with bluetooth capability.',
+    description: 'Innovative crystal chandelier that doubles as a high-performance ceiling fan with Bluetooth capability.',
     price: 180000,
     imageId: 'prod-50',
     category: 'Chandelier Lighting',
@@ -336,30 +353,6 @@ export const products: Product[] = [
     description: 'The pinnacle of luxury lighting. A grand royal crystal chandelier for sophisticated spaces.',
     price: 800000,
     imageId: 'prod-6',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-ch-6',
-    name: 'Luxury crystal gold duplex chandelier',
-    description: 'Grand luxury gold duplex chandelier featuring premium crystal accents.',
-    price: 35000,
-    imageId: 'prod-21',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-ch-7',
-    name: 'Luxury LED ceiling chandelier',
-    description: 'Sleek and sparkling luxury LED ceiling chandelier for modern homes.',
-    price: 300000,
-    imageId: 'prod-58',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-ch-8',
-    name: 'Luxury vintage crystal chandelier',
-    description: 'Classic luxury vintage crystal chandelier with timeless appeal.',
-    price: 220000,
-    imageId: 'prod-25',
     category: 'Chandelier Lighting',
   },
   {
@@ -387,42 +380,10 @@ export const products: Product[] = [
     category: 'Chandelier Lighting',
   },
   {
-    id: 'prod-ch-12',
-    name: 'Modern luxury Nordic rain drop light',
-    description: 'Magnificent modern design crystal chandelier, available in 500mm size.',
-    price: 200000,
-    imageId: 'prod-58',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-57',
-    name: 'Modern LED crystal chandelier',
-    description: 'Sleek and sparkling modern LED crystal chandelier, perfect for contemporary homes.',
-    price: 160000,
-    imageId: 'prod-57',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-ch-14',
-    name: 'Modern LED spheric chandelier',
-    description: 'Artistic modern LED spheric chandelier for a unique lighting statement.',
-    price: 200000,
-    imageId: 'prod-22',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-ch-15',
-    name: 'Modern round crystal chandelier',
-    description: 'Beautiful modern round crystal chandelier for balanced illumination.',
-    price: 380000,
-    imageId: 'prod-21',
-    category: 'Chandelier Lighting',
-  },
-  {
     id: 'prod-21',
     name: 'New luxury crystal gold duplex chandelier',
     description: 'Grand luxury gold duplex chandelier featuring premium crystal accents.',
-    price: 380000,
+    price: 350000,
     imageId: 'prod-21',
     category: 'Chandelier Lighting',
   },
@@ -435,35 +396,11 @@ export const products: Product[] = [
     category: 'Chandelier Lighting',
   },
   {
-    id: 'prod-ch-18',
-    name: 'Stylish crystal chandelier size 500',
-    description: 'Sleek and sparkling stylish crystal chandelier in 500mm size.',
-    price: 140000,
-    imageId: 'prod-68',
-    category: 'Chandelier Lighting',
-  },
-  {
     id: 'prod-30',
     name: 'Unique decorative LED chandelier',
     description: 'Decorative LED chandelier with a unique, eye-catching structure.',
     price: 220000,
     imageId: 'prod-30',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-ch-20',
-    name: 'Modern round crystal chandelier',
-    description: 'Breathtaking high quality crystal chandelier that radiates brilliance.',
-    price: 380000,
-    imageId: 'prod-59',
-    category: 'Chandelier Lighting',
-  },
-  {
-    id: 'prod-ch-21',
-    name: 'Unique modern crystal chandelier',
-    description: 'One-of-a-kind unique modern crystal chandelier, available in sizes 400 and 500.',
-    price: 160000,
-    imageId: 'prod-13',
     category: 'Chandelier Lighting',
   },
 
@@ -524,14 +461,6 @@ export const products: Product[] = [
     imageId: 'prod-93',
     category: 'Ceiling & Pop Lighting',
   },
-  {
-    id: 'prod-track-2',
-    name: 'Track light',
-    description: 'Durable track light for modern gallery and office illumination.',
-    price: 7000,
-    imageId: 'prod-93',
-    category: 'Ceiling & Pop Lighting',
-  },
 
   // --- LIGHTING: Outdoor Lighting ---
   {
@@ -540,14 +469,6 @@ export const products: Product[] = [
     description: 'Sleek and durable outdoor light fixture, perfect for pathways.',
     price: 8000,
     imageId: 'prod-11',
-    category: 'Outdoor Lighting',
-  },
-  {
-    id: 'out-2',
-    name: 'Outdoor light',
-    description: 'Weather-resistant decorative outdoor light for stylish exteriors.',
-    price: 8000,
-    imageId: 'prod-35',
     category: 'Outdoor Lighting',
   },
   {
@@ -575,14 +496,6 @@ export const products: Product[] = [
     category: 'Outdoor Lighting',
   },
   {
-    id: 'out-6',
-    name: 'Outdoor light',
-    description: 'Elegant outdoor lighting solution with a sophisticated finish.',
-    price: 18000,
-    imageId: 'prod-11',
-    category: 'Outdoor Lighting',
-  },
-  {
     id: 'out-7',
     name: 'Outdoor light',
     description: 'Luxurious grand outdoor light fixture for a stately home.',
@@ -602,7 +515,7 @@ export const products: Product[] = [
   // --- LIGHTING: Pendant & Drop Lighting ---
   {
     id: 'prod-1',
-    name: '3 In 1 dropping light',
+    name: '3 in 1 dropping light',
     description: 'Industrial style dropping light featuring rustic rope accents and protective metal cages.',
     price: 45000,
     imageId: 'prod-1',
@@ -610,7 +523,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-2',
-    name: '5 In 1 dropping light',
+    name: '5 in 1 dropping light',
     description: 'A grander version of our classic dropping light, featuring five bulbs.',
     price: 75000,
     imageId: 'prod-2',
@@ -618,7 +531,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-62',
-    name: '12 Bulb Nordic light',
+    name: '12 bulb Nordic light',
     description: 'Striking 12-bulb Nordic lighting fixture for a modern, expansive look.',
     price: 150000,
     imageId: 'prod-62',
@@ -642,27 +555,11 @@ export const products: Product[] = [
     category: 'Pendant & Drop Lighting',
   },
   {
-    id: 'prod-76',
-    name: 'Luxury Nordic rain drop chandelier',
-    description: 'Breathtaking Nordic rain drop chandelier for a touch of luxury.',
-    price: 400000,
-    imageId: 'prod-76',
-    category: 'Pendant & Drop Lighting',
-  },
-  {
     id: 'prod-10',
     name: 'Luxury unique pendant drop light',
     description: 'One-of-a-kind pendant drop light for those who value unique design.',
     price: 80000,
     imageId: 'prod-10',
-    category: 'Pendant & Drop Lighting',
-  },
-  {
-    id: 'prod-12-pendant',
-    name: 'Modern quality luxury crystal LED wall bracket',
-    description: 'A touch of luxury for your space with high-quality crystal LED lighting.',
-    price: 10000,
-    imageId: 'prod-12',
     category: 'Pendant & Drop Lighting',
   },
   {
@@ -687,14 +584,6 @@ export const products: Product[] = [
     description: 'Contemporary modern Nordic lighting solution for refined spaces.',
     price: 400000,
     imageId: 'prod-82',
-    category: 'Pendant & Drop Lighting',
-  },
-  {
-    id: 'prod-pd-12',
-    name: 'Modern LED crystal chandelier',
-    description: 'Exquisite modern LED crystal chandelier for brilliant interior illumination.',
-    price: 450000,
-    imageId: 'prod-58',
     category: 'Pendant & Drop Lighting',
   },
   {
@@ -723,7 +612,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-26',
-    name: 'Crafted to dazzle: The perfect blend of modern design chandelier light',
+    name: 'Crafted to dazzle: the perfect blend of modern design chandelier light',
     description: 'Crafted to dazzle, this chandelier is the perfect blend of modern design.',
     price: 190000,
     imageId: 'prod-26',
@@ -789,7 +678,7 @@ export const products: Product[] = [
   // --- LIGHTING: Wall Bracket Lighting ---
   {
     id: 'wb-1',
-    name: '2 In 1 LED wall bracket light',
+    name: '2 in 1 LED wall bracket light',
     description: 'Functional and stylish 2-in-1 LED wall bracket light.',
     price: 22000,
     imageId: 'prod-46',
@@ -959,7 +848,7 @@ export const products: Product[] = [
   // --- LIGHTING: Switches & Sockets ---
   {
     id: 'sw-1',
-    name: '1 Gang 2 way switch',
+    name: '1 gang 2 way switch',
     description: 'High-quality 1 gang 2 way electrical switch with a sleek design.',
     price: 2500,
     imageId: 'sw-1',
@@ -967,7 +856,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-2',
-    name: '2 Gang 2 way switch',
+    name: '2 gang 2 way switch',
     description: 'High-quality 2 gang 2 way electrical switch for dual circuit control.',
     price: 3000,
     imageId: 'sw-2',
@@ -975,7 +864,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-3',
-    name: '3 Gang 2 way switch',
+    name: '3 gang 2 way switch',
     description: 'High-quality 3 gang 2 way electrical switch for multi-point control.',
     price: 5000,
     imageId: 'sw-3',
@@ -983,7 +872,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-4',
-    name: '13A Multi big button socket',
+    name: '13A multi big button socket',
     description: 'Universal 13A multi-plug socket featuring a large button.',
     price: 3000,
     imageId: 'sw-4',
@@ -991,7 +880,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-5',
-    name: '20A Switch water heater',
+    name: '20A switch water heater',
     description: 'Heavy-duty 20A switch specifically designed for water heaters.',
     price: 3000,
     imageId: 'sw-5',
