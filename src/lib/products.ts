@@ -305,7 +305,6 @@ export const products: Product[] = [
     price: 410000,
     imageId: 'prod-13',
     category: 'Chandelier Lighting',
-    isSoldOut: true,
   },
   {
     id: 'prod-50',
