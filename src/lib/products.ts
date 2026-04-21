@@ -1,4 +1,3 @@
-
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -300,7 +299,7 @@ export const products: Product[] = [
     category: 'Chandelier Lighting',
   },
   {
-    id: 'prod-ch-22',
+    id: 'prod-ch-400',
     name: 'Modern LED crystal chandelier size 400',
     description: 'Elegant and sparkling modern LED crystal chandelier in 400mm size.',
     price: 120000,
