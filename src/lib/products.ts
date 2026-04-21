@@ -130,7 +130,7 @@ export const products: Product[] = [
   // --- FURNITURE: Dinning Set ---
   {
     id: 'prod-61',
-    name: '6 seater grey Italian bursa',
+    name: '6 Seater grey Italian bursa',
     description: 'Luxury 6 seater grey Italian Bursa set for a sophisticated dining area.',
     price: 1500000,
     imageId: 'prod-61',
@@ -301,8 +301,16 @@ export const products: Product[] = [
   {
     id: 'prod-ch-2',
     name: 'Modern LED crystal chandelier size 500',
-    description: 'Exquisite crystal lighting fixture for a refined interior.',
+    description: 'Exquisite crystal lighting fixture for a refined interior in 500mm size.',
     price: 410000,
+    imageId: 'prod-13',
+    category: 'Chandelier Lighting',
+  },
+  {
+    id: 'prod-ch-22',
+    name: 'Modern LED crystal chandelier size 400',
+    description: 'Elegant and sparkling modern LED crystal chandelier in 400mm size.',
+    price: 120000,
     imageId: 'prod-13',
     category: 'Chandelier Lighting',
   },
@@ -594,7 +602,7 @@ export const products: Product[] = [
   // --- LIGHTING: Pendant & Drop Lighting ---
   {
     id: 'prod-1',
-    name: '3 in 1 dropping light',
+    name: '3 In 1 dropping light',
     description: 'Industrial style dropping light featuring rustic rope accents and protective metal cages.',
     price: 45000,
     imageId: 'prod-1',
@@ -602,7 +610,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-2',
-    name: '5 in 1 dropping light',
+    name: '5 In 1 dropping light',
     description: 'A grander version of our classic dropping light, featuring five bulbs.',
     price: 75000,
     imageId: 'prod-2',
@@ -610,7 +618,7 @@ export const products: Product[] = [
   },
   {
     id: 'prod-62',
-    name: '12 bulb Nordic light',
+    name: '12 Bulb Nordic light',
     description: 'Striking 12-bulb Nordic lighting fixture for a modern, expansive look.',
     price: 150000,
     imageId: 'prod-62',
@@ -781,7 +789,7 @@ export const products: Product[] = [
   // --- LIGHTING: Wall Bracket Lighting ---
   {
     id: 'wb-1',
-    name: '2 in 1 LED wall bracket light',
+    name: '2 In 1 LED wall bracket light',
     description: 'Functional and stylish 2-in-1 LED wall bracket light.',
     price: 22000,
     imageId: 'prod-46',
@@ -951,7 +959,7 @@ export const products: Product[] = [
   // --- LIGHTING: Switches & Sockets ---
   {
     id: 'sw-1',
-    name: '1 gang 2 way switch',
+    name: '1 Gang 2 way switch',
     description: 'High-quality 1 gang 2 way electrical switch with a sleek design.',
     price: 2500,
     imageId: 'sw-1',
@@ -959,7 +967,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-2',
-    name: '2 gang 2 way switch',
+    name: '2 Gang 2 way switch',
     description: 'High-quality 2 gang 2 way electrical switch for dual circuit control.',
     price: 3000,
     imageId: 'sw-2',
@@ -967,7 +975,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-3',
-    name: '3 gang 2 way switch',
+    name: '3 Gang 2 way switch',
     description: 'High-quality 3 gang 2 way electrical switch for multi-point control.',
     price: 5000,
     imageId: 'sw-3',
@@ -975,7 +983,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-4',
-    name: '13A multi big button socket',
+    name: '13A Multi big button socket',
     description: 'Universal 13A multi-plug socket featuring a large button.',
     price: 3000,
     imageId: 'sw-4',
@@ -983,7 +991,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-5',
-    name: '20A switch water heater',
+    name: '20A Switch water heater',
     description: 'Heavy-duty 20A switch specifically designed for water heaters.',
     price: 3000,
     imageId: 'sw-5',
