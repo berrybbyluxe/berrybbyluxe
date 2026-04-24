@@ -1,7 +1,8 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
-  // --- LIGHTING: Chandelier Lighting ---
+  // --- LIGHTING: Chandelier Lighting (21 Items) ---
   {
     id: 'prod-ch-fan',
     name: 'Crystal fan chandelier with bluetooth',
@@ -171,7 +172,7 @@ export const products: Product[] = [
     category: 'Chandelier Lighting',
   },
 
-  // --- FURNITURE: Bedroom ---
+  // --- FURNITURE ---
   {
     id: 'prod-49',
     name: 'Comfortable and stylish bed',
@@ -180,8 +181,6 @@ export const products: Product[] = [
     imageId: 'prod-49',
     category: 'Bedroom',
   },
-
-  // --- FURNITURE: Living Room ---
   {
     id: 'prod-37',
     name: 'Armani cassa set',
@@ -190,8 +189,6 @@ export const products: Product[] = [
     imageId: 'prod-37',
     category: 'Living Room',
   },
-
-  // --- FURNITURE: Vass Flowers ---
   {
     id: 'prod-47',
     name: 'Beautiful wreath flower',
@@ -201,7 +198,7 @@ export const products: Product[] = [
     category: 'Vass Flowers',
   },
 
-  // --- LIGHTING: Ceiling & Pop Lighting ---
+  // --- CEILING & POP LIGHTING ---
   {
     id: 'prod-93',
     name: 'Track light',
@@ -211,7 +208,7 @@ export const products: Product[] = [
     category: 'Ceiling & Pop Lighting',
   },
 
-  // --- LIGHTING: Outdoor Lighting ---
+  // --- OUTDOOR LIGHTING ---
   {
     id: 'out-1',
     name: 'Modern outdoor & indoor light',
@@ -221,7 +218,7 @@ export const products: Product[] = [
     category: 'Outdoor Lighting',
   },
 
-  // --- LIGHTING: Pendant & Drop Lighting ---
+  // --- PENDANT & DROP LIGHTING ---
   {
     id: 'prod-1',
     name: '3 in 1 dropping light',
@@ -248,7 +245,7 @@ export const products: Product[] = [
     category: 'Pendant & Drop Lighting',
   },
 
-  // --- LIGHTING: Wall Bracket Lighting ---
+  // --- WALL BRACKET LIGHTING ---
   {
     id: 'wb-4',
     name: 'Deer wall bracket light',
@@ -258,7 +255,7 @@ export const products: Product[] = [
     category: 'Wall Bracket Lighting',
   },
 
-  // --- LIGHTING: Switches & Sockets ---
+  // --- SWITCHES & SOCKETS ---
   {
     id: 'sw-1',
     name: '1 gang 2 way switch',
