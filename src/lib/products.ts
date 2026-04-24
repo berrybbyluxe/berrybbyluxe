@@ -1,11 +1,10 @@
-
 import type { Product } from './types';
 
 export const products: Product[] = [
   // --- LIGHTING: Chandelier Lighting (21 Items) ---
   {
     id: 'prod-ch-fan',
-    name: 'Crystal fan chandelier with bluetooth',
+    name: 'Crystal fan chandelier with bluethooth',
     description: 'Innovative crystal chandelier that doubles as a high-performance ceiling fan with bluetooth capability.',
     price: 180000,
     imageId: 'prod-ch-fan',
@@ -202,7 +201,7 @@ export const products: Product[] = [
   {
     id: 'prod-93',
     name: 'Track light',
-    description: 'Available in white and black 20W-40W. Prices: 20W - ₦7,000, 40W - ₦10,000, Rail per meter - ₦2,000.',
+    description: 'Available in white and black 20W-40W. Efficient directional lighting for modern interiors.',
     price: 7000,
     imageId: 'prod-93',
     category: 'Ceiling & POP Lighting',
