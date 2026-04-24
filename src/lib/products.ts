@@ -172,16 +172,6 @@ export const products: Product[] = [
     category: 'Chandelier Lighting',
   },
 
-  // --- FURNITURE: Turkey Collections ---
-  {
-    id: 'prod-60',
-    name: 'Tufted Turkey chairs',
-    description: 'Ultra-luxurious Tufted Turkey chairs, the pinnacle of comfort and royal elegance for your master bedroom or living suite.',
-    price: 8000000,
-    imageId: 'prod-60',
-    category: 'Turkey Collections',
-  },
-  
   // --- FURNITURE: Bedroom ---
   {
     id: 'prod-49',
@@ -195,21 +185,11 @@ export const products: Product[] = [
   // --- FURNITURE: Living Room ---
   {
     id: 'prod-37',
-    name: 'Armani cassa set',
+    name: 'ARMANI CASSA SET',
     description: 'Exquisite Armani cassa sofa set designed for the ultimate luxury living experience.',
     price: 2500000,
     imageId: 'prod-37',
     category: 'Living Room',
-  },
-
-  // --- FURNITURE: Dinning Set ---
-  {
-    id: 'prod-61',
-    name: '6 seater grey Italian bursa',
-    description: 'Luxury 6 seater grey Italian Bursa set for a sophisticated dining area.',
-    price: 1500000,
-    imageId: 'prod-61',
-    category: 'Dinning Set',
   },
 
   // --- FURNITURE: Vass Flowers ---
@@ -224,28 +204,20 @@ export const products: Product[] = [
 
   // --- LIGHTING: Ceiling & Pop Lighting ---
   {
-    id: 'prod-106',
-    name: 'Bluetooth POP light',
-    description: 'Modern Bluetooth-enabled POP light with versatile ceiling illumination.',
-    price: 55000,
-    imageId: 'prod-106',
-    category: 'Ceiling & Pop Lighting',
-  },
-  {
     id: 'prod-93',
     name: 'Track light',
     description: 'Available in white and black 20W-40W. Prices: 20W - ₦7,000, 40W - ₦10,000, Rail per meter - ₦2,000.',
     price: 7000,
-    imageId: 'prod-93',
+    imageId: 'prod-71',
     category: 'Ceiling & Pop Lighting',
   },
 
   // --- LIGHTING: Outdoor Lighting ---
   {
     id: 'out-1',
-    name: 'Outdoor light',
+    name: 'Modern outdoor & indoor light',
     description: 'Sleek and durable outdoor light fixture, perfect for pathways.',
-    price: 8000,
+    price: 12000,
     imageId: 'prod-11',
     category: 'Outdoor Lighting',
   },

@@ -13,212 +13,236 @@
       "imageHint": "modern living room"
     },
     {
+      "id": "prod-ch-fan",
+      "description": "Crystal fan chandelier with bluetooth",
+      "imageUrl": "/images/Crystal_Fan_Chandelier with bluethooth_180,000.jpeg",
+      "imageHint": "fan chandelier"
+    },
+    {
+      "id": "prod-ch-deco",
+      "description": "Decorative crystal chandelier",
+      "imageUrl": "/images/decorative crystal chandelier_400,000.jpeg",
+      "imageHint": "crystal chandelier"
+    },
+    {
+      "id": "prod-ch-elegant",
+      "description": "Elegant and modern crystal chandelier",
+      "imageUrl": "/images/elegant and modern crystal chandelier_150,000.jpeg",
+      "imageHint": "elegant chandelier"
+    },
+    {
+      "id": "prod-ch-royal",
+      "description": "Luxurious royal crystal chandelier",
+      "imageUrl": "/images/LUXURIOUS ROYAL CRYSTAL CHANDELIER_800,000.jpeg",
+      "imageHint": "royal chandelier"
+    },
+    {
+      "id": "prod-ch-gold-duplex",
+      "description": "Luxury crystal gold duplex chandelier",
+      "imageUrl": "/images/luxury crystal gold duplex chandelier_350,000.jpeg",
+      "imageHint": "duplex chandelier"
+    },
+    {
+      "id": "prod-ch-ceiling",
+      "description": "Luxury LED ceiling chandelier",
+      "imageUrl": "/images/luxury led ceiling chandelier_250,000.jpeg",
+      "imageHint": "ceiling chandelier"
+    },
+    {
+      "id": "prod-ch-vintage",
+      "description": "Luxury vintage crystal chandelier",
+      "imageUrl": "/images/luxury vintage crystal chandelier_280,000.jpeg",
+      "imageHint": "vintage chandelier"
+    },
+    {
+      "id": "prod-ch-400",
+      "description": "Modern crystal chandelier light size 400",
+      "imageUrl": "/images/Modern Crystal Chandelier light_120,000_size 400.jpeg",
+      "imageHint": "crystal chandelier"
+    },
+    {
+      "id": "prod-ch-deco-light",
+      "description": "Modern decorative crystal chandelier light",
+      "imageUrl": "/images/Modern Decorative Crystal Chandelier Light_190,000.jpeg",
+      "imageHint": "decorative chandelier"
+    },
+    {
+      "id": "prod-ch-design-500",
+      "description": "Modern design crystal chandelier size 500",
+      "imageUrl": "/images/modern design crystal chandelier_size 500_180,000.jpeg",
+      "imageHint": "design chandelier"
+    },
+    {
+      "id": "prod-ch-led-500-160",
+      "description": "Modern LED crystal chandelier size 500",
+      "imageUrl": "/images/modern LED crystal chandelier_160,000_size_500.jpeg",
+      "imageHint": "led chandelier"
+    },
+    {
+      "id": "prod-ch-led-600",
+      "description": "Modern LED crystal chandelier size 600",
+      "imageUrl": "/images/modern LED crystal chandelier_220,000_size_600.jpeg",
+      "imageHint": "led chandelier"
+    },
+    {
+      "id": "prod-ch-led-500-190",
+      "description": "Modern LED crystal chandelier size 500",
+      "imageUrl": "/images/Modern Led crystal chandelier_size 500_190,000.jpeg",
+      "imageHint": "led chandelier"
+    },
+    {
+      "id": "prod-ch-nordic-rain",
+      "description": "Modern luxury Nordic rain drop light",
+      "imageUrl": "/images/Modern Luxury Nordic Rain Drop Light_300,000.jpeg",
+      "imageHint": "nordic chandelier"
+    },
+    {
+      "id": "prod-ch-round",
+      "description": "Modern round crystal chandelier",
+      "imageUrl": "/images/modern round crystal chandelier_350,000.jpeg",
+      "imageHint": "round chandelier"
+    },
+    {
+      "id": "prod-ch-gold-duplex-new",
+      "description": "New luxury crystal gold duplex chandelier",
+      "imageUrl": "/images/New Luxury Crystal Gold Duplex Chandelier_380,000.jpeg",
+      "imageHint": "new chandelier"
+    },
+    {
+      "id": "prod-ch-pure",
+      "description": "Pure crystal charming chandelier light",
+      "imageUrl": "/images/Pure crystal charming Chandelier Light_400,000.jpeg",
+      "imageHint": "pure crystal"
+    },
+    {
+      "id": "prod-ch-stylish-500",
+      "description": "Stylish crystal chandelier size 500",
+      "imageUrl": "/images/stylish crystal chandelier size 500_160,000.jpeg",
+      "imageHint": "stylish chandelier"
+    },
+    {
+      "id": "prod-ch-unique-deco",
+      "description": "Unique decorative LED chandelier",
+      "imageUrl": "/images/Unique Decorative LED Chandelier_220,000.jpeg",
+      "imageHint": "unique chandelier"
+    },
+    {
+      "id": "prod-ch-high-quality",
+      "description": "Unique high quality crystal chandelier",
+      "imageUrl": "/images/unique high quality crystal chandelier_280,000.jpeg",
+      "imageHint": "quality chandelier"
+    },
+    {
+      "id": "prod-ch-nordic-rain-drop",
+      "description": "Unique Nordic rain LED drop light",
+      "imageUrl": "/images/Unique Nordic Rain Led Drop Light_400,000.jpeg",
+      "imageHint": "nordic drop"
+    },
+    {
       "id": "prod-1",
-      "description": "3 in 1 Dropping Light",
+      "description": "3 in 1 dropping light",
       "imageUrl": "/images/3 in 1 Dropping Light_45,000.png",
       "imageHint": "industrial light"
     },
     {
       "id": "prod-2",
-      "description": "5 in 1 Dropping Light",
+      "description": "5 in 1 dropping light",
       "imageUrl": "/images/5 in 1 Dropping Light _75,000.jpg",
       "imageHint": "industrial pendant"
     },
     {
-      "id": "prod-3",
-      "description": "Decorative Crystal Chandelier",
-      "imageUrl": "/images/chandelier lighting/decorative crystal chandelier_400,000.jpeg",
-      "imageHint": "crystal chandelier"
-    },
-    {
       "id": "prod-4",
-      "description": "Deer Wall Bracket Light",
+      "description": "Deer wall bracket light",
       "imageUrl": "/images/Deer Wall Bracket Light_22,000.png",
       "imageHint": "wall light"
     },
     {
       "id": "prod-5",
-      "description": "LED Drop Light",
+      "description": "LED drop light",
       "imageUrl": "/images/led_drop_light_40000_sold_out.png",
       "imageHint": "pendant light"
     },
     {
-      "id": "prod-6",
-      "description": "Luxurious Royal Crystal Chandelier",
-      "imageUrl": "/images/chandelier lighting/LUXURIOUS ROYAL CRYSTAL CHANDELIER_800,000.jpeg",
-      "imageHint": "luxury chandelier"
-    },
-    {
       "id": "prod-7",
-      "description": "Luxury  Home Rooms wall Bracket Light",
+      "description": "Luxury home rooms wall bracket light",
       "imageUrl": "/images/Luxury  Home Rooms wall Bracket Light-25,000.png",
       "imageHint": "wall bracket"
     },
     {
       "id": "prod-8",
-      "description": "Luxury Double Golden Bird Wall Bracket Light",
+      "description": "Luxury double golden bird wall bracket light",
       "imageUrl": "/images/Luxury Double Golden Bird Wall Bracket Light _35,000.png",
       "imageHint": "bird light"
     },
     {
       "id": "prod-9",
-      "description": "Luxury Quality Mounted Wall Bird Light",
+      "description": "Luxury quality mounted wall bird light",
       "imageUrl": "/images/Luxury Quality Mounted Wall Bird Light_20,000.png",
       "imageHint": "mounted light"
     },
     {
       "id": "prod-10",
-      "description": "Luxury Unique Pendant drop Light",
+      "description": "Luxury unique pendant drop light",
       "imageUrl": "/images/Luxury Unique Pendant drop Light_80,000.png",
       "imageHint": "unique pendant"
     },
     {
       "id": "prod-11",
-      "description": "Modern Outdoor & Indoor Light",
+      "description": "Modern outdoor & indoor light",
       "imageUrl": "/images/Modern Outdoor & Indoor Light_12,000.png",
       "imageHint": "outdoor light"
     },
     {
       "id": "prod-12",
-      "description": "Modern Quality Luxury Crystal LED Wall Bracket",
+      "description": "Modern quality luxury crystal LED wall bracket",
       "imageUrl": "/images/Modern Quality Luxury Christal LED Wall Bracket_10,000.png",
       "imageHint": "wall bracket"
     },
     {
-      "id": "prod-13",
-      "description": "Modern Crystal Chandelier light",
-      "imageUrl": "/images/chandelier lighting/Modern Crystal Chandelier light_120,000_size 400.jpeg",
-      "imageHint": "crystal chandelier"
-    },
-    {
-      "id": "prod-14",
-      "description": "Modern Decorative Crystal Chandelier Light",
-      "imageUrl": "/images/chandelier lighting/Modern Decorative Crystal Chandelier Light_190,000.jpeg",
-      "imageHint": "modern chandelier"
-    },
-    {
       "id": "prod-15",
-      "description": "Modern Design Singlr Drop Pendant Light",
+      "description": "Modern design single drop pendant light",
       "imageUrl": "/images/Modern Design Singlr Drop Pendant Light_60,000.jpeg",
       "imageHint": "single pendant"
     },
     {
-      "id": "prod-16",
-      "description": "Modern Four Drop Led Pendant Light",
-      "imageUrl": "/images/Modern Four Drop Led Pendant Light_75,000.jpeg",
-      "imageHint": "four drop pendant"
-    },
-    {
       "id": "prod-17",
-      "description": "Modern Horn Rooms bracket",
+      "description": "Modern horn rooms bracket",
       "imageUrl": "/images/Modern Horn Rooms bracket_25,000.png",
       "imageHint": "horn bracket"
     },
     {
       "id": "prod-18",
-      "description": "Modern Room Wall Bracket Light",
+      "description": "Modern room wall bracket light",
       "imageUrl": "/images/Modern Room Wall Bracket Light_15,000.png",
       "imageHint": "room wall light"
     },
     {
       "id": "prod-19",
-      "description": "New Design Bird Chandelier Led Light for Dinning & kitchen",
+      "description": "New design bird chandelier LED light for dining & kitchen",
       "imageUrl": "/images/New Design Bird Chandelier Led Light for Dinning & kitchen_75,000.jpeg",
       "imageHint": "bird chandelier"
     },
     {
-      "id": "prod-20",
-      "description": "New Design Crystal Drop Light",
-      "imageUrl": "/images/New Design Crystal Drop Light_75,000.jpeg",
-      "imageHint": "crystal drop light"
-    },
-    {
-      "id": "prod-21",
-      "description": "New Luxury Crystal Gold Duplex Chandelier",
-      "imageUrl": "/images/chandelier lighting/New Luxury Crystal Gold Duplex Chandelier_380,000.jpeg",
-      "imageHint": "duplex chandelier"
-    },
-    {
-      "id": "prod-22",
-      "description": "New Unique Design  Led Light",
-      "imageUrl": "/images/New Unique Design  Led Light_120,000.jpeg",
-      "imageHint": "unique led light"
-    },
-    {
       "id": "prod-23",
-      "description": "Nodic Modern Creative Feather wall bracket",
+      "description": "Nordic modern creative feather wall bracket",
       "imageUrl": "/images/Nodic Modern Creative Feather wall bracket _15,000.png",
       "imageHint": "feather wall bracket"
     },
     {
       "id": "prod-24",
-      "description": "Nodic Modern Creative Feather wall Ligh",
+      "description": "Nordic modern creative feather wall light",
       "imageUrl": "/images/Nodic Modern Creative Feather wall Ligh_20,000.png",
       "imageHint": "feather wall light"
     },
     {
-      "id": "prod-25",
-      "description": "Pure crystal charming Chandelier Light",
-      "imageUrl": "/images/chandelier lighting/Pure crystal charming Chandelier Light_400,000.jpeg",
-      "imageHint": "pure crystal chandelier"
-    },
-    {
-      "id": "prod-26",
-      "description": "rafted to dazzle the perfect blend of modern design Chandelier Light",
-      "imageUrl": "/images/rafted to dazzle the perfect blend of modern design Chandelier Light_190,000.jpeg",
-      "imageHint": "dazzling chandelier"
-    },
-    {
-      "id": "prod-27",
-      "description": "Unique 3Way Round Led Light",
-      "imageUrl": "/images/Unique 3Way Round Led Light_75,000.jpeg",
-      "imageHint": "3way led light"
-    },
-    {
-      "id": "prod-28",
-      "description": "Unique 4 way  Ball Led Drop Light",
-      "imageUrl": "/images/Unique 4 way  Ball Led Drop Light_80,000.jpeg",
-      "imageHint": "4way ball drop light"
-    },
-    {
-      "id": "prod-29",
-      "description": "Unique Butterfly Led Dropping Light",
-      "imageUrl": "/images/Unique Butterfly Led Dropping Light_120,000.jpeg",
-      "imageHint": "butterfly light"
-    },
-    {
-      "id": "prod-30",
-      "description": "Unique Decorative LED Chandelier",
-      "imageUrl": "/images/chandelier lighting/Unique Decorative LED Chandelier_220,000.jpeg",
-      "imageHint": "decorative led chandelier"
-    },
-    {
-      "id": "prod-31",
-      "description": "Unique Design 2 way Drop Light",
-      "imageUrl": "/images/Unique Design 2 way Drop Light_35,000.jpeg",
-      "imageHint": "2way drop light"
-    },
-    {
-      "id": "prod-32",
-      "description": "Unique Standing Led Lamp",
-      "imageUrl": "/images/Unique Standing Led Lamp_95,000.jpeg",
-      "imageHint": "standing lamp"
-    },
-    {
-      "id": "prod-33",
-      "description": "Unique Track LED Drop Light",
-      "imageUrl": "/images/Unique Track LED Drop Light_100,000.jpeg",
-      "imageHint": "track light"
-    },
-    {
       "id": "prod-34",
-      "description": "Unique Wall LED Light",
+      "description": "Unique wall LED light",
       "imageUrl": "/images/Unique Wall LED Light_19,000.png",
       "imageHint": "wall led light"
     },
     {
       "id": "prod-35",
-      "description": "Wall bracket Light ",
+      "description": "Wall bracket light",
       "imageUrl": "/images/Wall bracket Light _8,000.png",
       "imageHint": "wall bracket"
     },
@@ -235,484 +259,28 @@
       "imageHint": "luxury sofa set"
     },
     {
-      "id": "prod-38",
-      "description": "grey 4 seater sofa",
-      "imageUrl": "/images/grey 4 seater sofa_750,000.jpeg",
-      "imageHint": "grey sofa"
-    },
-    {
-      "id": "prod-39",
-      "description": "Halifax Accent Chair",
-      "imageUrl": "/images/Halifax Accent Chair_300,000_per 1.jpeg",
-      "imageHint": "accent chair"
-    },
-    {
-      "id": "prod-40",
-      "description": "Marble Coffee Table",
-      "imageUrl": "/images/Marble Coffee Table_550,000.jpeg",
-      "imageHint": "coffee table"
-    },
-    {
-      "id": "prod-41",
-      "description": "MARBLE CONFFETABLE 4 SEATER SET",
-      "imageUrl": "/images/MARBLE CONFFETABLE 4 SEATER SET_1,500,000.jpeg",
-      "imageHint": "dining set"
-    },
-    {
-      "id": "prod-42",
-      "description": "osmo sofa",
-      "imageUrl": "/images/osmo sofa _2,500,000.jpeg",
-      "imageHint": "modern sofa"
-    },
-    {
-      "id": "prod-43",
-      "description": "Side table",
-      "imageUrl": "/images/Side table_100,000.jpeg",
-      "imageHint": "side table"
-    },
-    {
-      "id": "prod-44",
-      "description": "Vista Table",
-      "imageUrl": "/images/Vista Table_400,000.jpeg",
-      "imageHint": "vista table"
-    },
-    {
-      "id": "prod-45",
-      "description": "VITALE SOFA SET",
-      "imageUrl": "/images/VITALE SOFA SET_3,500,000.jpeg",
-      "imageHint": "vitale sofa"
-    },
-    {
-      "id": "prod-46",
-      "description": "2 in 1 Led Wall Bracket light",
-      "imageUrl": "/images/2 in 1 Led Wall Bracket light_22,000.jpeg",
-      "imageHint": "wall bracket"
-    },
-    {
       "id": "prod-47",
-      "description": "beautiful wreath flower",
+      "description": "Beautiful wreath flower",
       "imageUrl": "/images/beautiful wreath flower_30,000.png",
       "imageHint": "wreath flower"
     },
     {
-      "id": "prod-48",
-      "description": "bed side lamp",
-      "imageUrl": "/images/bed side lamp_50,000.jpeg",
-      "imageHint": "bed lamp"
-    },
-    {
-      "id": "prod-49",
-      "description": "comfortable and stylish bed",
-      "imageUrl": "/images/comfortable and stylish bed_850,000.jpeg",
-      "imageHint": "luxury bed"
-    },
-    {
-      "id": "prod-50",
-      "description": "Crystal_Fan_Chandelier",
-      "imageUrl": "/images/chandelier lighting/Crystal_Fan_Chandelier with bluethooth_180,000.jpeg",
-      "imageHint": "fan chandelier"
-    },
-    {
-      "id": "prod-51",
-      "description": "decorative LED wall bracket",
-      "imageUrl": "/images/decorative LED wall bracket_20,000.jpeg",
-      "imageHint": "wall bracket"
-    },
-    {
-      "id": "prod-52",
-      "description": "decorative POP light",
-      "imageUrl": "/images/decorative POP light_60,000.jpeg",
-      "imageHint": "pop light"
-    },
-    {
-      "id": "prod-53",
-      "description": "decorative wall bracket light",
-      "imageUrl": "/images/decorative wall bracket light_24,000.jpeg",
-      "imageHint": "wall light"
-    },
-    {
-      "id": "prod-54",
-      "description": "durable and stylish Led wall bracket",
-      "imageUrl": "/images/durable and stylish Led wall bracket_19,000.jpeg",
-      "imageHint": "wall bracket"
-    },
-    {
-      "id": "prod-55",
-      "description": "Durable LED wall bracket",
-      "imageUrl": "/images/Durable LED wall bracket_19,000.jpeg",
-      "imageHint": "wall bracket"
-    },
-    {
-      "id": "prod-56",
-      "description": "Modern and energy-efficient LED wall bracket",
-      "imageUrl": "/images/Modern and energy-efficient LED wall bracket_22,000.jpeg",
-      "imageHint": "wall bracket"
-    },
-    {
-      "id": "prod-57",
-      "description": "modern LED crystal chandelier size 500",
-      "imageUrl": "/images/chandelier lighting/Modern Led crystal chandelier_size 500_190,000.jpeg",
-      "imageHint": "modern chandelier"
-    },
-    {
-      "id": "prod-ch-led-500-160",
-      "description": "modern LED crystal chandelier size 500",
-      "imageUrl": "/images/chandelier lighting/modern LED crystal chandelier_160,000_size_500.jpeg",
-      "imageHint": "modern chandelier"
-    },
-    {
-      "id": "prod-ch-led-600",
-      "description": "modern LED crystal chandelier size 600",
-      "imageUrl": "/images/chandelier lighting/modern LED crystal chandelier_220,000_size_600.jpeg",
-      "imageHint": "modern chandelier"
-    },
-    {
-      "id": "prod-ch-gold-duplex",
-      "description": "luxury crystal gold duplex chandelier",
-      "imageUrl": "/images/chandelier lighting/luxury crystal gold duplex chandelier_350,000.jpeg",
-      "imageHint": "duplex chandelier"
-    },
-    {
-      "id": "prod-ch-ceiling",
-      "description": "luxury led ceiling chandelier",
-      "imageUrl": "/images/chandelier lighting/luxury led ceiling chandelier_250,000.jpeg",
-      "imageHint": "ceiling chandelier"
-    },
-    {
-      "id": "prod-ch-vintage",
-      "description": "luxury vintage crystal chandelier",
-      "imageUrl": "/images/chandelier lighting/luxury vintage crystal chandelier_280,000.jpeg",
-      "imageHint": "vintage chandelier"
-    },
-    {
-      "id": "prod-ch-design-500",
-      "description": "modern design crystal chandelier size 500",
-      "imageUrl": "/images/chandelier lighting/modern design crystal chandelier_size 500_180,000.jpeg",
-      "imageHint": "design chandelier"
-    },
-    {
-      "id": "prod-ch-stylish-500",
-      "description": "stylish crystal chandelier size 500",
-      "imageUrl": "/images/chandelier lighting/stylish crystal chandelier size 500_160,000.jpeg",
-      "imageHint": "stylish chandelier"
-    },
-    {
-      "id": "prod-ch-high-quality",
-      "description": "unique high quality crystal chandelier",
-      "imageUrl": "/images/chandelier lighting/unique high quality crystal chandelier_280,000.jpeg",
-      "imageHint": "quality chandelier"
-    },
-    {
-      "id": "prod-ch-nordic-rain",
-      "description": "Unique Nordic Rain Led Drop Light",
-      "imageUrl": "/images/chandelier lighting/Unique Nordic Rain Led Drop Light_400,000.jpeg",
-      "imageHint": "nordic rain light"
-    },
-    {
-      "id": "prod-58",
-      "description": "Modern_Led_Crystal_Chandelier",
-      "imageUrl": "/images/chandelier lighting/Modern_Led_Crystal_Chandelier_450,000.jpeg",
-      "imageHint": "modern chandelier"
-    },
-    {
-      "id": "prod-59",
-      "description": "modern round crystal chandelier",
-      "imageUrl": "/images/chandelier lighting/modern round crystal chandelier_350,000.jpeg",
-      "imageHint": "round chandelier"
-    },
-    {
-      "id": "prod-61",
-      "description": "6 seater grey italian bursa",
-      "imageUrl": "/images/6 seater grey italian bursa_1,500,000.jpg",
-      "imageHint": "luxury bursa"
-    },
-    {
-      "id": "prod-62",
-      "description": "12 bulb nordic light",
-      "imageUrl": "/images/12 bulb nordic light_150,000.jpg",
-      "imageHint": "nordic light"
-    },
-    {
-      "id": "prod-63",
-      "description": "antelope deer decor",
-      "imageUrl": "/images/antelope deer decor_150,000.jpg",
-      "imageHint": "antelope decor"
-    },
-    {
-      "id": "prod-64",
-      "description": "candle dinning lamp set",
-      "imageUrl": "/images/candle dinning lamp set_300,000.jpg",
-      "imageHint": "dining lamp"
-    },
-    {
-      "id": "prod-65",
-      "description": "chocolate center table",
-      "imageUrl": "/images/chocolate center table_500,000.jpg",
-      "imageHint": "center table"
-    },
-    {
-      "id": "prod-66",
-      "description": "classic damask accent",
-      "imageUrl": "/images/classic damask accent_600,000.jpg",
-      "imageHint": "damask accent"
-    },
-    {
-      "id": "prod-67",
-      "description": "clock gobe",
-      "imageUrl": "/images/clock gobe_120,000.jpg",
-      "imageHint": "clock decor"
-    },
-    {
-      "id": "prod-68",
-      "description": "compact nordic crystal drop light",
-      "imageUrl": "/images/compact nordic crystal drop light_140,000.jpg",
-      "imageHint": "crystal drop"
-    },
-    {
-      "id": "prod-69",
-      "description": "elegant and modern crystal chandeier",
-      "imageUrl": "/images/chandelier lighting/elegant and modern crystal chandelier_150,000.jpeg",
-      "imageHint": "crystal chandelier"
-    },
-    {
-      "id": "prod-70",
-      "description": "fehdi console",
-      "imageUrl": "/images/fehdi console_650,000.jpg",
-      "imageHint": "fehdi console"
-    },
-    {
       "id": "prod-71",
-      "description": "fence light",
+      "description": "Fence light",
       "imageUrl": "/images/fence light_7,000.png",
       "imageHint": "fence light"
     },
     {
-      "id": "prod-72",
-      "description": "fire flame tv stand",
-      "imageUrl": "/images/fire flame tv stand_300,000.jpg",
-      "imageHint": "tv stand"
-    },
-    {
-      "id": "prod-73",
-      "description": "garrah console",
-      "imageUrl": "/images/garrah console_800,000.jpg",
-      "imageHint": "garrah console"
-    },
-    {
-      "id": "prod-74",
-      "description": "green curvette",
-      "imageUrl": "/images/green curvette_600,000.jpg",
-      "imageHint": "green curvette"
-    },
-    {
-      "id": "prod-75",
-      "description": "grey sofa",
-      "imageUrl": "/images/grey sofa_750,000.jpg",
-      "imageHint": "grey sofa"
-    },
-    {
-      "id": "prod-76",
-      "description": "Modern Luxury Nordic Rain Drop Light",
-      "imageUrl": "/images/chandelier lighting/Modern Luxury Nordic Rain Drop Light_300,000.jpeg",
-      "imageHint": "nordic rain light"
-    },
-    {
-      "id": "prod-77",
-      "description": "machiatto set",
-      "imageUrl": "/images/machiatto set_600,000.jpg",
-      "imageHint": "machiatto set"
-    },
-    {
-      "id": "prod-78",
-      "description": "medium size deer decor",
-      "imageUrl": "/images/medium size deer decor_120,000.jpg",
-      "imageHint": "deer decor"
-    },
-    {
-      "id": "prod-79",
-      "description": "modern crystal chandelier",
-      "imageUrl": "/images/chandelier lighting/modern crystal chandelier_180,000.jpg",
-      "imageHint": "modern chandelier"
-    },
-    {
-      "id": "prod-80",
-      "description": "modern led wall bracket",
-      "imageUrl": "/images/modern led wall bracket_17,000.jpg",
-      "imageHint": "wall bracket"
-    },
-    {
-      "id": "prod-81",
-      "description": "modern nordic gold chandelier",
-      "imageUrl": "/images/modern nordic gold chandelier_120,000.jpg",
-      "imageHint": "gold chandelier"
-    },
-    {
       "id": "prod-82",
-      "description": "modern nordic light",
+      "description": "Modern Nordic light",
       "imageUrl": "/images/modern nordic light_400,000.png",
       "imageHint": "nordic light"
     },
     {
-      "id": "prod-83",
-      "description": "modern wall bracket with bulb",
-      "imageUrl": "/images/modern wall bracket with bulb_17,000.jpg",
-      "imageHint": "wall bracket"
-    },
-    {
-      "id": "prod-84",
-      "description": "pop decorative light",
-      "imageUrl": "/images/pop decorative light_70,000.jpg",
-      "imageHint": "pop light"
-    },
-    {
-      "id": "prod-85",
-      "description": "rocky set",
-      "imageUrl": "/images/rocky set_600,000.jpg",
-      "imageHint": "rocky set"
-    },
-    {
-      "id": "prod-86",
-      "description": "round side table",
-      "imageUrl": "/images/round side table_100,000.jpg",
-      "imageHint": "side table"
-    },
-    {
-      "id": "prod-87",
-      "description": "small deer decor",
-      "imageUrl": "/images/small deer decor_100,000.jpg",
-      "imageHint": "small deer"
-    },
-    {
-      "id": "prod-88",
-      "description": "small tree decor",
-      "imageUrl": "/images/small tree decor_100,000.jpg",
-      "imageHint": "tree decor"
-    },
-    {
-      "id": "prod-89",
-      "description": "snow flower set",
-      "imageUrl": "/images/snow flower set_170,000.jpg",
-      "imageHint": "flower set"
-    },
-    {
-      "id": "prod-90",
-      "description": "standing horse gold decor",
-      "imageUrl": "/images/standing horse gold decor_150,000.jpg",
-      "imageHint": "horse decor"
-    },
-    {
-      "id": "prod-91",
-      "description": "stoned frame",
-      "imageUrl": "/images/stoned frame_200,000.jpg",
-      "imageHint": "stoned frame"
-    },
-    {
-      "id": "prod-92",
-      "description": "stylish led drop light",
-      "imageUrl": "/images/stylish led drop light_45,000.jpg",
-      "imageHint": "drop light"
-    },
-    {
       "id": "prod-93",
-      "description": "track_light",
+      "description": "Track light",
       "imageUrl": "/images/track_light_7,000.png",
       "imageHint": "track light"
-    },
-    {
-      "id": "prod-94",
-      "description": "triangle clock decor",
-      "imageUrl": "/images/triangle clock decor_120,000.jpg",
-      "imageHint": "clock decor"
-    },
-    {
-      "id": "prod-95",
-      "description": "unique bird light",
-      "imageUrl": "/images/unique bird light_85,000.jpg",
-      "imageHint": "bird light"
-    },
-    {
-      "id": "prod-96",
-      "description": "unique drop light",
-      "imageUrl": "/images/unique drop light_70,000.jpg",
-      "imageHint": "drop light"
-    },
-    {
-      "id": "prod-97",
-      "description": "varta console",
-      "imageUrl": "/images/varta console_800,000.jpg",
-      "imageHint": "varta console"
-    },
-    {
-      "id": "prod-98",
-      "description": "wall decor",
-      "imageUrl": "/images/wall decor_150,000.jpg",
-      "imageHint": "wall decor"
-    },
-    {
-      "id": "prod-99",
-      "description": "wall design mirror",
-      "imageUrl": "/images/wall design mirror_340,000.jpg",
-      "imageHint": "design mirror"
-    },
-    {
-      "id": "prod-100",
-      "description": "wardrobe with inbuilt light",
-      "imageUrl": "/images/wardrobe with inbuilt light_950,000.jpg",
-      "imageHint": "wardrobe light"
-    },
-    {
-      "id": "prod-101",
-      "description": "white fur light",
-      "imageUrl": "/images/white fur light_150,000.jpg",
-      "imageHint": "fur light"
-    },
-    {
-      "id": "prod-102",
-      "description": "AKT 5W bulb",
-      "imageUrl": "/images/AKT 5W bulb_900.jpeg",
-      "imageHint": "light bulb"
-    },
-    {
-      "id": "prod-103",
-      "description": "AKT 15W bulb",
-      "imageUrl": "/images/AKT 15W bulb_1,700.jpeg",
-      "imageHint": "light bulb"
-    },
-    {
-      "id": "prod-104",
-      "description": "AKT 18W pop bulb",
-      "imageUrl": "/images/AKT 18W pop bulb_3,800.jpeg",
-      "imageHint": "light bulb"
-    },
-    {
-      "id": "prod-105",
-      "description": "DLI 10W bulb",
-      "imageUrl": "/images/DLI 10W bulb_900.jpeg",
-      "imageHint": "light bulb"
-    },
-    {
-      "id": "prod-106",
-      "description": "bluetooth pop light",
-      "imageUrl": "/images/bluetooth pop light_55,000.png",
-      "imageHint": "bluetooth light"
-    },
-    {
-      "id": "prod-107",
-      "description": "design pop light",
-      "imageUrl": "/images/design pop light_70,000.png",
-      "imageHint": "design light"
-    },
-    {
-      "id": "prod-108",
-      "description": "okeli rope light",
-      "imageUrl": "/images/okeli rope light_40,000.png",
-      "imageHint": "rope light"
-    },
-    {
-      "id": "prod-109",
-      "description": "spot AKT pop light",
-      "imageUrl": "/images/spot AKT pop light_3,500.jpeg",
-      "imageHint": "spot light"
     },
     {
       "id": "sw-1",
