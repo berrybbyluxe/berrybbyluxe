@@ -5,7 +5,7 @@ export const products: Product[] = [
   // --- LIGHTING: Chandelier Lighting (21 Items) ---
   {
     id: 'prod-ch-fan',
-    name: 'Crystal fan chandelier with bluetooth',
+    name: 'Crystal fan chandelier with bluethooth',
     description: 'Innovative crystal chandelier that doubles as a high-performance ceiling fan with bluetooth capability.',
     price: 180000,
     imageId: 'prod-ch-fan',
