@@ -254,7 +254,7 @@
     },
     {
       "id": "prod-37",
-      "description": "ARMANI CASSA SET",
+      "description": "Armani cassa set",
       "imageUrl": "/images/ARMANI CASSA SET_2,500,000.png",
       "imageHint": "luxury sofa set"
     },
@@ -284,43 +284,43 @@
     },
     {
       "id": "sw-1",
-      "description": "Electrical switch",
+      "description": "1 gang 2 way switch",
       "imageUrl": "/images/1 gang 2 way switch_2,500.jpeg",
       "imageHint": "light switch"
     },
     {
       "id": "sw-2",
-      "description": "Double electrical switch",
+      "description": "2 gang 2 way switch",
       "imageUrl": "/images/2 gang 2 way switch_3,000.jpeg",
       "imageHint": "double switch"
     },
     {
       "id": "sw-3",
-      "description": "Triple electrical switch",
+      "description": "3 gang 2 way switch",
       "imageUrl": "/images/3 Gang 2 way switch_5,000.jpeg",
       "imageHint": "triple switch"
     },
     {
       "id": "sw-4",
-      "description": "Power socket",
+      "description": "13A multi big button socket",
       "imageUrl": "/images/13A multi big button socket_3,000.jpeg",
       "imageHint": "power socket"
     },
     {
       "id": "sw-5",
-      "description": "Water heater switch",
+      "description": "20A switch water heater",
       "imageUrl": "/images/20A switch water heater_3,000.jpeg",
       "imageHint": "heater switch"
     },
     {
       "id": "sw-6",
-      "description": "Double power socket",
+      "description": "Double 13A multi big button socket",
       "imageUrl": "/images/double 13A multi big button socket_5,000.jpeg",
       "imageHint": "double socket"
     },
     {
       "id": "sw-7",
-      "description": "Wall socket",
+      "description": "Double socket",
       "imageUrl": "/images/double socket_5,000.jpeg",
       "imageHint": "wall socket"
     },

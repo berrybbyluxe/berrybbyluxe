@@ -1,4 +1,3 @@
-
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -102,7 +101,7 @@ export const products: Product[] = [
   {
     id: 'prod-ch-led-500-190',
     name: 'Modern LED crystal chandelier size 500',
-    description: 'Sleek and sparkling modern LED crystal chandelier, perfect for contemporary homes.',
+    description: 'Sleek and sparkling modern LED crystal chandelier with premium accents.',
     price: 190000,
     imageId: 'prod-ch-led-500-190',
     category: 'Chandelier Lighting',
@@ -185,7 +184,7 @@ export const products: Product[] = [
   // --- FURNITURE: Living Room ---
   {
     id: 'prod-37',
-    name: 'ARMANI CASSA SET',
+    name: 'Armani cassa set',
     description: 'Exquisite Armani cassa sofa set designed for the ultimate luxury living experience.',
     price: 2500000,
     imageId: 'prod-37',
@@ -208,7 +207,7 @@ export const products: Product[] = [
     name: 'Track light',
     description: 'Available in white and black 20W-40W. Prices: 20W - ₦7,000, 40W - ₦10,000, Rail per meter - ₦2,000.',
     price: 7000,
-    imageId: 'prod-71',
+    imageId: 'prod-93',
     category: 'Ceiling & Pop Lighting',
   },
 
@@ -318,7 +317,7 @@ export const products: Product[] = [
   },
   {
     id: 'sw-8',
-    name: 'Single socket',
+    name: 'Single wall socket',
     description: 'Standard single wall socket, perfect for any room.',
     price: 3000,
     imageId: 'sw-8',
