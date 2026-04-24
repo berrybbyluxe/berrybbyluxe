@@ -27,7 +27,7 @@
     {
       "id": "prod-3",
       "description": "Decorative Crystal Chandelier",
-      "imageUrl": "/images/Decorative Crystal Chandelier_400,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/Decorative Crystal Chandelier_400,000.jpeg",
       "imageHint": "crystal chandelier"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "prod-6",
       "description": "Luxurious Royal Crystal Chandelier",
-      "imageUrl": "/images/LUXURIOUS ROYAL CRYSTAL CHANDELIER_800,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/LUXURIOUS ROYAL CRYSTAL CHANDELIER_800,000.jpeg",
       "imageHint": "luxury chandelier"
     },
     {
@@ -87,13 +87,13 @@
     {
       "id": "prod-13",
       "description": "Modern Crystal Chandelier light",
-      "imageUrl": "/images/Modern Crystal Chandelier light_120,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/Modern Crystal Chandelier light_120,000.jpeg",
       "imageHint": "crystal chandelier"
     },
     {
       "id": "prod-14",
       "description": "Modern Decorative Crystal Chandelier Light",
-      "imageUrl": "/images/Modern Decorative Crystal Chandelier Light_180,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/Modern Decorative Crystal Chandelier Light_180,000.jpeg",
       "imageHint": "modern chandelier"
     },
     {
@@ -135,7 +135,7 @@
     {
       "id": "prod-21",
       "description": "New Luxury Crystal Gold Duplex Chandelier",
-      "imageUrl": "/images/New Luxury Crystal Gold Duplex Chandelier_350,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/New Luxury Crystal Gold Duplex Chandelier_350,000.jpeg",
       "imageHint": "duplex chandelier"
     },
     {
@@ -159,7 +159,7 @@
     {
       "id": "prod-25",
       "description": "Pure crystal charming Chandelier Light",
-      "imageUrl": "/images/Pure crystal charming Chandelier Light_400,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/Pure crystal charming Chandelier Light_400,000.jpeg",
       "imageHint": "pure crystal chandelier"
     },
     {
@@ -189,7 +189,7 @@
     {
       "id": "prod-30",
       "description": "Unique Decorative LED Chandelier",
-      "imageUrl": "/images/Unique Decorative LED Chandelier_220,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/Unique Decorative LED Chandelier_220,000.jpeg",
       "imageHint": "decorative led chandelier"
     },
     {
@@ -309,7 +309,7 @@
     {
       "id": "prod-50",
       "description": "Crystal_Fan_Chandelier",
-      "imageUrl": "/images/Crystal_Fan_Chandelier_180,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/Crystal_Fan_Chandelier_180,000.jpeg",
       "imageHint": "fan chandelier"
     },
     {
@@ -351,19 +351,19 @@
     {
       "id": "prod-57",
       "description": "modern LED crystal chandelier",
-      "imageUrl": "/images/modern LED crystal chandelier_160,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/modern LED crystal chandelier_160,000.jpeg",
       "imageHint": "crystal chandelier"
     },
     {
       "id": "prod-58",
       "description": "Modern_Led_Crystal_Chandelier",
-      "imageUrl": "/images/Modern_Led_Crystal_Chandelier_450,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/Modern_Led_Crystal_Chandelier_450,000.jpeg",
       "imageHint": "modern chandelier"
     },
     {
       "id": "prod-59",
       "description": "stunning crystal chandelier",
-      "imageUrl": "/images/stunning crystal chandelier_300,000.jpeg",
+      "imageUrl": "/images/chandelier lighting/stunning crystal chandelier_300,000.jpeg",
       "imageHint": "crystal chandelier"
     },
     {
@@ -423,7 +423,7 @@
     {
       "id": "prod-69",
       "description": "elegant and modern crystal chandeier",
-      "imageUrl": "/images/elegant and modern crystal chandeier_150,000.jpg",
+      "imageUrl": "/images/chandelier lighting/elegant and modern crystal chandeier_150,000.jpg",
       "imageHint": "crystal chandelier"
     },
     {
@@ -465,7 +465,7 @@
     {
       "id": "prod-76",
       "description": "luxury nordic rain drop chandelier",
-      "imageUrl": "/images/luxury nordic rain drop chandelier_400,000.jpg",
+      "imageUrl": "/images/chandelier lighting/luxury nordic rain drop chandelier_400,000.jpg",
       "imageHint": "rain chandelier"
     },
     {
@@ -483,7 +483,7 @@
     {
       "id": "prod-79",
       "description": "modern crystal chandelier",
-      "imageUrl": "/images/modern crystal chandelier_180,000.jpg",
+      "imageUrl": "/images/chandelier lighting/modern crystal chandelier_180,000.jpg",
       "imageHint": "modern chandelier"
     },
     {
