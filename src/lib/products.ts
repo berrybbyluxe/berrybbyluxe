@@ -5,7 +5,7 @@ export const products: Product[] = [
   // --- LIGHTING: Chandelier Lighting (21 Items) ---
   {
     id: 'prod-ch-fan',
-    name: 'Crystal fan chandelier with bluethooth',
+    name: 'Crystal fan chandelier with bluetooth',
     description: 'Innovative crystal chandelier that doubles as a high-performance ceiling fan with bluetooth capability.',
     price: 180000,
     imageId: 'prod-ch-fan',
@@ -205,7 +205,7 @@ export const products: Product[] = [
     description: 'Available in white and black 20W-40W. Prices: 20W - ₦7,000, 40W - ₦10,000, Rail per meter - ₦2,000.',
     price: 7000,
     imageId: 'prod-93',
-    category: 'Ceiling & Pop Lighting',
+    category: 'Ceiling & POP Lighting',
   },
 
   // --- OUTDOOR LIGHTING ---
