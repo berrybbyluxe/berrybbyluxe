@@ -1,26 +1,25 @@
+
 'use client';
 
 import * as React from 'react';
-import { Suspense } from 'react'; // Added this
+import { Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, ArrowLeft, Hash } from 'lucide-react';
+import { Mail, ArrowLeft, Hash, CheckCircle2 } from 'lucide-react';
 
-// 1. We move the logic into a sub-component
 function PaymentSuccessContent() {
   const searchParams = useSearchParams();
-  const reference = searchParams.get('reference');
+  const reference = searchParams ? searchParams.get('reference') : null;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[calc(100vh-12rem)] bg-background px-4 py-12">
       <div className="w-full max-w-md text-center">
         <div className="mb-8 flex justify-center">
-          <svg className="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-            <circle className="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
-            <path className="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-          </svg>
+          <div className="rounded-full bg-primary/10 p-4">
+            <CheckCircle2 className="h-16 w-16 text-primary animate-in zoom-in duration-500" />
+          </div>
         </div>
 
         <h1 className="text-4xl font-bold tracking-tight text-primary font-headline">
@@ -68,9 +67,9 @@ function PaymentSuccessContent() {
 
         <div className="mt-12 flex flex-col gap-4">
           <Button asChild size="lg" className="w-full sm:w-auto mx-auto">
-            <Link href="/">
+            <Link href="/products">
               <ArrowLeft className="mr-2 h-5 w-5" />
-              Return to Home
+              Back to Catalog
             </Link>
           </Button>
         </div>
@@ -79,11 +78,16 @@ function PaymentSuccessContent() {
   );
 }
 
-// 2. The main page now just wraps the content in Suspense
 export default function PaymentSuccessfulPage() {
   return (
-    <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
-      <PaymentSuccessContent />
-    </Suspense>
+    <div className="min-h-[60vh]">
+      <Suspense fallback={
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+        </div>
+      }>
+        <PaymentSuccessContent />
+      </Suspense>
+    </div>
   );
 }

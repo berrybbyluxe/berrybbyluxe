@@ -3,450 +3,322 @@
 
 import * as React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { products } from '@/lib/products';
 import { ProductCard } from '@/components/product-card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import Link from 'next/link';
 import { getPlaceholderImage } from '@/lib/placeholder-images';
-import { ChevronLeft, ChevronRight, Info, Truck, Wrench, Search, Filter, MoreHorizontal, X } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { useIsMobile } from '@/hooks/use-mobile';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { 
+  ArrowRight, 
+  ChevronLeft, 
+  ChevronRight, 
+  ShieldCheck, 
+  Truck, 
+  Star, 
+  CheckCircle2, 
+  Zap,
+  Sofa,
+  LampCeiling,
+  Lightbulb,
+  Flame,
+  Grid,
+  Power,
+  Bed,
+  Utensils,
+  Flower2,
+  Briefcase,
+  LampDesk,
+  Package,
+  Sparkles
+} from 'lucide-react';
+import { cn } from '@/lib/utils';
 
-const PRODUCTS_PER_PAGE = 12;
+const FEATURED_LIMIT = 15;
 
-const CATEGORY_STRUCTURE = {
-  'Furniture': [
-    'Bedroom', 
-    'Dinning Set', 
-    'House Decoratives', 
-    'Living Room', 
-    'Office', 
-    'Side Lamps & Standing Lamps',
-    'Turkey Collections',
-    'Vass Flowers'
-  ],
-  'Lighting': [
-    'Ceiling & Pop Lighting',
-    'Chandelier Lighting',
-    'Outdoor Lighting',
-    'Pendant & Drop Lighting',
-    'Switches & Sockets',
-    'Wall Bracket Lighting',
-    'Bulb'
-  ]
-};
+const CATEGORY_BLOCKS = [
+  { name: 'Bedroom', slug: 'bedroom', icon: Bed, subcategories: ['Bedroom'] },
+  { name: 'Dining Set', slug: 'dining-set', icon: Utensils, subcategories: ['Dining Set'] },
+  { name: 'House Decoratives', slug: 'house-decoratives', icon: Flower2, subcategories: ['House Decoratives'] },
+  { name: 'Living Room', slug: 'living-room', icon: Sofa, subcategories: ['Living Room'] },
+  { name: 'Office', slug: 'office', icon: Briefcase, subcategories: ['Office'] },
+  { name: 'Side Lamps & Standing Lamps', slug: 'side-standing-lamps', icon: LampDesk, subcategories: ['Side Lamps & Standing Lamps'] },
+  { name: 'Turkey Collection', slug: 'turkey', icon: Package, subcategories: ['Turkey Collection'] },
+  { name: 'Vass Flower', slug: 'vass-flower', icon: Sparkles, subcategories: ['Vass Flower'] },
+  { name: 'Bulbs', slug: 'bulbs', icon: Lightbulb, subcategories: ['Bulbs'] },
+  { name: 'Ceiling & POP Lighting', slug: 'ceiling-lighting', icon: Grid, subcategories: ['Ceiling & Pop Lighting'] },
+  { name: 'Chandelier Lighting', slug: 'chandeliers', icon: LampCeiling, subcategories: ['Chandelier Lighting'] },
+  { name: 'Outdoor Lighting', slug: 'outdoor-lighting', icon: Flame, subcategories: ['Outdoor Lighting'] },
+  { name: 'Pendant & Drop Lighting', slug: 'pendant-lighting', icon: Lightbulb, subcategories: ['Pendant & Drop Lighting'] },
+  { name: 'Switches & Sockets', slug: 'switches-sockets', icon: Power, subcategories: ['Switches & Sockets'] },
+  { name: 'Wall Bracket Lighting', slug: 'wall-brackets', icon: Zap, subcategories: ['Wall Bracket Lighting'] },
+];
 
 export default function Home() {
-  const isMobile = useIsMobile();
   const heroImage = getPlaceholderImage('hero-1');
   const [currentPage, setCurrentPage] = React.useState(1);
-  const [searchQuery, setSearchQuery] = React.useState('');
-  const [selectedCategory, setSelectedCategory] = React.useState('All');
-  const [isFilterDialogOpen, setIsFilterDialogOpen] = React.useState(false);
 
-  const filteredProducts = React.useMemo(() => {
-    if (!products || !Array.isArray(products)) return [];
-    
-    return products.filter((product) => {
-      if (!product) return false;
-      const name = (product.name || '').toLowerCase();
-      const description = (product.description || '').toLowerCase();
-      const query = searchQuery.toLowerCase();
-      
-      const matchesSearch = name.includes(query) || description.includes(query);
-      
-      let matchesCategory = false;
-      if (selectedCategory === 'All') {
-        matchesCategory = true;
-      } else if (selectedCategory === 'Furniture') {
-        matchesCategory = CATEGORY_STRUCTURE.Furniture.includes(product.category);
-      } else if (selectedCategory === 'Lighting') {
-        matchesCategory = CATEGORY_STRUCTURE.Lighting.includes(product.category);
-      } else {
-        matchesCategory = product.category === selectedCategory;
-      }
-      
-      return matchesSearch && matchesCategory;
-    });
-  }, [searchQuery, selectedCategory]);
+  const totalPages = Math.max(1, Math.ceil(products.length / FEATURED_LIMIT));
+  const featuredProducts = products.slice((currentPage - 1) * FEATURED_LIMIT, currentPage * FEATURED_LIMIT);
 
-  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE));
-  const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
-  const currentProducts = filteredProducts.slice(startIndex, startIndex + PRODUCTS_PER_PAGE);
+  const spaces = React.useMemo(() => [
+    { 
+      name: 'Living Room', 
+      id: 'armani-cassa-set',
+      slug: 'living-room' 
+    },
+    { 
+      name: 'Bedroom', 
+      id: 'comfortable-and-stylish-bed',
+      slug: 'bedroom' 
+    },
+    { 
+      name: 'Dining', 
+      id: 'six-seater-grey-italian-bursa',
+      slug: 'dining-set' 
+    },
+    { 
+      name: 'Lighting', 
+      id: 'modern-led-crystal-190',
+      slug: 'chandeliers' 
+    },
+  ].map(space => {
+    const imgData = getPlaceholderImage(space.id);
+    return {
+      ...space,
+      image: imgData?.imageUrl || ''
+    };
+  }), []);
 
   const handlePageChange = (page: number) => {
-    if (page < 1 || page > totalPages) return;
     setCurrentPage(page);
-    const productsSection = document.getElementById('products');
-    if (productsSection) {
-      productsSection.scrollIntoView({ behavior: 'smooth' });
+    const featuredSection = document.getElementById('featured');
+    if (featuredSection) {
+      const offset = 150;
+      const elementPosition = featuredSection.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: elementPosition, behavior: 'smooth' });
     }
   };
 
-  const getVisiblePages = () => {
-    const maxVisible = isMobile ? 3 : 5;
-    if (totalPages <= maxVisible) {
-      return Array.from({ length: totalPages }, (_, i) => i + 1);
-    }
-
-    let start = Math.max(1, currentPage - Math.floor(maxVisible / 2));
-    let end = Math.min(totalPages, start + maxVisible - 1);
-
-    if (end === totalPages) {
-      start = Math.max(1, totalPages - maxVisible + 1);
-    } else if (start === 1) {
-      end = Math.min(totalPages, maxVisible);
-    }
-
-    return Array.from({ length: end - start + 1 }, (_, i) => start + i);
-  };
-
-  const visiblePages = getVisiblePages();
-
-  React.useEffect(() => {
-    setCurrentPage(1);
-  }, [searchQuery, selectedCategory]);
-
-  const selectCategoryAndClose = (category: string) => {
-    setSelectedCategory(category);
-    setIsFilterDialogOpen(false);
-  };
+  const categoryStats = React.useMemo(() => {
+    return CATEGORY_BLOCKS.map(block => ({
+      ...block,
+      count: products.filter(p => block.subcategories.includes(p.category)).length
+    }));
+  }, []);
 
   return (
-    <div className="flex flex-col">
-      <section id="home" className="relative w-full h-[60vh] md:h-[80vh] text-white">
-        <div className="absolute inset-0 bg-black/50 z-10" />
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
-        <div className="relative z-20 flex flex-col items-center justify-center h-full text-center p-4">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold tracking-tight">
-            Crafted for Comfort
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg md:text-xl text-neutral-200">
-            Discover exquisite lighting and furniture that brings warmth, style, and personality to your home.
-          </p>
-          <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
-            <Link href="#products">Shop Now</Link>
-          </Button>
-        </div>
-      </section>
-
-      <section id="products" className="py-12 md:py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Catalog</h2>
-            <div className="w-20 h-1 bg-primary mx-auto mt-4 mb-2"></div>
-            <p className="mt-2 text-lg text-muted-foreground">Handpicked selections for the modern home.</p>
-          </div>
-
-          <div className="mb-8 flex flex-col md:flex-row gap-4 items-center justify-between">
-            <div className="relative w-full md:max-w-md">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input 
-                placeholder="Search products..." 
-                className="pl-10"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </div>
-            <div className="flex items-center gap-2 w-full md:w-auto">
-              <Dialog open={isFilterDialogOpen} onOpenChange={setIsFilterDialogOpen}>
-                <DialogTrigger asChild>
-                  <Button variant="outline" className="w-full md:w-[300px] justify-between h-10">
-                    <span className="truncate mr-2">
-                      {selectedCategory === 'All' ? 'Filter by Category' : `Category: ${selectedCategory}`}
-                    </span>
-                    <Filter className="h-4 w-4 shrink-0 opacity-50" />
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-2xl w-[95vw] h-[90vh] sm:h-auto sm:max-h-[85vh] flex flex-col p-0 overflow-hidden">
-                  <DialogHeader className="p-6 border-b shrink-0 bg-background z-10">
-                    <DialogTitle className="text-2xl font-headline text-center sm:text-left">Select Category</DialogTitle>
-                  </DialogHeader>
-                  <div className="flex-grow overflow-hidden flex flex-col p-6 space-y-6">
-                    <Button 
-                      variant={selectedCategory === 'All' ? 'default' : 'outline'} 
-                      onClick={() => selectCategoryAndClose('All')}
-                      className="w-full font-bold h-12 shadow-sm shrink-0"
-                    >
-                      All Products
-                    </Button>
-
-                    <Tabs defaultValue="furniture" className="flex-grow flex flex-col overflow-hidden">
-                      <TabsList className="grid w-full grid-cols-2 shrink-0">
-                        <TabsTrigger value="furniture" className="font-bold">Furniture</TabsTrigger>
-                        <TabsTrigger value="lighting" className="font-bold">Lighting</TabsTrigger>
-                      </TabsList>
-                      
-                      <div className="flex-grow overflow-hidden relative mt-4">
-                        <ScrollArea className="h-full pr-4">
-                          <TabsContent value="furniture" className="m-0 space-y-4">
-                            <div className="grid grid-cols-2 gap-3 pb-4">
-                              {CATEGORY_STRUCTURE.Furniture.map((cat) => (
-                                <Button 
-                                  key={cat}
-                                  variant={selectedCategory === cat ? 'default' : 'outline'} 
-                                  onClick={() => selectCategoryAndClose(cat)}
-                                  className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight text-xs sm:text-sm shadow-sm"
-                                >
-                                  {cat}
-                                </Button>
-                              ))}
-                            </div>
-                          </TabsContent>
-
-                          <TabsContent value="lighting" className="m-0 space-y-4">
-                            <div className="grid grid-cols-2 gap-3 pb-4">
-                              {CATEGORY_STRUCTURE.Lighting.map((cat) => (
-                                <Button 
-                                  key={cat}
-                                  variant={selectedCategory === cat ? 'default' : 'outline'} 
-                                  onClick={() => selectCategoryAndClose(cat)}
-                                  className="justify-start h-auto py-3 px-4 text-left whitespace-normal leading-tight text-xs sm:text-sm shadow-sm"
-                                >
-                                  {cat}
-                                </Button>
-                              ))}
-                            </div>
-                          </TabsContent>
-                        </ScrollArea>
-                      </div>
-                    </Tabs>
-                  </div>
-                  <div className="p-4 border-t bg-muted/30 flex justify-end shrink-0">
-                    <Button variant="ghost" onClick={() => setIsFilterDialogOpen(false)}>Close</Button>
-                  </div>
-                </DialogContent>
-              </Dialog>
-              {selectedCategory !== 'All' && (
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  onClick={() => setSelectedCategory('All')}
-                  className="shrink-0"
-                  title="Clear Filter"
-                >
-                  <X className="h-4 w-4" />
-                </Button>
-              )}
-            </div>
-          </div>
+    <div className="flex flex-col bg-background pt-44 sm:pt-48 md:pt-52 lg:pt-64">
+      {/* Marketplace Style Hero Section */}
+      <section className="container mx-auto px-4 py-4 lg:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-stone-900 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden min-h-[500px] lg:min-h-[600px] text-white shadow-2xl relative">
           
-          {currentProducts.length > 0 ? (
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
-              {currentProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-20 bg-muted/20 rounded-lg border-2 border-dashed border-muted">
-              <p className="text-xl text-muted-foreground">No products found matching your criteria.</p>
-              <Button 
-                variant="link" 
-                onClick={() => {setSearchQuery(''); setSelectedCategory('All');}}
-                className="mt-2"
-              >
-                Clear all filters
-              </Button>
+          {/* Immersive Background Image */}
+          {heroImage && (
+            <div className="absolute inset-0 z-0">
+              <Image 
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                fill
+                className="object-cover opacity-30 lg:opacity-40 mix-blend-overlay"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black via-black/60 lg:via-black/40 to-transparent" />
             </div>
           )}
 
+          {/* Left: Content */}
+          <div className="lg:col-span-6 space-y-6 sm:space-y-8 z-10 p-6 sm:p-10 lg:p-16 text-left">
+            <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] sm:tracking-[0.4em] text-primary font-bold flex items-center gap-2">
+               <CheckCircle2 className="h-4 w-4 shrink-0" /> Premium Nigerian Interiors
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-headline font-light italic leading-tight">
+              Elevate Your <br className="hidden sm:block" /> Sanctuary with <br className="hidden sm:block" /> <span className="text-primary italic">Permanent Luxury.</span>
+            </h1>
+            <p className="text-base sm:text-lg text-neutral-400 font-light max-w-lg leading-relaxed">
+              Discover exquisite high-end lighting and furniture pieces from trusted global brands. Expertly delivered across Lagos, Abuja, and nationwide.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 pt-2 sm:pt-4">
+              <Button asChild size="lg" className="rounded-full bg-primary text-white hover:bg-primary/90 h-12 sm:h-14 px-8 sm:px-10 uppercase text-[9px] sm:text-[10px] tracking-widest font-bold">
+                <Link href="/products">Shop Collection</Link>
+              </Button>
+            </div>
+            
+            {/* Trust Badges */}
+            <div className="hidden sm:flex flex-wrap gap-3 pt-6 sm:pt-8">
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full text-[8px] sm:text-[9px] uppercase tracking-widest font-bold">
+                <ShieldCheck className="h-3 w-3 text-primary" /> Verified Quality
+              </div>
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full text-[8px] sm:text-[9px] uppercase tracking-widest font-bold">
+                <Truck className="h-3 w-3 text-primary" /> Support Service
+              </div>
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full text-[8px] sm:text-[9px] uppercase tracking-widest font-bold">
+                <Zap className="h-3 w-3 text-primary" /> Secure Payment
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Grid of Spaces */}
+          <div className="lg:col-span-6 grid grid-cols-2 gap-3 sm:gap-4 h-full z-10 p-6 sm:p-8 lg:p-8">
+            {spaces.map((space) => (
+              <Link key={space.name} href={`/category/${space.slug}`} className="group relative aspect-square lg:aspect-auto lg:h-full rounded-xl sm:rounded-2xl overflow-hidden border border-white/5 shadow-lg bg-stone-800">
+                {space.image && (
+                  <Image
+                    src={space.image}
+                    alt={space.name}
+                    fill
+                    className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-70"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 right-4 sm:right-6">
+                   <p className="text-[7px] sm:text-[8px] uppercase tracking-[0.3em] sm:tracking-[0.4em] font-bold text-primary mb-1 lg:opacity-0 lg:group-hover:opacity-100 transition-all">Explore</p>
+                   <p className="text-lg sm:text-xl font-headline italic font-light">{space.name}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Feature Bar */}
+      <section className="container mx-auto px-4 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 py-8 sm:py-10 border-y border-foreground/5">
+          {[
+            { icon: Truck, title: 'Fast Delivery', desc: 'Local & International' },
+            { icon: ShieldCheck, title: 'Secure Payment', desc: 'Paystack protected gateway' },
+            { icon: Star, title: 'Loyalty Rewards', desc: 'Earn on every referral' }
+          ].map((feature, i) => (
+            <div key={i} className="flex items-center gap-4 group">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-muted/50 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                <feature.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+              </div>
+              <div className="text-left">
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-0.5 sm:mb-1">{feature.title}</p>
+                <p className="text-[9px] sm:text-[10px] text-muted-foreground">{feature.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Featured Collections Section */}
+      <section id="featured" className="py-16 sm:py-24 bg-stone-50/50">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 sm:mb-12 gap-4">
+            <div className="space-y-2 text-left">
+              <h2 className="text-3xl md:text-4xl font-headline font-bold flex items-center gap-3">
+                Featured Collections
+              </h2>
+              <p className="text-muted-foreground text-sm font-medium">Mouth watering offers for your sanctuary.</p>
+            </div>
+            <Link href="/products" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
+              View all products <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          {/* Pagination */}
           {totalPages > 1 && (
-            <div className="mt-12 md:mt-16 flex flex-col items-center gap-4">
-              <div className="flex items-center gap-1 md:gap-2">
+            <div className="mt-16 sm:mt-20 flex flex-col items-center gap-8 border-t pt-10 sm:pt-12 border-foreground/5">
+              <div className="flex items-center gap-4 sm:gap-6">
                 <Button
-                  variant="outline"
-                  size="icon"
+                  variant="ghost"
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}
-                  aria-label="Previous Page"
-                  className="h-8 w-8 md:h-10 md:w-10"
+                  className="group flex items-center gap-2 text-[10px] sm:text-xs font-bold px-3 sm:px-4 h-9 sm:h-10 border rounded-lg disabled:opacity-30"
                 >
                   <ChevronLeft className="h-4 w-4" />
+                  <span className="hidden sm:inline">Prev</span>
                 </Button>
                 
-                {visiblePages[0] > 1 && (
-                  <>
-                    <Button
-                      variant="outline"
-                      className="hidden sm:flex h-8 w-8 md:h-10 md:w-10 p-0"
-                      onClick={() => handlePageChange(1)}
-                    >
-                      1
-                    </Button>
-                    <MoreHorizontal className="h-4 w-4 text-muted-foreground mx-1" />
-                  </>
-                )}
-
-                {visiblePages.map((page) => (
-                  <Button
-                    key={page}
-                    variant={currentPage === page ? "default" : "outline"}
-                    className="h-8 w-8 md:h-10 md:w-10 p-0 text-xs md:text-sm"
-                    onClick={() => handlePageChange(page)}
-                  >
-                    {page}
-                  </Button>
-                ))}
-
-                {visiblePages[visiblePages.length - 1] < totalPages && (
-                  <>
-                    <MoreHorizontal className="h-4 w-4 text-muted-foreground mx-1" />
-                    <Button
-                      variant="outline"
-                      className="hidden sm:flex h-8 w-8 md:h-10 md:w-10 p-0"
-                      onClick={() => handlePageChange(totalPages)}
-                    >
-                      {totalPages}
-                    </Button>
-                  </>
-                )}
+                <div className="flex gap-1.5 sm:gap-2">
+                  {Array.from({ length: totalPages }).map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => handlePageChange(i + 1)}
+                      className={cn(
+                        "w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-300",
+                        currentPage === i + 1 ? "bg-primary w-6 sm:w-8" : "bg-muted hover:bg-muted-foreground"
+                      )}
+                      aria-label={`Go to page ${i + 1}`}
+                    />
+                  ))}
+                </div>
 
                 <Button
-                  variant="outline"
-                  size="icon"
+                  variant="ghost"
                   onClick={() => handlePageChange(currentPage + 1)}
                   disabled={currentPage === totalPages}
-                  aria-label="Next Page"
-                  className="h-8 w-8 md:h-10 md:w-10"
+                  className="group flex items-center gap-2 text-[10px] sm:text-xs font-bold px-3 sm:px-4 h-9 sm:h-10 border rounded-lg disabled:opacity-30"
                 >
+                  <span className="hidden sm:inline">Next</span>
                   <ChevronRight className="h-4 w-4" />
                 </Button>
               </div>
-              <p className="text-xs md:text-sm text-muted-foreground">
-                Showing {startIndex + 1} to {Math.min(startIndex + PRODUCTS_PER_PAGE, filteredProducts.length)} of {filteredProducts.length} results
-              </p>
             </div>
           )}
         </div>
       </section>
 
-      <section id="about" className="py-16 md:py-24 bg-muted/30">
+      {/* Browse Categories Section */}
+      <section className="py-16 sm:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-square lg:aspect-auto lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
+          <div className="mb-10 sm:mb-12 text-left">
+            <h2 className="text-3xl sm:text-4xl font-headline font-bold text-foreground">Browse Categories</h2>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+            {categoryStats.map((cat) => (
+              <Link 
+                key={cat.name} 
+                href={`/category/${cat.slug}`}
+                className="group flex flex-col items-center justify-center p-6 sm:p-8 bg-white border border-stone-200 rounded-lg hover:shadow-xl transition-all duration-300 text-center"
+              >
+                <div className="w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 flex items-center justify-center bg-stone-50 rounded-full group-hover:bg-primary/10 transition-colors">
+                  <cat.icon className="h-8 w-8 sm:h-10 sm:w-10 text-stone-700 group-hover:text-primary transition-colors" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-sm sm:text-lg font-bold mb-1 sm:mb-2 group-hover:text-primary transition-colors line-clamp-1">
+                  {cat.name}
+                </h3>
+                <p className="text-[10px] sm:text-sm text-stone-500 font-medium">
+                  {cat.count} products
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Craftsmanship Section */}
+      <section className="bg-stone-900 text-white py-16 sm:py-32 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-24 items-center">
+            <div className="relative aspect-video lg:aspect-square rounded-2xl sm:rounded-3xl overflow-hidden border border-white/5 order-2 lg:order-1">
               <Image 
-                src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsaXZpbmclMjByb29tJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcxMjE5OTU0fDA&ixlib.rb-4.1.0&q=80&w=1080"
-                alt="About Berrybby"
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?fm=avif&fit=crop&q=80&w=1200"
+                alt="Mastery Detail"
                 fill
-                className="object-cover"
-                data-ai-hint="living room interior"
+                className="object-cover opacity-60 transition-transform duration-[3s] hover:scale-110"
               />
+              <div className="absolute inset-0 bg-gradient-to-r from-stone-900/50 to-transparent" />
             </div>
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-headline font-bold">About Berrybby Luxury Lighting & Furnishing</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                At Berrybby, we believe that your home is a sanctuary that deserves nothing but the finest touches. Founded with a passion for exquisite design and unmatched quality, we specialize in curating premium lighting and furniture that blend functionality with timeless elegance.
+            <div className="space-y-8 sm:space-y-12 order-1 lg:order-2 text-left">
+              <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.6em] sm:tracking-[0.8em] text-primary font-bold">Our Mastery</span>
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-headline font-light leading-tight">
+                Details that <br className="hidden sm:block" /> Define <br className="hidden sm:block" /> <span className="italic text-primary">Prestige.</span>
+              </h2>
+              <p className="text-lg sm:text-xl text-neutral-400 font-light leading-relaxed max-w-lg">
+                From the spectral brilliance of our K9 crystals to the hand-tufted Turkish fabrics, every object is engineered for a legacy. This is the luxury of meticulous intention.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Our journey began with a simple mission: to make high-end interior aesthetics accessible to those who appreciate the finer things in life. Every piece in our catalog is handpicked to ensure it meets our rigorous standards of craftsmanship and style.
-              </p>
-              <div className="flex gap-4 pt-4">
-                <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm flex-1">
-                  <Info className="h-8 w-8 text-primary mb-2" />
-                  <span className="font-semibold text-center">Quality Assured</span>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm flex-1">
-                  <Wrench className="h-8 w-8 text-primary mb-2" />
-                  <span className="font-semibold text-center">Handpicked</span>
-                </div>
-              </div>
+              <Button asChild size="lg" className="rounded-full bg-white text-black px-10 sm:px-12 h-14 sm:h-16 uppercase text-[9px] sm:text-[10px] tracking-widest font-bold hover:bg-white/90 hover:text-black">
+                <Link href="/about">Discover Our Story</Link>
+              </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">What We Do</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-12"></div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Info className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="font-headline">Interior Consultation</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">Expert advice on how to choose the perfect lighting fixtures and furniture to match your home's unique style.</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Wrench className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="font-headline">Installation Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">Professional installation for all our lighting fixtures to ensure safety and the perfect aesthetic placement in your space.</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Truck className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="font-headline">Nationwide Delivery</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">We deliver our exquisite pieces right to your doorstep, anywhere in the country, with maximum care and safety.</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">Get In Touch</h2>
-            <p className="mt-2 text-lg text-muted-foreground">We'd love to hear from you. Reach out for inquiries or orders.</p>
-          </div>
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
-              <Info className="h-10 w-10 text-primary mb-4" />
-              <h3 className="font-headline text-xl font-bold mb-2">Call Us</h3>
-              <p className="text-muted-foreground">09063927855</p>
-            </div>
-            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
-              <Info className="h-10 w-10 text-primary mb-4" />
-              <h3 className="font-headline text-xl font-bold mb-2">Email</h3>
-              <p className="text-muted-foreground">berrybbyluxe@gmail.com</p>
-            </div>
-            <div className="flex flex-col items-center p-8 bg-background rounded-lg shadow-sm">
-              <Info className="h-10 w-10 text-primary mb-4" />
-              <h3 className="font-headline text-xl font-bold mb-2">Visit Us</h3>
-              <p className="text-muted-foreground text-center">4A, Victor Olaleye Street, Rogo Ishaga, Lagos State</p>
-            </div>
-          </div>
-          <div className="text-center mt-12">
-            <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white">
-              <a href="https://wa.me/2349063927855" target="_blank" rel="noopener noreferrer">
-                Contact via WhatsApp
-              </a>
-            </Button>
           </div>
         </div>
       </section>

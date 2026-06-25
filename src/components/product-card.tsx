@@ -1,139 +1,142 @@
-
 'use client';
 
 import * as React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Product } from '@/lib/types';
-import { getPlaceholderImage } from '@/lib/placeholder-images';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Star, Zap, MessageCircle } from 'lucide-react';
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { PaymentDialog } from '@/components/payment-dialog';
-import { Eye, X } from 'lucide-react';
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogDescription,
-  DialogHeader,
-} from "@/components/ui/dialog";
 
 type ProductCardProps = {
   product: Product;
 };
 
+const FALLBACK_IMAGE = "/images/products/berrybby-luxury-lighting-and-furniture-hero-picture.avif";
+
 export function ProductCard({ product }: ProductCardProps) {
-  const [isPaymentDialogOpen, setIsPaymentDialogOpen] = React.useState(false);
-  const [isLightboxOpen, setIsLightboxOpen] = React.useState(false);
-  const image = getPlaceholderImage(product.imageId);
+  const [isPaymentOpen, setIsPaymentOpen] = React.useState(false);
+  const [imgSrc, setImgSrc] = React.useState(product.images?.[0] || FALLBACK_IMAGE);
+  
+  const discount = product.originalPrice ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100) : null;
 
   const whatsappUrl = `https://wa.me/2349063927855?text=${encodeURIComponent(
     `Hello! I'm interested in ordering the ${product.name} (₦${product.price.toLocaleString()})`
   )}`;
 
-  if (!image) return null;
-
   return (
-    <>
-      <Card className="group flex flex-col overflow-hidden transition-transform transform hover:-translate-y-2 duration-300 ease-in-out shadow-sm md:shadow-md hover:shadow-xl relative h-full">
-        {product.isSoldOut && (
-          <div className="absolute top-2 right-2 md:top-4 md:right-4 z-20">
-            <Badge variant="destructive" className="text-[10px] md:text-sm px-2 py-0.5 md:px-3 md:py-1 font-bold">
-              SOLD OUT
-            </Badge>
-          </div>
-        )}
-        
-        <div className="absolute top-2 left-2 md:top-4 md:left-4 z-20 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <Button
-            size="icon"
-            variant="secondary"
-            className="rounded-full shadow-lg h-7 w-7 md:h-10 md:w-10"
-            onClick={(e) => {
-              e.preventDefault();
-              setIsLightboxOpen(true);
-            }}
-          >
-            <Eye className="h-4 w-4 md:h-5 md:w-5" />
-          </Button>
+    <div className="group relative bg-white rounded-xl border border-muted/50 overflow-hidden hover:shadow-xl transition-all duration-500 flex flex-col h-full">
+      {/* Image Section */}
+      <Link href={`/product/${product.id}`} className="relative aspect-square overflow-hidden bg-stone-50 flex items-center justify-center p-8">
+        <div className="absolute top-3 left-3 flex flex-col gap-2 z-10">
+          {discount && (
+            <span className="bg-rose-50 text-rose-500 text-[10px] font-bold px-2 py-1 rounded-md">
+              -{discount}%
+            </span>
+          )}
+          <span className="bg-amber-50 text-amber-600 text-[10px] font-bold px-2 py-1 rounded-md flex items-center gap-1">
+            <Zap className="h-3 w-3 fill-amber-600" /> Premium
+          </span>
         </div>
 
-        <CardHeader className="p-0">
-          <div className="aspect-square relative overflow-hidden">
-            <Image
-              src={image.imageUrl}
-              alt={product.name}
-              fill
-              className={`object-cover transition-transform duration-500 group-hover:scale-110 ${product.isSoldOut ? 'grayscale opacity-70' : ''}`}
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
-              data-ai-hint={image.imageHint}
-            />
+        <div className="relative w-full h-full transition-transform duration-700 group-hover:scale-110">
+          <Image
+            src={imgSrc}
+            alt={product.name}
+            fill
+            className={cn(
+              "object-contain p-4 transition-opacity duration-300",
+              product.isSoldOut && "grayscale opacity-60"
+            )}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            onError={() => setImgSrc(FALLBACK_IMAGE)}
+            loading="lazy"
+          />
+        </div>
+        
+        {product.isSoldOut && (
+          <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px] flex items-center justify-center z-20">
+            <span className="bg-black text-white px-6 py-2 text-[10px] font-bold tracking-widest uppercase rounded-full">
+              Sold Out
+            </span>
           </div>
-        </CardHeader>
-        <CardContent className="p-3 md:p-6 flex-grow flex flex-col gap-1">
-          <CardTitle className="font-headline text-sm md:text-xl line-clamp-2 md:line-clamp-1 h-10 md:h-auto">{product.name}</CardTitle>
-          <p className="text-muted-foreground text-[10px] md:text-sm line-clamp-1 md:line-clamp-2 mt-1 hidden xs:block">{product.description}</p>
-          <span className="font-bold text-sm md:text-lg text-primary mt-auto">₦{product.price.toLocaleString()}</span>
-        </CardContent>
-        <CardFooter className="p-3 md:p-6 pt-0 md:pt-0 flex flex-col gap-2">
-          <div className="flex flex-col md:flex-row gap-2 w-full">
-            <Button asChild variant="outline" size="sm" disabled={product.isSoldOut} className="flex-1 text-[10px] md:text-sm h-8 md:h-10 px-1">
-              <Link href={product.isSoldOut ? '#' : whatsappUrl} target={product.isSoldOut ? "_blank" : undefined} className={product.isSoldOut ? 'pointer-events-none' : ''}>
-                Chat to Order
-              </Link>
-            </Button>
-            <Button 
-              size="sm"
-              onClick={() => setIsPaymentDialogOpen(true)} 
-              disabled={product.isSoldOut}
-              className={`flex-1 text-[10px] md:text-sm h-8 md:h-10 ${product.isSoldOut ? 'bg-muted text-muted-foreground' : ''}`}
-            >
-              {product.isSoldOut ? 'Sold Out' : 'Buy Now'}
-            </Button>
-          </div>
-        </CardFooter>
-      </Card>
+        )}
+      </Link>
 
-      <Dialog open={isLightboxOpen} onOpenChange={setIsLightboxOpen}>
-        <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none shadow-none focus-visible:outline-none">
-          <DialogHeader className="sr-only">
-            <DialogTitle>{product.name} - Image Preview</DialogTitle>
-            <DialogDescription>Detailed view of {product.name}</DialogDescription>
-          </DialogHeader>
-          <div className="relative w-full aspect-square md:aspect-video flex items-center justify-center bg-black/90 rounded-lg overflow-hidden">
-            <Button
-              size="icon"
-              variant="ghost"
-              className="absolute top-4 right-4 z-50 text-white hover:bg-white/20"
-              onClick={() => setIsLightboxOpen(false)}
-            >
-              <X className="h-6 w-6" />
-            </Button>
-            <Image
-              src={image.imageUrl}
-              alt={product.name}
-              fill
-              className="object-contain"
-              sizes="100vw"
-              priority
-            />
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
-              <h3 className="text-2xl font-headline font-bold">{product.name}</h3>
-              <p className="mt-1 opacity-90">{product.description}</p>
-              <p className="mt-2 font-bold text-primary-foreground">₦{product.price.toLocaleString()}</p>
+      {/* Details Section */}
+      <div className="p-4 space-y-3 flex flex-col flex-grow">
+        <div className="space-y-1">
+          <Link href={`/product/${product.id}`}>
+            <h3 className="font-bold text-sm md:text-base hover:text-primary transition-colors line-clamp-1">
+              {product.name}
+            </h3>
+          </Link>
+          <p className="text-[11px] text-muted-foreground font-medium">
+            {product.category} • {product.stock || 5} left
+          </p>
+        </div>
+        
+        <div className="flex flex-col gap-1">
+          <div className="flex items-center gap-2">
+            <span className="text-lg font-bold text-primary">
+              ₦{product.price.toLocaleString()}
+            </span>
+            {product.originalPrice && (
+              <span className="text-xs text-muted-foreground line-through decoration-muted-foreground/50">
+                ₦{product.originalPrice.toLocaleString()}
+              </span>
+            )}
+          </div>
+          
+          <div className="flex items-center gap-1">
+            <div className="flex">
+              {[...Array(5)].map((_, i) => (
+                <Star 
+                  key={i} 
+                  className={cn(
+                    "h-3 w-3",
+                    i < Math.floor(product.rating || 5) ? "fill-primary text-primary" : "text-muted fill-muted"
+                  )} 
+                />
+              ))}
             </div>
+            <span className="text-[10px] font-bold text-muted-foreground">
+              ({product.reviews || 0})
+            </span>
           </div>
-        </DialogContent>
-      </Dialog>
+        </div>
 
-      {!product.isSoldOut && isPaymentDialogOpen && (
-        <PaymentDialog
-          product={product}
-          open={isPaymentDialogOpen}
-          onOpenChange={setIsPaymentDialogOpen}
-        />
-      )}
-    </>
+        <div className="mt-2 space-y-2">
+          <a 
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "w-full py-2.5 rounded-lg flex items-center justify-center gap-2 bg-primary/5 text-primary hover:bg-primary hover:text-white transition-all text-xs font-bold uppercase tracking-wider",
+              product.isSoldOut && "opacity-50 pointer-events-none grayscale bg-muted text-muted-foreground"
+            )}
+          >
+            <MessageCircle className="h-4 w-4" />
+            {product.isSoldOut ? 'Sold Out' : 'Chat to Order'}
+          </a>
+
+          <Button 
+            onClick={() => setIsPaymentOpen(true)}
+            disabled={product.isSoldOut}
+            variant="default"
+            className="w-full py-2.5 h-auto text-xs font-bold uppercase tracking-wider rounded-lg"
+          >
+            Buy Now
+          </Button>
+        </div>
+      </div>
+
+      <PaymentDialog 
+        product={product} 
+        open={isPaymentOpen} 
+        onOpenChange={setIsPaymentOpen} 
+      />
+    </div>
   );
 }
