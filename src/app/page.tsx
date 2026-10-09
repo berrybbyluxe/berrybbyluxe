@@ -266,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* Browse Categories Section */}
-      <section className="py-16 sm:py-24 bg-white">
+      <section id="categories" className="py-16 sm:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="mb-10 sm:mb-12 text-left">
             <h2 className="text-3xl sm:text-4xl font-headline font-bold text-foreground">Browse Categories</h2>

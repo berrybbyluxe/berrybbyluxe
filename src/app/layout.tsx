@@ -6,12 +6,14 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { BackToTopButton } from '@/components/back-to-top-button';
 import { WhatsAppButton } from '@/components/whatsapp-button';
+import { NewArrivalsPopup } from '@/components/new-arrivals-popup';
 import './globals.css';
 
 const DOMAIN = 'https://berrybbyluxe.com';
 const HERO_IMAGE = `${DOMAIN}/images/products/Hero/berrybby-luxury-lighting-and-furniture-hero-picture.avif`;
 
 export const metadata: Metadata = {
+  metadataBase: new URL(DOMAIN),
   title: {
     default: 'Berrybby Luxe Living | Architectural Lighting & Premium Furnishing',
     template: '%s | Berrybby Luxe Living'
@@ -123,6 +125,7 @@ export default function RootLayout({
         <Footer />
         <BackToTopButton />
         <WhatsAppButton />
+        <NewArrivalsPopup />
         <Toaster />
       </body>
     </html>
